@@ -1,0 +1,148 @@
+
+#Daily Rewards (General configuration)
+[General]
+	#Automatically reward players after the rewardTimePerDay is reached. (e.g. 30 minutes). If disabled the reward command needs to be executed manually to reward the players.
+	automaticRewardPlayers = true
+	#Automatically reward players with specials after the rewardTimePerDay is reached. (e.g. 30 minutes). If disabled the reward command needs to be executed manually to reward the players.
+	automaticRewardSpecialPlayers = true
+	#Time in minutes the players needs to be online on the server before receiving a reward for the day.
+	#Range: 1 ~ 1440
+	rewardTimePerDay = 30
+	#Shows a unclaimed rewards message when a player joins the server (if there are unclaimed rewards).
+	showUnclaimedRewardsOnPlayerJoin = true
+	#Shows a unclaimed special rewards message when a player joins the server (if there are unclaimed special rewards).
+	showUnclaimedRewardsSpecialOnPlayerJoin = true
+	#Shows a message when a player receives a reward.
+	showReceivedRewardMessage = true
+	#Shows a message when a player receives a special reward.
+	showReceivedRewardSpecialMessage = true
+	#Shows a message with the reward claim command to claim rewards.
+	showRewardClaimCommandMessage = true
+	#Shows the rewards menu when a player joins the server (if there are unclaimed rewards).
+	showRewardMenuOnPlayerJoin = true
+	#Type of the reward screen.
+	#Allowed Values: COMPACT, DEFAULT_OVERVIEW, SPECIAL_OVERVIEW
+	rewardScreenType = "SPECIAL_OVERVIEW"
+
+["Fill Items"]
+	#Use fill items if there are not enough valid items for a month. (e.g. if there are only 2 items for a month and the player claims 3 rewards, the 3rd reward will be a fill item)
+	useFillItems = true
+	#List of normal fill items which are used in the case we have not enough valid items for a month.
+	normalFillItems = ["cobblemon:premier_ball:8", "cobblemon:premier_ball:12", "cobblemon:premier_ball:4", "cobblemon:premier_ball:10", "cobblemon:ultra_ball:3", "cobblemon:net_ball:3", "simplehats:hatbag_rare:1", "cobblemon:super_potion:4", "cobblemon:heal_ball:6", "cobblemon:safari_ball:6", "cobblemon:timer_ball:3", "cobblemon:potion:4", "cobblemon:revive:2", "cobblemon:max_revive", "cobblemon:full_restore", "cobblemon:hyper_potion:2", "cobblemon:moon_ball:4", "cobblemon:sport_ball:10", "cobblemon:automaton_armor_trim_smithing_template", "cobblemon:quick_ball:5", "cobblemon:berry_juice:3", "cobblemon:premier_ball:10", "cobblemon:antidote", "cobblemon:awakening", "cobblemon:burn_heal", "cobblemon:ice_heal", "cobblemon:paralyze_heal", "cobblemon:full_heal", "cobblemon:ether", "cobblemon:max_ether", "cobblemon:elixir", "cobblemon:max_elixir"]
+	#List of rare fill items which are used in the case we have not enough valid items for a month.
+	rareFillItems = ["cobblemon:galarica_cuff", "cobblemon:link_cable", "cobblemon:dusk_stone", "cobblemon:shiny_stone", "cobblemon:moon_stone", "cobblemonmikeskills:super_fishing_rod", "cobblemon:shell_bell", "cobblemon:safety_goggles", "simpletms:tr_shadowball", "cobblemon:tart_apple", "cobblemon:sweet_apple", "cobblemon:sachet", "cobblemon:upgrade", "cobblemon:magmarizer", "cobblemon:electirizer", "cobblemon:thunder_stone", "cobblemon:water_stone", "cobblemon:fire_stone", "cobblemon:malicious_armor", "cobblemon:auspicious_armor", "cobblemon:ribbon_sweet", "cobblemon:star_sweet", "cobblemon:protector", "cobblemon:soothe_bell", "cobblemon:spell_tag", "cobblemon:sticky_barb", "cobblemon:toxic_orb", "cobblemon:twisted_spoon", "cobblemon:dubious_disc", "cobblemon:unremarkable_teacup", "cobblemon:peat_block", "cobblemon:prism_scale", "obblemon:choice_band", "cobblemon:expert_belt", "cobblemon:lucky_egg", "cobblemon:reaper_cloth", "cobblemon:deep_sea_scale", "cobblemon:ability_shield", "cobblemon:weakness_policy", "cobblemon:power_anklet", "cobblemon:never_melt_ice", "cobblemon:muscle_band", "cobblemon:focus_band", "cobblemon:exp_share", "cobblemon:poison_barb", "cobblemon:power_lens", "cobblemon:loaded_dice", "cobblemon:metal_powder", "cobblemon:power_band", "cobblemon:covert_cloak", "cobblemon:iron_ball", "cobblemon:magnet", "cobblemon:life_orb", "cobblemon:flame_orb", "cobblemon:destiny_knot", "cobblemon:eject_button", "cobblemon:icy_rock", "cobblemon:rocky_helmet", "cobblemon:ring_target", "cobblemon:red_card", "cobblemon:silver_powder", "cobblemon:smoke_ball", "cobblemon:smooth_rock", "cobblemon:soft_sand", "cobblemon:sharp_beak", "cobblemon:damp_rock", "cobblemon:pp_up", "cobblemon:protein", "cobblemon:zinc", "cobblemon:hp_up", "cobblemon:black_augurite", "cobblemon:swift_feather", "cobblemon:master_ball", "cobblemon:jaw_fossil", "cobblemon:armor_fossil", "cobblemon:skull_fossil", "cobblemon:root_fossil", "cobblemon:old_amber_fossil", "cobblemon:dome_fossil", "cobblemon:helix_fossil", "cobblemon:suspicious_sherd", "cobblemon:relic_coin_pouch", "cobblemon:sun_stone", "cobblemon:elixir", "cobblemon:dire_hit", "cobblemon:wise_glasses", "cobblemon:leaf_stone", "cobblemon:moon_stone", "cobblemon:choice_specs", "cobblemon:fairy_feather", "cobblemon:dragon_scale", "cobblemon:heavy_duty_boots", "cobblemon:galarica_wreath", "cobblemon:x_attack"]
+	#The chance to use a rare item instead of a regular one. e.g. 7 means every 7th items could be a rare item. (0 = disabled)
+	#Range: 0 ~ 100
+	rareFillItemsChance = 3
+	#List of loot bag fill items which are used in the case we have not enough valid items for a month.
+	lootBagFillItems = ["lootbagmod:lootbag"]
+	#The chance to use a loot bag item instead of a regular one. e.g. 15 means every 15th items could be a loot bag item. (0 = disabled)
+	#Range: 0 ~ 100
+	lootBagFillItemsChance = 15
+
+["Rewards Items"]
+	#Shuffle the rewards items instead of using the defined order.
+	shuffleRewardsItems = true
+	#Shuffle the special rewards items instead of using the defined order.
+	shuffleRewardsSpecialItems = true
+	#Preview the upcoming rewards items for the next days.
+	previewRewardsItems = false
+	#Preview the upcoming special rewards items for the next days.
+	previewRewardsSpecialItems = false
+
+	["Rewards Items"."January Rewards Items"]
+		#List of rewards items for January
+		rewardsJanuaryItems = ["minecraft:oak_log:32", "minecraft:cooked_salmon:16", "minecraft:white_wool:16", "minecraft:cake:1"]
+		#Single reward item or list of special streak rewards items for January. (Only used if rewardsJanuarySpecialItemsNeededDays is greater than 0)
+		rewardsJanuarySpecialItems = ["simplehats:hatbag_common", "simplehats:hatbag_uncommon", "simplehats:hatbag_rare", "simplehats:hatbag_epic"]
+		#List of users which will get the special rewards items for January. (Use empty list to allow all players to get special rewards items for January)
+		rewardsJanuarySpecialUsers = [""]
+
+	["Rewards Items"."February Rewards Items"]
+		#List of rewards items for February
+		rewardsFebruaryItems = []
+		#Single reward item or list of special streak rewards items for February. (Only used if rewardsFebruarySpecialItemsNeededDays is greater than 0)
+		rewardsFebruarySpecialItems = ["simplehats:hatbag_common", "simplehats:hatbag_uncommon", "simplehats:hatbag_rare", "simplehats:hatbag_epic"]
+		#List of users which will get the special rewards items for February. (Use empty list to allow all players to get special rewards items for February)
+		rewardsFebruarySpecialUsers = [""]
+
+	["Rewards Items"."March Rewards Items"]
+		#List of rewards items for March
+		rewardsMarchItems = []
+		#Single reward item or list of special streak rewards items for March. (Only used if rewardsMarchSpecialItemsNeededDays is greater than 0)
+		rewardsMarchSpecialItems = ["simplehats:hatbag_common", "simplehats:hatbag_uncommon", "simplehats:hatbag_rare", "simplehats:hatbag_epic"]
+		#List of users which will get the special rewards items for March. (Use empty list to allow all players to get special rewards items for March)
+		rewardsMarchSpecialUsers = [""]
+
+	["Rewards Items"."April Rewards Items"]
+		#List of rewards items for April
+		rewardsAprilItems = []
+		#Single reward item or list of special streak rewards items for April. (Only used if rewardsAprilSpecialItemsNeededDays is greater than 0)
+		rewardsAprilSpecialItems = ["simplehats:hatbag_common", "simplehats:hatbag_uncommon", "simplehats:hatbag_rare", "simplehats:hatbag_epic"]
+		#List of users which will get the special rewards items for April. (Use empty list to allow all players to get special rewards items for April)
+		rewardsAprilSpecialUsers = [""]
+
+	["Rewards Items"."May Rewards Items"]
+		#List of rewards items for May
+		rewardsMayItems = ["minecraft:egg:16"]
+		#Single reward item or list of special streak rewards items for May. (Only used if rewardsMaySpecialItemsNeededDays is greater than 0)
+		rewardsMaySpecialItems = ["simplehats:hatbag_common", "simplehats:hatbag_uncommon", "simplehats:hatbag_rare", "simplehats:hatbag_epic"]
+		#List of users which will get the special rewards items for May. (Use empty list to allow all players to get special rewards items for May)
+		rewardsMaySpecialUsers = [""]
+
+	["Rewards Items"."June Rewards Items"]
+		#List of rewards items for June
+		rewardsJuneItems = []
+		#Single reward item or list of special streak rewards items for June. (Only used if rewardsJuneSpecialItemsNeededDays is greater than 0)
+		rewardsJuneSpecialItems = ["simplehats:hatbag_summer", "simplehats:hatbag_common", "simplehats:hatbag_uncommon", "simplehats:hatbag_rare", "simplehats:hatbag_epic"]
+		#List of users which will get the special rewards items for June. (Use empty list to allow all players to get special rewards items for June)
+		rewardsJuneSpecialUsers = [""]
+
+	["Rewards Items"."July Rewards Items"]
+		#List of rewards items for July
+		rewardsJulyItems = []
+		#Single reward item or list of special streak rewards items for July. (Only used if rewardsJulySpecialItemsNeededDays is greater than 0)
+		rewardsJulySpecialItems = ["simplehats:hatbag_summer", "simplehats:hatbag_common", "simplehats:hatbag_uncommon", "simplehats:hatbag_rare", "simplehats:hatbag_epic"]
+		#List of users which will get the special rewards items for July. (Use empty list to allow all players to get special rewards items for July)
+		rewardsJulySpecialUsers = [""]
+
+	["Rewards Items"."August Rewards Items"]
+		#List of rewards items for August
+		rewardsAugustItems = []
+		#Single reward item or list of special streak rewards items for August. (Only used if rewardsAugustSpecialItemsNeededDays is greater than 0)
+		rewardsAugustSpecialItems = ["simplehats:hatbag_common", "simplehats:hatbag_uncommon", "simplehats:hatbag_rare", "simplehats:hatbag_epic"]
+		#List of users which will get the special rewards items for August. (Use empty list to allow all players to get special rewards items for August)
+		rewardsAugustSpecialUsers = [""]
+
+	["Rewards Items"."September Rewards Items"]
+		#List of rewards items for September
+		rewardsSeptemberItems = []
+		#Single reward item or list of special streak rewards items for September. (Only used if rewardsSeptemberSpecialItemsNeededDays is greater than 0)
+		rewardsSeptemberSpecialItems = ["simplehats:hatbag_common", "simplehats:hatbag_uncommon", "simplehats:hatbag_rare", "simplehats:hatbag_epic"]
+		#List of users which will get the special rewards items for September. (Use empty list to allow all players to get special rewards items for September)
+		rewardsSeptemberSpecialUsers = [""]
+
+	["Rewards Items"."October Rewards Items"]
+		#List of rewards items for October
+		rewardsOctoberItems = []
+		#Single reward item or list of special streak rewards items for October. (Only used if rewardsOctoberSpecialItemsNeededDays is greater than 0)
+		rewardsOctoberSpecialItems = ["simplehats:hatbag_halloween", "simplehats:hatbag_common", "simplehats:hatbag_uncommon", "simplehats:hatbag_rare", "simplehats:hatbag_epic"]
+		#List of users which will get the special rewards items for October. (Use empty list to allow all players to get special rewards items for October)
+		rewardsOctoberSpecialUsers = [""]
+
+	["Rewards Items"."November Rewards Items"]
+		#List of rewards items for November
+		rewardsNovemberItems = []
+		#Single reward item or list of special streak rewards items for November. (Only used if rewardsNovemberSpecialItemsNeededDays is greater than 0)
+		rewardsNovemberSpecialItems = ["simplehats:hatbag_common", "simplehats:hatbag_uncommon", "simplehats:hatbag_rare", "simplehats:hatbag_epic"]
+		#List of users which will get the special rewards items for November. (Use empty list to allow all players to get special rewards items for November)
+		rewardsNovemberSpecialUsers = [""]
+
+	["Rewards Items"."December Rewards Items"]
+		#List of rewards items for December
+		rewardsDecemberItems = ["simplehats:hatbag_festive"]
+		#Single reward item or list of special streak rewards items for December. (Only used if rewardsDecemberSpecialItemsNeededDays is greater than 0)
+		rewardsDecemberSpecialItems = ["simplehats:hatbag_festive", "minecraft:cookie:20", "simplehats:hatbag_common", "simplehats:hatbag_uncommon", "simplehats:hatbag_rare", "simplehats:hatbag_epic"]
+		#List of users which will get the special rewards items for December. (Use empty list to allow all players to get special rewards items for December)
+		rewardsDecemberSpecialUsers = [""]
+
