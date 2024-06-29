@@ -1,4 +1,5 @@
 {
+	autofocus_id: "72E398B97503ECD1"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "introduction"
@@ -150,6 +151,34 @@
 				type: "item"
 			}]
 			x: 2.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"The Backpack allows you to carry much more junk! Equip and press &d(B)&r to open!"
+				""
+				"&6Tip:&r This is a Curio, it goes in a Curio Slot!"
+			]
+			id: "12E8B9C1B8F23B9F"
+			rewards: [
+				{
+					id: "749702117E33E119"
+					item: "cobblemon:revive"
+					type: "item"
+				}
+				{
+					id: "503756300E379648"
+					item: "delightful:pumpkin_pie_slice"
+					type: "item"
+				}
+			]
+			subtitle: "Craft a &eBackpack"
+			tasks: [{
+				id: "7C38E00DF6914961"
+				item: "backpacked:backpack"
+				type: "item"
+			}]
+			x: 0.0d
 			y: 2.5d
 		}
 	]

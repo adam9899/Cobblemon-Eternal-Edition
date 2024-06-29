@@ -9,6 +9,11 @@
 	quests: [
 		{
 			id: "6A15D488929F4085"
+			rewards: [{
+				id: "6B654A3FA58E4976"
+				item: "cobblemon:master_ball"
+				type: "item"
+			}]
 			subtitle: "Catch a &eShiny Pokemon"
 			tasks: [{
 				action: "catch"
@@ -29,6 +34,11 @@
 		}
 		{
 			id: "5629C3B6906F49AC"
+			rewards: [{
+				id: "5EC037015546F76B"
+				item: "cobblemon:master_ball"
+				type: "item"
+			}]
 			subtitle: "Catch 1000x Pokemon!"
 			tasks: [{
 				action: "catch"
