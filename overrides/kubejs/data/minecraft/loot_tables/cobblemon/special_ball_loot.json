@@ -1,0 +1,146 @@
+{
+    "type": "loot_table",
+    "pools": [
+      {
+        "bonus_rolls": 0.0,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 2.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:net_ball",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 2.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:dive_ball",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 2.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:nest_ball",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 2.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:repeat_ball",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 2.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:timer_ball",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 2.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:luxury_ball",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 2.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:dusk_ball",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 2.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:heal_ball",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 2.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:quick_ball",
+            "weight": 3
+          }
+        ],
+        "rolls": 1.0
+      }
+    ]
+  }

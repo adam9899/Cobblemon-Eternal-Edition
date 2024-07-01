@@ -1,0 +1,156 @@
+{
+    "type": "loot_table",
+    "pools": [
+      {
+        "bonus_rolls": 0.0,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:kings_rock",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:deep_sea_scale",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:deep_sea_tooth",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:razor_claw",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:razor_fang",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:black_sludge",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:choice_band",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:choice_scarf",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:choice_specs",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:focus_band",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:heavy_duty_boots",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:light_clay",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:mental_herb",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:mirror_herb",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:muscle_band",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:power_anklet",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:power_band",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:power_belt",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:power_bracer",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:power_herb",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:power_lens",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:power_weight",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:quick_claw",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:rocky_helmet",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:safety_goggles",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:wise_glasses",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:white_herb",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:bright_powder",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:destiny_knot",
+            "weight": 2
+          }
+        ],
+        "rolls": 1.0
+      }
+    ]
+  }

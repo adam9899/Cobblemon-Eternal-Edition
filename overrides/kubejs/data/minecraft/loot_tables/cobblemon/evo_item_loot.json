@@ -1,0 +1,179 @@
+{
+    "type": "loot_table",
+    "pools": [
+      {
+        "bonus_rolls": 0.0,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:link_cable",
+            "weight": 6
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:dragon_scale",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:kings_rock",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:metal_coat",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:upgrade",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:dubious_disc",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:deep_sea_scale",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:deep_sea_tooth",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:electirizer",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:magmarizer",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:oval_stone",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:protector",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:reaper_cloth",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:prism_scale",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:sachet",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:whipped_dream",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:strawberry_sweet"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:love_sweet"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:berry_sweet"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:clover_sweet"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:flower_sweet"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:star_sweet"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:ribbon_sweet"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:chipped_pot",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:cracked_pot",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:sweet_apple",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:tart_apple",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:galarica_cuff",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:galarica_wreath",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:black_augurite",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:peat_block",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:razor_claw",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:razor_fang",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:auspicious_armor",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:malicious_armor",
+            "weight": 2
+          }
+        ],
+        "rolls": 1.0
+      }
+    ]
+  }

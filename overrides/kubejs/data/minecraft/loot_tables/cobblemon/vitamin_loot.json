@@ -1,0 +1,101 @@
+{
+    "type": "loot_table",
+    "pools": [
+      {
+        "bonus_rolls": 0.0,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 2.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:hp_up",
+            "weight": 10
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 2.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:protein",
+            "weight": 10
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 2.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:iron",
+            "weight": 10
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 2.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:calcium",
+            "weight": 10
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 2.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:zinc",
+            "weight": 10
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 2.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:carbos",
+            "weight": 10
+          }
+        ],
+        "rolls": 1.0
+      }
+    ]
+  }

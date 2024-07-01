@@ -1,0 +1,86 @@
+{
+    "type": "loot_table",
+    "pools": [
+      {
+        "bonus_rolls": 0.0,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:metal_coat",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:black_glasses",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:charcoal_stick",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:dragon_fang",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:hard_stone",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:magnet",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:miracle_seed",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:mystic_water",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:never_melt_ice",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:poison_barb",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:silk_scarf",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:silver_powder",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:soft_sand",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:spell_tag",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:twisted_spoon",
+            "weight": 2
+          }
+        ],
+        "rolls": 1.0
+      }
+    ]
+  }

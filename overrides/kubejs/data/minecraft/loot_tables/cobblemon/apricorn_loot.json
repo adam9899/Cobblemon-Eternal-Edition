@@ -1,0 +1,148 @@
+{
+    "type": "loot_table",
+    "pools": [
+      {
+        "bonus_rolls": 0.0,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 4.0,
+                  "min": 2.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:red_apricorn",
+            "weight": 6
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 4.0,
+                  "min": 2.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:yellow_apricorn",
+            "weight": 6
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 4.0,
+                  "min": 2.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:green_apricorn",
+            "weight": 6
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 4.0,
+                  "min": 2.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:blue_apricorn",
+            "weight": 6
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 4.0,
+                  "min": 2.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:pink_apricorn",
+            "weight": 6
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 4.0,
+                  "min": 2.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:black_apricorn",
+            "weight": 6
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 4.0,
+                  "min": 2.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:white_apricorn",
+            "weight": 6
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:red_apricorn_seed"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:yellow_apricorn_seed"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:green_apricorn_seed"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:blue_apricorn_seed"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:green_apricorn_seed"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:pink_apricorn_seed"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:black_apricorn_seed"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cobblemon:white_apricorn_seed"
+          }
+        ],
+        "rolls": 1.0
+      }
+    ]
+  }

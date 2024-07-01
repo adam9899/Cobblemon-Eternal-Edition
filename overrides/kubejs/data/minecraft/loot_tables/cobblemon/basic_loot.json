@@ -1,0 +1,146 @@
+{
+    "type": "loot_table",
+    "pools": [
+      {
+        "bonus_rolls": 0.0,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 3.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:poke_ball",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 3.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:citrine_ball",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 3.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:verdant_ball",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 3.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:azure_ball",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 3.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:roseate_ball",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 3.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:slate_ball",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 3.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:premier_ball",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 3.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:great_ball",
+            "weight": 5
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 3.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "cobblemon:ultra_ball",
+            "weight": 5
+          }
+        ],
+        "rolls": 1.0
+      }
+    ]
+  }
