@@ -1,0 +1,13 @@
+{
+	"name": "cobbletowns:lavender_town/mart",
+	"fallback": "minecraft:empty",
+	"elements": [{
+		"weight": 1,
+		"element": {
+			"location": "cobbletowns:lavender_town/buildings/mart",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	}]
+}

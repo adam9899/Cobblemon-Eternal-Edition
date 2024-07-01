@@ -1,0 +1,42 @@
+{
+	"name": "cobbletowns:twinleaf_town/roads",
+	"fallback": "minecraft:empty",
+	"elements": [{
+		"weight": 4,
+		"element": {
+			"element_type": "minecraft:empty_pool_element"
+		}
+	},{
+		"weight": 3,
+		"element": {
+			"location": "cobbletowns:twinleaf_town/roads/straight",
+			"processors": "minecraft:empty",
+			"projection": "terrain_matching",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 2,
+		"element": {
+			"location": "cobbletowns:twinleaf_town/roads/joint_l",
+			"processors": "minecraft:empty",
+			"projection": "terrain_matching",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 2,
+		"element": {
+			"location": "cobbletowns:twinleaf_town/roads/joint_t",
+			"processors": "minecraft:empty",
+			"projection": "terrain_matching",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 1,
+		"element": {
+			"location": "cobbletowns:twinleaf_town/roads/joint_x",
+			"processors": "minecraft:empty",
+			"projection": "terrain_matching",
+			"element_type": "minecraft:single_pool_element"
+		}
+	}]
+}

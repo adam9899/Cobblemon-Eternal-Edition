@@ -1,0 +1,42 @@
+{
+	"name": "cobbletowns:pacifidlog_town/roads",
+	"fallback": "minecraft:empty",
+	"elements": [{
+		"weight": 4,
+		"element": {
+			"element_type": "minecraft:empty_pool_element"
+		}
+	},{
+		"weight": 3,
+		"element": {
+			"location": "cobbletowns:pacifidlog_town/roads/straight",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 2,
+		"element": {
+			"location": "cobbletowns:pacifidlog_town/roads/joint_l",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 2,
+		"element": {
+			"location": "cobbletowns:pacifidlog_town/roads/joint_t",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 1,
+		"element": {
+			"location": "cobbletowns:pacifidlog_town/roads/joint_x",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	}]
+}

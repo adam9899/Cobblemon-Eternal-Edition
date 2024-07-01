@@ -1,0 +1,13 @@
+{
+	"name": "cobbletowns:lentimas_town/strange_house",
+	"fallback": "minecraft:empty",
+	"elements": [{
+		"weight": 1,
+		"element": {
+			"location": "cobbletowns:lentimas_town/buildings/strange_house",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	}]
+}

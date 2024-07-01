@@ -1,0 +1,66 @@
+{
+	"name": "cobbletowns:cherrygrove_city/decor",
+	"fallback": "minecraft:empty",
+	"elements": [{
+		"weight": 1,
+		"element": {
+			"element_type": "minecraft:empty_pool_element"
+		}
+	},{
+		"weight": 2,
+		"element": {
+			"location": "cobbletowns:cherrygrove_city/decor/lamp1",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 2,
+		"element": {
+			"location": "cobbletowns:cherrygrove_city/decor/lamp2",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 1,
+		"element": {
+			"location": "cobbletowns:cherrygrove_city/decor/lamp3",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 1,
+		"element": {
+			"location": "cobbletowns:cherrygrove_city/decor/lamp4",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 1,
+		"element": {
+			"location": "cobbletowns:cherrygrove_city/decor/tree1",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 1,
+		"element": {
+			"location": "cobbletowns:cherrygrove_city/decor/tree2",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 1,
+		"element": {
+			"location": "cobbletowns:cherrygrove_city/decor/tree3",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	}]
+}

@@ -1,0 +1,13 @@
+{
+	"name": "cobbletowns:lavender_town/rare_road",
+	"fallback": "minecraft:empty",
+	"elements": [{
+		"weight": 1,
+		"element": {
+			"location": "cobbletowns:lavender_town/roads/rare",
+			"processors": "minecraft:empty",
+			"projection": "terrain_matching",
+			"element_type": "minecraft:single_pool_element"
+		}
+	}]
+}

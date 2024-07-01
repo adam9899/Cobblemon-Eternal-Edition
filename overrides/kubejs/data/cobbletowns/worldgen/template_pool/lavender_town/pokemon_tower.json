@@ -1,0 +1,13 @@
+{
+	"name": "cobbletowns:lavender_town/pokemon_tower",
+	"fallback": "minecraft:empty",
+	"elements": [{
+		"weight": 1,
+		"element": {
+			"location": "cobbletowns:lavender_town/buildings/pokemon_tower",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	}]
+}

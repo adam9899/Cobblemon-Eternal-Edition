@@ -1,0 +1,13 @@
+{
+	"name": "cobbletowns:pokecenter/pokecenter",
+	"fallback": "minecraft:empty",
+	"elements": [{
+		"weight": 1,
+		"element": {
+			"location": "cobbletowns:pokecenter/pokecenter",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	}]
+}

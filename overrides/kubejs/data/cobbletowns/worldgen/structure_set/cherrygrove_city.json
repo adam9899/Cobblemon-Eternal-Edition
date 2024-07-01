@@ -1,0 +1,17 @@
+{
+	"placement": {
+		"type": "minecraft:random_spread",
+		"salt": 19014896,
+		"separation": 8,
+		"spacing": 34,
+		"spread_type": "triangular",
+		"exclusion_zone": {
+			"other_set": "minecraft:villages",
+			"chunk_count": 8
+		}
+	},
+	"structures": [{
+		"structure": "cobbletowns:cherrygrove_city",
+		"weight": 1
+	}]
+}

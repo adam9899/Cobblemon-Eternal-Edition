@@ -1,0 +1,13 @@
+{
+	"name": "cobbletowns:villagers/nurse",
+	"fallback": "minecraft:empty",
+	"elements": [{
+		"element": {
+			"element_type": "minecraft:single_pool_element",
+			"location": "cobbletowns:villagers/nurse/nurse",
+			"processors": "minecraft:empty",
+			"projection": "rigid"
+		},
+		"weight": 1
+	}]
+  }

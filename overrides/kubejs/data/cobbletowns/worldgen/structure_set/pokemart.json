@@ -1,0 +1,17 @@
+{
+	"placement": {
+		"type": "minecraft:random_spread",
+		"salt": 36692144,
+		"separation": 12,
+		"spacing": 25,
+		"spread_type": "triangular",
+		"exclusion_zone": {
+			"other_set": "minecraft:villages",
+			"chunk_count": 8
+		}
+	},
+	"structures": [{
+		"structure": "cobbletowns:pokemart",
+		"weight": 1
+	}]
+}

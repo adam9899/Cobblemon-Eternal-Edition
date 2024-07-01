@@ -1,0 +1,13 @@
+{
+	"name": "cobbletowns:cherrygrove_city/town_centers",
+	"fallback": "minecraft:empty",
+	"elements": [{
+		"weight": 1,
+		"element": {
+			"location": "cobbletowns:cherrygrove_city/town_centers/sign",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	}]
+}

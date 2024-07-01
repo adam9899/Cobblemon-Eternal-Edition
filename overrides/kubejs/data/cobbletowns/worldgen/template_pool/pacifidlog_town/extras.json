@@ -1,0 +1,90 @@
+{
+	"name": "cobbletowns:pacifidlog_town/extras",
+	"fallback": "minecraft:empty",
+	"elements": [{
+		"weight": 1,
+		"element": {
+			"element_type": "minecraft:empty_pool_element"
+		}
+	},{
+		"weight": 2,
+		"element": {
+			"location": "cobbletowns:pacifidlog_town/extras/flower1",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 1,
+		"element": {
+			"location": "cobbletowns:pacifidlog_town/extras/flower2",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 2,
+		"element": {
+			"location": "cobbletowns:pacifidlog_town/extras/pier1",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 1,
+		"element": {
+			"location": "cobbletowns:pacifidlog_town/extras/pier2",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 1,
+		"element": {
+			"location": "cobbletowns:pacifidlog_town/extras/pier3",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 2,
+		"element": {
+			"location": "cobbletowns:pacifidlog_town/extras/rock1",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 1,
+		"element": {
+			"location": "cobbletowns:pacifidlog_town/extras/rock2",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 2,
+		"element": {
+			"location": "cobbletowns:pacifidlog_town/extras/ship1",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 1,
+		"element": {
+			"location": "cobbletowns:pacifidlog_town/extras/ship2",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 2,
+		"element": {
+			"location": "cobbletowns:pacifidlog_town/extras/bench",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	}]
+}

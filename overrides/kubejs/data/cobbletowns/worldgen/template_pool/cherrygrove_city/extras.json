@@ -1,0 +1,74 @@
+{
+	"name": "cobbletowns:cherrygrove_city/extras",
+	"fallback": "minecraft:empty",
+	"elements": [{
+		"weight": 1,
+		"element": {
+			"element_type": "minecraft:empty_pool_element"
+		}
+	},{
+		"weight": 1,
+		"element": {
+			"location": "cobbletowns:cherrygrove_city/extras/flower1",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 2,
+		"element": {
+			"location": "cobbletowns:cherrygrove_city/extras/flower2",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 2,
+		"element": {
+			"location": "cobbletowns:cherrygrove_city/extras/fence1",
+			"processors": "minecraft:empty",
+			"projection": "terrain_matching",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 2,
+		"element": {
+			"location": "cobbletowns:cherrygrove_city/extras/fence2",
+			"processors": "minecraft:empty",
+			"projection": "terrain_matching",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 1,
+		"element": {
+			"location": "cobbletowns:cherrygrove_city/extras/fence3",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 1,
+		"element": {
+			"location": "cobbletowns:cherrygrove_city/extras/fence4",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 1,
+		"element": {
+			"location": "cobbletowns:cherrygrove_city/extras/rock1",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 1,
+		"element": {
+			"location": "cobbletowns:cherrygrove_city/extras/rock2",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	}]
+}

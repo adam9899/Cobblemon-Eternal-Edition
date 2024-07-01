@@ -1,0 +1,85 @@
+{
+	"name": "cobbletowns:villagers/shopkeeper_second",
+	"fallback": "minecraft:empty",
+	"elements": [{
+		"weight": 1,
+		"element": {
+			"element_type": "minecraft:single_pool_element",
+			"location": "cobbletowns:villagers/shopkeeper/shopkeeper_second1",
+			"processors": "minecraft:empty",
+			"projection": "rigid"
+		}
+	},{
+		"weight": 1,
+		"element": {
+			"element_type": "minecraft:single_pool_element",
+			"location": "cobbletowns:villagers/shopkeeper/shopkeeper_second2",
+			"processors": "minecraft:empty",
+			"projection": "rigid"
+		}
+	},{
+		"weight": 1,
+		"element": {
+			"element_type": "minecraft:single_pool_element",
+			"location": "cobbletowns:villagers/shopkeeper/shopkeeper_second3",
+			"processors": "minecraft:empty",
+			"projection": "rigid"
+		}
+	},{
+		"weight": 1,
+		"element": {
+			"element_type": "minecraft:single_pool_element",
+			"location": "cobbletowns:villagers/shopkeeper/shopkeeper_second4",
+			"processors": "minecraft:empty",
+			"projection": "rigid"
+		}
+	},{
+		"weight": 1,
+		"element": {
+			"element_type": "minecraft:single_pool_element",
+			"location": "cobbletowns:villagers/shopkeeper/shopkeeper_second5",
+			"processors": "minecraft:empty",
+			"projection": "rigid"
+		}
+	},{
+		"weight": 1,
+		"element": {
+			"element_type": "minecraft:single_pool_element",
+			"location": "cobbletowns:villagers/shopkeeper/shopkeeper_second6",
+			"processors": "minecraft:empty",
+			"projection": "rigid"
+		}
+	},{
+		"weight": 1,
+		"element": {
+			"element_type": "minecraft:single_pool_element",
+			"location": "cobbletowns:villagers/shopkeeper/shopkeeper_second7",
+			"processors": "minecraft:empty",
+			"projection": "rigid"
+		}
+	},{
+		"weight": 1,
+		"element": {
+			"element_type": "minecraft:single_pool_element",
+			"location": "cobbletowns:villagers/shopkeeper/shopkeeper_second8",
+			"processors": "minecraft:empty",
+			"projection": "rigid"
+		}
+	},{
+		"weight": 1,
+		"element": {
+			"element_type": "minecraft:single_pool_element",
+			"location": "cobbletowns:villagers/shopkeeper/shopkeeper_second9",
+			"processors": "minecraft:empty",
+			"projection": "rigid"
+		}
+	},{
+		"weight": 1,
+		"element": {
+			"element_type": "minecraft:single_pool_element",
+			"location": "cobbletowns:villagers/shopkeeper/shopkeeper_second10",
+			"processors": "minecraft:empty",
+			"projection": "rigid"
+		}
+	}]
+  }

@@ -1,0 +1,13 @@
+{
+	"name": "cobbletowns:villagers/shopkeeper_main",
+	"fallback": "minecraft:empty",
+	"elements": [{
+		"element": {
+			"element_type": "minecraft:single_pool_element",
+			"location": "cobbletowns:villagers/shopkeeper/shopkeeper_main",
+			"processors": "minecraft:empty",
+			"projection": "rigid"
+		},
+		"weight": 1
+	}]
+  }

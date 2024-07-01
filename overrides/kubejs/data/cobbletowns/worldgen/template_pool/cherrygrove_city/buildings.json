@@ -1,0 +1,37 @@
+{
+	"name": "cobbletowns:cherrygrove_city/buildings",
+	"fallback": "minecraft:empty",
+	"elements": [{
+		"weight": 2,
+		"element": {
+			"location": "cobbletowns:cherrygrove_city/buildings/large1",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 2,
+		"element": {
+			"location": "cobbletowns:cherrygrove_city/buildings/large2",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 2,
+		"element": {
+			"location": "cobbletowns:cherrygrove_city/buildings/small1",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 2,
+		"element": {
+			"location": "cobbletowns:cherrygrove_city/buildings/small2",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	}]
+}

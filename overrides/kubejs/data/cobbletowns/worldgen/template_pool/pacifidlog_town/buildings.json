@@ -1,0 +1,37 @@
+{
+	"name": "cobbletowns:pacifidlog_town/buildings",
+	"fallback": "minecraft:empty",
+	"elements": [{
+		"weight": 2,
+		"element": {
+			"location": "cobbletowns:pacifidlog_town/buildings/large1",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 2,
+		"element": {
+			"location": "cobbletowns:pacifidlog_town/buildings/small1",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 2,
+		"element": {
+			"location": "cobbletowns:pacifidlog_town/buildings/small2",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 2,
+		"element": {
+			"location": "cobbletowns:pacifidlog_town/buildings/small3",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	}]
+}

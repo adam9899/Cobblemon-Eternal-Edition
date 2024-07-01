@@ -1,0 +1,13 @@
+{
+	"name": "cobbletowns:villagers/oak",
+	"fallback": "minecraft:empty",
+	"elements": [{
+		"element": {
+			"element_type": "minecraft:single_pool_element",
+			"location": "cobbletowns:villagers/oak/oak",
+			"processors": "minecraft:empty",
+			"projection": "rigid"
+		},
+		"weight": 1
+	}]
+  }
