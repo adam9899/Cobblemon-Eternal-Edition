@@ -1,0 +1,5 @@
+{
+    "message.cobblemoneternal.legendary_spawned_nearby": " has appeared nearby!",
+    "message.cobblemoneternal.command.force_spawn_success": "%s has been forcibly spawned near %s",
+    "message.cobblemoneternal.command.reset_daily_roamer": "Daily roamer flag reset for %s"
+}
