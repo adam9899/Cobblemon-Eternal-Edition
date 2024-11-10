@@ -31,10 +31,11 @@
         "1:ancientpower",
         "1:scratch",
         "1:metronome",
-
         "5:teleport",
+        "8:milkdrink",
         "11:dreameater",
         "11:superfang",
+        "20:cosmicpower",
         "23:earthquake",
         "50:outrage",
         "66:sacredfire",
@@ -42,6 +43,7 @@
         "66:doomdesire",
         "66:psychoboost",
         "99:sketch",
+        "100:explosion",
 
         "tm:earthquake",
         "tm:outrage",
