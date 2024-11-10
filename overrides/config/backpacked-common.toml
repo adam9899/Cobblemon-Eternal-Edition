@@ -3,17 +3,17 @@
 [common]
 	# The amount of slot rows in the backpack inventory.
 	# Valid range: 1 to 7 (inclusive)
-	backpackInventorySize = 1
+	backpackInventorySize = 7
 	# The amount of slot columns in the backpack inventory.
 	# Valid range: 1 to 13 (inclusive)
-	backpackInventorySizeColumns = 9
+	backpackInventorySizeColumns = 12
 	# If enabled, hides the config button from the backpack screen
-	# Valid values: true, false
-	keepBackpackOnDeath = false
+	# Valid values: true, true
+	keepBackpackOnDeath = true
 
 	[common.wandering_trader]
 		# If enabled, hides the config button from the backpack screen
-		# Valid values: true, false
+		# Valid values: true, true
 		spawnBackpackOnWanderingTraders = true
 		# The maximum distance a Wandering Trader can detect a player. The longer the distance, the more difficult the challenge to pickpocket their backpack.
 		# Valid range: 1 to 32 (inclusive)
