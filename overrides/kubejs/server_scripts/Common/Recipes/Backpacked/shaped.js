@@ -1,4 +1,4 @@
-onEvent('recipes', event => {
+ServerEvents.recipes(event => {
   event.shaped('backpacked:backpack', [
     'RRR',
     'PZP',
