@@ -72,9 +72,14 @@ const trySpawnRoamingLegendary = (player, spawnDetails, bypassConditions) => {
             player.level.playSound(null, player.x, player.y, player.z, spawnDetails.spawnSound, 'neutral', 1, 1)
         })
 
-    let monCommandString = `pokespawnat ${pos.x} ${pos.y} ${pos.z} ${spawnDetails.species}`
+    console.log(spawnDetails)
+    let pokemonEntity = new $PokemonEntity(level, createPokemon(spawnDetails.species, spawnDetails.properties), $CobblemonEntities.POKEMON)
+    console.log(pokemonEntity)
+        pokemonEntity.x = pos.x
+        pokemonEntity.y = pos.y
+        pokemonEntity.z = pos.z
+        pokemonEntity.spawn()
 
-    player.server.runCommand(monCommandString)
     console.log(`${spawnDetails.species} created at ${pos.x}x ${pos.y}y ${pos.z}z near ${player.username}. forced: ${bypassConditions}`)
 }
 

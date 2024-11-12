@@ -9,6 +9,17 @@ global.staticConditionalEncounters.mewtwo = {
         y: 1,
         z: 0
     },
+    properties: {
+        dexNumber: 150, //TEMPORARY, PokemonSpecies.getByIdentifier() does not exist in this version, so we use getByPokedexNumber() until we update
+        level: 80,
+        moveSet: [
+            'psystrike',
+            'aurasphere',
+            'shadowball',
+            'recover'
+        ],
+        maxedIVs: 3
+    },
     multiblockName: 'cloning_machine',
     condition: (player, block, rotation) => {
         if(validateMultiblock('cloning_machine', block, rotation))
@@ -17,5 +28,5 @@ global.staticConditionalEncounters.mewtwo = {
             player.setStatusMessage(Text.translate('message.cobblemoneternal.missing_multiblock')) 
             return 'fail_multiblock';
         }
-    }
+    },
 }

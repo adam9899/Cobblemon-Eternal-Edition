@@ -22,9 +22,12 @@ const tryStaticEncounter = (event) => {
     console.log(`${event.player.username} clicked on ${event.block.id} at ${pos.x}x ${pos.y}y ${pos.z}z`, entry, multiblock)
 
     if(conditionResult == 'pass'){
-        event.server.runCommandSilent(
-            `pokespawnat ${posWithOffset(pos, entry, 'x')} ${posWithOffset(pos, entry, 'y')} ${posWithOffset(pos, entry, 'z')} ${entry.species}`
-        )
+
+        let pokemonEntity = new $PokemonEntity(event.level, createPokemon(entry.species, entry.properties), $CobblemonEntities.POKEMON)
+            pokemonEntity.x = posWithOffset(pos, entry, 'x')
+            pokemonEntity.y = posWithOffset(pos, entry, 'y')
+            pokemonEntity.z = posWithOffset(pos, entry, 'z')
+            pokemonEntity.spawn()
 
         if(entry.spawnSound)
             event.server.runCommandSilent(`playsound ${entry.spawnSound} neutral ${event.player.username} ${posWithOffset(pos, entry, 'x')} ${posWithOffset(pos, entry, 'y')} ${posWithOffset(pos, entry, 'z')}`)

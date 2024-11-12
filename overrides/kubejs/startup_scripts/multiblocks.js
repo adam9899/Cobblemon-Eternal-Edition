@@ -20,7 +20,7 @@ global.customMultiblocks = {}
 // used for Mewtwo
 StartupEvents.postInit(event => {
         
-    $PatchouliAPI.registerMultiblock(`cobblemoneternal:cloning_machine`,
+    $PatchouliAPI.registerMultiblock('cobblemoneternal:cloning_machine',
         $PatchouliAPI.makeMultiblock(
             [
                 [
@@ -45,8 +45,70 @@ StartupEvents.postInit(event => {
 
     global.customMultiblocks['cloning_machine'] = $PatchouliAPI.getMultiblock('cobblemoneternal:cloning_machine')
 
-    console.log(Block.getBlock('minecraft:iron_block'))
+    $PatchouliAPI.registerMultiblock('cobblemoneternal:sleeping_giant',
+        $PatchouliAPI.makeMultiblock(
+            [
+                [
+                    'SS',
+                    'SS',
+                    'SS',
+                    'SS',
+                    'SS',
+                    'SS',
+                    'SS'
+                ],
+                [
+                    'SS',
+                    'SS',
+                    'SS',
+                    'SS',
+                    'SS',
+                    'SS',
+                    'SS'
+                ],
+                [
+                    'SS',
+                    'SS',
+                    'SS',
+                    'S0',
+                    'SS',
+                    'SS',
+                    'SS'
+                ],
+                [
+                    'SS',
+                    'SS',
+                    'SS',
+                    'SS',
+                    'SS',
+                    'SS',
+                    'SS'
+                ],
+                [
+                    '  ',
+                    'SS',
+                    'SS',
+                    '  ',
+                    'SS',
+                    'SS',
+                    '  '
+                ],
+                [
+                    '  ',
+                    'SS',
+                    'SS',
+                    '  ',
+                    'SS',
+                    'SS',
+                    '  '
+                ]
+            ],
+            new $Character('0'), $StringStateMatcher.fromString('cobblemoneternal:regigigas_core'),
+            new $Character('S'), Block.getBlock('minecraft:stone')
+        )
+    )
 
+    global.customMultiblocks['sleeping_giant'] = $PatchouliAPI.getMultiblock('cobblemoneternal:sleeping_giant')
 
     console.log(global.customMultiblocks, global.customMultiblocks['cloning_machine'])
 

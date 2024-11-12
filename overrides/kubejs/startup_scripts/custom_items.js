@@ -7,7 +7,8 @@ const $PokemonStats = Java.loadClass('com.cobblemon.mod.common.api.pokemon.stats
 const simpleItems = [
     'zygarde_cube', // complex code is implemented in an Entity Interaction event, along with other manual form changes
     'bottle_cap/normal',
-    'potential_limiter'
+    'potential_limiter',
+    'mewtant_genome'
 ]
 
 
@@ -22,6 +23,9 @@ const staticSpawnerBlocks = {
     'cloning_machine_core': {
         soundType: 'metal',
         hardness: 1.5
+    },
+    'regigigas_core': {
+        soundType: 'stone'
     }
 }
 

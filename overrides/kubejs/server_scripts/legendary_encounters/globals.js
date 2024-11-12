@@ -2,14 +2,18 @@
 
 const $CobblemonAPI = Java.loadClass('com.cobblemon.mod.common.Cobblemon').INSTANCE
 
-const $PokemonEntity = Java.loadClass('com.cobblemon.mod.common.entity.pokemon.PokemonEntity')
+const $CobblemonEntities = Java.loadClass('com.cobblemon.mod.common.CobblemonEntities')
 
+const $PokemonEntity = Java.loadClass('com.cobblemon.mod.common.entity.pokemon.PokemonEntity')
+const $Pokemon = Java.loadClass('com.cobblemon.mod.common.pokemon.Pokemon')
+const $IVs = Java.loadClass('com.cobblemon.mod.common.pokemon.IVs')
+
+const $PokemonSpecies = Java.loadClass('com.cobblemon.mod.common.api.pokemon.PokemonSpecies').INSTANCE
 const $PokemonStats = Java.loadClass('com.cobblemon.mod.common.api.pokemon.stats.Stats')
 
-const $InteractionHand = Java.loadClass('net.minecraft.world.InteractionHand')
+const $Moves = Java.loadClass('com.cobblemon.mod.common.api.moves.Moves').INSTANCE
 
-const $Arrays = Java.loadClass('java.util.Arrays')
-const $List = Java.loadClass('java.util.List')
+const $InteractionHand = Java.loadClass('net.minecraft.world.InteractionHand')
 
 //const $PatchouliAPI = Java.loadClass('vazkii.patchouli.api.stub.StubPatchouliAPI').INSTANCE
 const $PatchouliAPI = Java.loadClass('vazkii.patchouli.api.PatchouliAPI').get()
@@ -117,8 +121,34 @@ const validateMultiblock = (multiblock, block, rotation) => {
 
 //function to spawn a Pokemon
 // used in Static and Roaming Encounter systems
-const createPokemon = (species, properties) => {
-    let pokemon = new $PokemonEntity()
+const createPokemon = (speciesID, properties) => {
+    let pokemon = new $Pokemon()
+    let species = $PokemonSpecies.getByPokedexNumber(properties.dexNumber, 'cobblemon') //$PokemonSpecies.getByIdentifier(speciesID)
+    //PokemonSpecies.getByIdentifier() does not exist in this version, so we use getByPokedexNumber() until we update
+
+    pokemon.setSpecies(species)
+
+    if(properties){
+        if(properties.level)
+            pokemon.setLevel(properties.level)
+        if(properties.maxedIVs)
+            $IVs.Companion.createRandomIVs(properties.maxedIVs).forEach(iv => {
+                pokemon.setIV(iv.getKey(), iv.getValue())
+            })
+        if(properties.formAspects)
+            pokemon.species.getForm(properties.formAspects)
+        if(properties.heldItem)
+            pokemon.swapHeldItem(properties.heldItem, false)
+        if(properties.moveSet)
+            for (let index = 0; index < properties.moveSet.length; index++){
+                console.log(properties.moveSet[index], $Moves.getByName(properties.moveSet[index]).create())
+                pokemon.moveSet.setMove(index, $Moves.getByName(properties.moveSet[index]).create())
+            }
+    }
+
+    console.log(pokemon)
+
+    return pokemon
 }
 
 
