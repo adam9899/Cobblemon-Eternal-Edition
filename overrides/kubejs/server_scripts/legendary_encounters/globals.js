@@ -10,6 +10,8 @@ const $IVs = Java.loadClass('com.cobblemon.mod.common.pokemon.IVs')
 
 const $PokemonSpecies = Java.loadClass('com.cobblemon.mod.common.api.pokemon.PokemonSpecies').INSTANCE
 const $PokemonStats = Java.loadClass('com.cobblemon.mod.common.api.pokemon.stats.Stats')
+const $Abilities = Java.loadClass('com.cobblemon.mod.common.api.abilities.Abilities')
+const $Ability = Java.loadClass('com.cobblemon.mod.common.api.abilities.Ability')
 
 const $Moves = Java.loadClass('com.cobblemon.mod.common.api.moves.Moves').INSTANCE
 
@@ -144,6 +146,8 @@ const createPokemon = (speciesID, properties) => {
                 console.log(properties.moveSet[index], $Moves.getByName(properties.moveSet[index]).create())
                 pokemon.moveSet.setMove(index, $Moves.getByName(properties.moveSet[index]).create())
             }
+        if(properties.ability)
+            pokemon.updateAbility(new $Ability($Abilities.INSTANCE.get(properties.ability), false))
     }
 
     console.log(pokemon)
