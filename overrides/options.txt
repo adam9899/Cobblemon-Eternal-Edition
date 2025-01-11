@@ -281,7 +281,7 @@ key_key.buildinggadgets2.undo:key.keyboard.u
 key_key.buildinggadgets2.anchor:key.keyboard.h
 key_key.buildinggadgets2.range:key.keyboard.r
 key_key.entityculling.toggle:key.keyboard.unknown
-soundCategory_master:0.0
+soundCategory_master:0.5
 soundCategory_music:0.10387323943661972
 soundCategory_record:1.0
 soundCategory_weather:0.5052816901408451
