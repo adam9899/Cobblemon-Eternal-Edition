@@ -1,9 +1,9 @@
 {
   "general": {
-    "globalBaseSpeedModifier": 1.0,
+    "globalBaseSpeedModifier": 1.1,
     "globalLandSpeedModifier": 1.0,
-    "globalWaterSpeedModifier": 1.0,
-    "globalAirSpeedModifier": 1.0,
+    "globalWaterSpeedModifier": 2.0,
+    "globalAirSpeedModifier": 1.5,
     "underwaterSpeedModifier": 2.0,
     "waterVerticalClimbSpeed": 2.0,
     "airVerticalClimbSpeed": 0.5,
@@ -24,7 +24,7 @@
     "canSprintInWater": true,
     "canSprintInAir": false,
     "canExhaust": true,
-    "maxStamina": 200,
+    "maxStamina": 900,
     "recoveryTime": 300,
     "recoveryDelay": 20,
     "exhaustionSpeed": 0.5,
