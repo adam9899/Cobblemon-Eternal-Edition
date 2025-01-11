@@ -1,0 +1,285 @@
+{
+  "defaultShop": [
+    {
+      "Supplies": [
+        {
+          "item": "cobblemon:ice_heal",
+          "price": 50
+        },
+        {
+          "item": "cobblemon:burn_heal",
+          "price": 50
+        },
+        {
+          "item": "cobblemon:paralyze_heal",
+          "price": 50
+        },
+        {
+          "item": "cobblemon:berry_juice",
+          "price": 80
+        },
+        {
+          "item": "cobblemon:full_heal",
+          "price": 150
+        },
+        {
+          "item": "cobblemon:revive",
+          "price": 200
+        },
+        {
+          "item": "cobblemon:potion",
+          "price": 200
+        },
+        {
+          "item": "cobblemon:poke_ball",
+          "price": 250
+        },
+        {
+          "item": "cobblemon:x_accuracy",
+          "price": 500
+        },
+        {
+          "item": "cobblemon:citrine_ball",
+          "price": 600
+        },
+        {
+          "item": "cobblemon:verdant_ball",
+          "price": 600
+        },
+        {
+          "item": "cobblemon:azure_ball",
+          "price": 600
+        },
+        {
+          "item": "cobblemon:roseate_ball",
+          "price": 600
+        },
+        {
+          "item": "cobblemon:slate_ball",
+          "price": 600
+        },
+        {
+          "item": "cobblemon:premier_ball",
+          "price": 650
+        },
+        {
+          "item": "cobblemon:great_ball",
+          "price": 1200
+        },
+        {
+          "item": "cobblemon:ultra_ball",
+          "price": 2500
+        },
+        {
+          "item": "cobblemon:safari_ball",
+          "price": 2500
+        },
+        {
+          "item": "cobblemon:fast_ball",
+          "price": 2500
+        },
+        {
+          "item": "cobblemon:level_ball",
+          "price": 2500
+        },
+        {
+          "item": "cobblemon:lure_ball",
+          "price": 2500
+        },
+        {
+          "item": "cobblemon:heavy_ball",
+          "price": 2500
+        },
+        {
+          "item": "cobblemon:love_ball",
+          "price": 2500
+        },
+        {
+          "item": "cobblemon:friend_ball",
+          "price": 2500
+        },
+        {
+          "item": "cobblemon:moon_ball",
+          "price": 2500
+        },
+        {
+          "item": "cobblemon:sport_ball",
+          "price": 2500
+        },
+        {
+          "item": "cobblemon:park_ball",
+          "price": 2500
+        },
+        {
+          "item": "cobblemon:net_ball",
+          "price": 2500
+        },
+        {
+          "item": "cobblemon:dive_ball",
+          "price": 2500
+        },
+        {
+          "item": "cobblemon:nest_ball",
+          "price": 3000
+        },
+        {
+          "item": "cobblemon:repeat_ball",
+          "price": 3000
+        },
+        {
+          "item": "cobblemon:timer_ball",
+          "price": 3000
+        },
+        {
+          "item": "cobblemon:luxury_ball",
+          "price": 8000
+        },
+        {
+          "item": "cobblemon:dusk_ball",
+          "price": 3000
+        },
+        {
+          "item": "cobblemon:heal_ball",
+          "price": 3000
+        },
+        {
+          "item": "cobblemon:quick_ball",
+          "price": 3000
+        },
+        {
+          "item": "cobblemon:sport_rod",
+          "price": 500
+        },
+        {
+          "item": "cobblemon:master_ball",
+          "price": 500000
+        }
+      ]
+    },
+    {
+      "Exp": [
+        {
+          "item": "cobblemon:exp_candy_xs",
+          "price": 500
+        },
+        {
+          "item": "cobblemon:exp_candy_s",
+          "price": 4000
+        },
+        {
+          "item": "cobblemon:exp_candy_m",
+          "price": 15000
+        },
+        {
+          "item": "cobblemon:exp_candy_l",
+          "price": 50000
+        },
+        {
+          "item": "cobblemon:exp_candy_xl",
+          "price": 150000
+        },
+        {
+          "item": "cobblemon:rare_candy",
+          "price": 100000
+        },
+        {
+          "item": "cobblemon:exp_share",
+          "price": 250000
+        }
+      ]
+    },
+    {
+      "Shoe Shop": [
+        {
+          "item": "artifacts:running_shoes",
+          "price": 100,
+          "components": "{\"relics:data\":{abilities:{abilities:{runner:{extender:{cooldown:0,cooldownCap:0,ticking:0b},lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{speed:{initialValue:0.50299d}}}}},leveling:{experience:0,level:0,luck:0,points:0}}}"
+        },
+        {
+          "item": "relics:roller_skates",
+          "price": 2500,
+          "components": "{\"relics:data\":{abilities:{abilities:{skating:{extender:{cooldown:0,cooldownCap:0,ticking:0b},lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{duration:{initialValue:26.60621d},speed:{initialValue:0.00417d}}}}},leveling:{experience:0,level:0,luck:0,points:0}}}"
+        },
+        {
+          "item": "relics:ice_skates",
+          "price": 2500,
+          "components": "{\"relics:data\":{abilities:{abilities:{ram:{extender:{cooldown:0,cooldownCap:0,ticking:0b},lock:{breaks:0},points:0,research:{links:{},researched:0b},stats:{damage:{initialValue:0.20513d}}},skating:{extender:{cooldown:0,cooldownCap:0,ticking:0b},lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{duration:{initialValue:36.83532d},speed:{initialValue:0.02489d}}}}},leveling:{experience:0,level:0,luck:0,points:0}}}"
+        },
+        {
+          "item": "relics:ice_breaker",
+          "price": 2500,
+          "components": "{\"relics:data\":{abilities:{abilities:{impact:{extender:{cooldown:0,cooldownCap:0,ticking:0b},lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{damage:{initialValue:3.07076d},size:{initialValue:4.59029d}}},sustainability:{extender:{cooldown:0,cooldownCap:0,ticking:0b},lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{modifier:{initialValue:0.63696d}}}}},leveling:{experience:0,level:0,luck:0,points:0}}}"
+        },
+        {
+          "item": "relics:magma_walker",
+          "price": 3500,
+          "components": "{\"relics:data\":{abilities:{abilities:{heat_resistance:{extender:{cooldown:0,cooldownCap:0,ticking:0b},lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{}},pace:{extender:{cooldown:0,cooldownCap:0,ticking:0b},lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{time:{initialValue:23.50854d}}}}},leveling:{experience:0,level:0,luck:0,points:0}}}"
+        },
+        {
+          "item": "relics:aqua_walker",
+          "price": 3500,
+          "components": "{\"relics:data\":{abilities:{abilities:{walking:{extender:{cooldown:0,cooldownCap:0,ticking:0b},lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{time:{initialValue:44.76712d}}}}},leveling:{experience:0,level:0,luck:0,points:0}}}"
+        },
+        {
+          "item": "relics:springy_boot",
+          "price": 3500,
+          "components": "{\"relics:data\":{abilities:{abilities:{bounce:{extender:{cooldown:0,cooldownCap:0,ticking:1b},lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{power:{initialValue:0.3053d}}}}},leveling:{experience:0,level:0,luck:0,points:0}}}"
+        },
+        {
+          "item": "relics:phantom_boot",
+          "price": 8000,
+          "components": "{\"relics:data\":{abilities:{abilities:{bridge:{extender:{cooldown:0,cooldownCap:0,ticking:1b},lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{duration:{initialValue:0.62823d}}}}},leveling:{experience:0,level:0,luck:0,points:0}}}"
+        }
+      ]
+    },
+    {
+      "Special Items": [
+        {
+          "item": "cobblemon:prism_scale",
+          "price": 3500
+        },
+        {
+          "item": "cobblemon:love_sweet",
+          "price": 3500
+        },
+        {
+          "item": "cobblemon:sachet",
+          "price": 3500
+        },
+        {
+          "item": "cobblemon:dubious_disc",
+          "price": 3500
+        },
+        {
+          "item": "cobblemon:electirizer",
+          "price": 3500
+        },
+        {
+          "item": "cobblemon:thunder_stone",
+          "price": 3500
+        },
+        {
+          "item": "cobblemon:metal_coat",
+          "price": 3500
+        },
+        {
+          "item": "cobblemon:ability_patch",
+          "price": 15300
+        },
+        {
+          "item": "cobblemon:ability_capsule",
+          "price": 15300
+        }
+      ]
+    },
+    {
+      "Flamingo": [
+        {
+          "item": "artifacts:helium_flamingo",
+          "price": 5000,
+          "components": "{\"relics:data\":{abilities:{abilities:{flying:{extender:{cooldown:0,cooldownCap:0,ticking:1b},lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{time:{initialValue:4.47264d}}}}},leveling:{experience:0,level:0,luck:0,points:0}}}"
+        }
+      ]
+    }
+  ]
+}

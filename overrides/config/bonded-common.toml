@@ -1,0 +1,24 @@
+upgrading_enabled = true
+repairing_enabled = true
+enable_durability_repair_on_level_up = true
+send_chat_messages = true
+tooltips_enabled = true
+# Default: 10
+# Range: 10 ~ 100
+levels_to_upgrade = 10
+default_experience_for_unknown_items = 1000
+# Default: 0.2
+# Range: 0.1 ~ 1.0
+durability_gained_on_repair_bench = 0.2
+# Default: 0.2
+# Range: 0.0 ~ 1.0
+durability_repair_on_level_up = 0.2
+# Default: 3.0
+# Range: 1.0 ~ 20.0
+weapon_damage_dealt_experience_multiplier = 3.0
+# Default: 1.0
+# Range: 1.0 ~ 20.0
+armor_damage_taken_experience_multiplier = 1.0
+# Default: 10
+# Range: 1 ~ 10
+experience_for_mining_ores = 10

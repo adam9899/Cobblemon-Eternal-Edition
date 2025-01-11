@@ -1,0 +1,33 @@
+{
+  "general": {
+    "globalBaseSpeedModifier": 1.0,
+    "globalLandSpeedModifier": 1.0,
+    "globalWaterSpeedModifier": 1.0,
+    "globalAirSpeedModifier": 1.0,
+    "underwaterSpeedModifier": 2.0,
+    "waterVerticalClimbSpeed": 2.0,
+    "airVerticalClimbSpeed": 0.5,
+    "rideSpeedLimit": 0.0,
+    "isWaterBreathingShared": true,
+    "canDismountInMidair": false
+  },
+  "speedStat": {
+    "affectsSpeed": true,
+    "minStatThreshold": 20,
+    "maxStatThreshold": 400,
+    "minSpeedModifier": 0.5,
+    "maxSpeedModifier": 4.0
+  },
+  "sprinting": {
+    "canSprint": true,
+    "rideSprintSpeed": 1.5,
+    "canSprintInWater": true,
+    "canSprintInAir": false,
+    "canExhaust": true,
+    "maxStamina": 200,
+    "recoveryTime": 300,
+    "recoveryDelay": 20,
+    "exhaustionSpeed": 0.5,
+    "exhaustionDuration": 1.0
+  }
+}
