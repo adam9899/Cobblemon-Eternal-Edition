@@ -1,0 +1,10 @@
+{
+	id: "63ED2FA51512A0F8"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ item: { count: 1, id: "cobblemon:friend_ball" } }
+		{ item: { count: 1, id: "cobblemon:revive" } }
+		{ item: { count: 1, id: "cobblemon:potion" } }
+	]
+}
