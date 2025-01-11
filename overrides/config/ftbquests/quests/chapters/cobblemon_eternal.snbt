@@ -1261,5 +1261,33 @@
 			x: 7.5d
 			y: 6.5d
 		}
+		{
+			dependencies: ["1A0BD89EC5FB4061"]
+			id: "1EC64021BB45A3E4"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "36E42952E303A015"
+					table_id: 7200463765304942840L
+					type: "choice"
+				}
+				{
+					count: 8
+					id: "086B2245B80D9C00"
+					item: {
+						count: 1
+						id: "farmersdelight:fried_egg"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "130C877A4CE0F087"
+				item: { count: 1, id: "luggage:luggage" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
 	]
 }
