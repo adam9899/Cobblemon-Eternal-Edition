@@ -1,0 +1,5 @@
+Art assets belong to the official cobblemon modpack
+
+licence: 
+Mozilla Public License
+Version 2.0
