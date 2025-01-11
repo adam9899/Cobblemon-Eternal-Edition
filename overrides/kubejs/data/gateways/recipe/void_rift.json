@@ -1,0 +1,21 @@
+{
+  "type": "gateways:gate_recipe",
+  "group": "gateways",
+  "pattern": [
+    "FFF",
+    "FAF",
+    "FFF"
+  ],
+  "key": {
+    "F": {
+      "tag": "cobblemon:dusk_stone_block"
+    },
+	"A": {
+      "item": "minecraft:dragon_egg"
+    }
+  },
+  "result": {
+    "id": "gateways:gate_pearl"
+  },
+  "gateway": "gateways:void_rift"
+}
