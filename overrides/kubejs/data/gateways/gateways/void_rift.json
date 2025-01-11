@@ -189,7 +189,7 @@
                     }
                 ]
 			}],
-			"max_wave_time": 1200,
+			"max_wave_time": 9200,
 			"setup_time": 200
 		}
 	],
