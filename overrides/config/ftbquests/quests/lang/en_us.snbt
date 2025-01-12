@@ -1,10 +1,13 @@
 {
 	chapter.031093E825061AE5.title: "Challenges"
+	chapter.0E1F8A4BFA26DD78.title: "Combat"
+	chapter.16A7BCF860211CB6.title: "The End"
 	chapter.1DF598887604D25D.title: "Introduction"
 	chapter.3190B10C12FAB4F7.title: "Farming and Berries"
 	file.0000000000000001.title: "Cobblemon Eternal Quests"
 	quest.012E4D991A81408A.quest_subtitle: "Craft a &eMaster Ball Fishing Rod"
 	quest.012E4D991A81408A.title: "Master Angler"
+	quest.02DF45F7DA8311BB.quest_subtitle: "Found in Chests"
 	quest.09BD5BE582E54F69.quest_desc: [
 		"This project is currenty a work in progress."
 		"Thank you for installing and joining us on this journey!"
@@ -17,6 +20,7 @@
 	]
 	quest.09BD5BE582E54F69.quest_subtitle: "Install The Modpack"
 	quest.09BD5BE582E54F69.title: "&5Welcome To Cobblemon Eternal!"
+	quest.09DC8D9E9F0EAD08.quest_subtitle: "Find a &eMedicinal Leek"
 	quest.116F1AFF9B138FEE.quest_desc: [
 		"The PokéNav is the culmination of years of research and scientific discovery."
 		""
@@ -26,6 +30,7 @@
 		"&dNote:&r Watch out for those pesky Team Rocket! They would LOVE to get their hands on technology like this..."
 	]
 	quest.116F1AFF9B138FEE.quest_subtitle: "Craft a &ePokéNav"
+	quest.13103EBD0B4D3497.quest_subtitle: "Drops from &eGuardian"
 	quest.15CADD4029E11471.quest_desc: [
 		"The &ePoke Rod&r can be used to have encounters with sea dwelling Cobblemon!"
 		""
@@ -37,18 +42,23 @@
 	quest.1A99838DE8E97CE2.quest_desc: ["Upon sleeping, injured Cobblemon will regain some health."]
 	quest.1A99838DE8E97CE2.quest_subtitle: "Craft a &eBed"
 	quest.1A99838DE8E97CE2.title: "Nap Time!"
+	quest.1B2300A535829DA2.quest_subtitle: "&eFound in Chests"
+	quest.1B6CCB38C4549D44.quest_subtitle: "Drops from &eNether Gauntlet"
 	quest.21FBFEDDB954BC62.quest_desc: [
 		"You will need a Badge Box to collect all of the Gym Leaders Badges!"
 		""
 		"&5Badges NYI"
 	]
 	quest.21FBFEDDB954BC62.quest_subtitle: "Craft a &eBadge Box"
+	quest.25CC1866C4B2CD98.quest_subtitle: "Drops from &eArchevoker"
 	quest.26383FB3CB75BF13.quest_desc: ["The Airship can be used to travel great distances! A true marvel of engineering!"]
 	quest.26383FB3CB75BF13.quest_subtitle: "Craft an &eAirship"
 	quest.276FBA28044EB55F.quest_desc: ["The Building Gadget makes building much much easier!"]
 	quest.276FBA28044EB55F.quest_subtitle: "Craft a &eBuilding Gadget"
+	quest.28A4438BD0A75AF1.quest_subtitle: "Found in Chests"
 	quest.2A4E2FB2F9EB344D.quest_subtitle: "Craft a &ePoke Ball"
 	quest.2A4E2FB2F9EB344D.title: "Portable Catching Device"
+	quest.2B29B428A013E04D.quest_subtitle: "Drops from &eWither"
 	quest.2BB19CFF6357DB5C.quest_subtitle: "Catch &d10x&r Cobblemon"
 	quest.2D5377E10B83CCBA.quest_subtitle: "Craft a &eUltra Ball"
 	quest.2D5377E10B83CCBA.title: "Incredible Portable Catching Device"
@@ -73,9 +83,22 @@
 	quest.4B54929993494AE1.quest_subtitle: "Defeat &d50x&r Cobblemon or Trainers"
 	quest.4B54929993494AE1.title: "Poké Gladiator"
 	quest.4BD6632DFCF9F496.quest_subtitle: "Catch &d50x&r Cobblemon"
+	quest.521C904D81C4C47F.quest_subtitle: "Found in Chests"
 	quest.532FBFE98329A7D6.quest_desc: ["Use a &ePoke Ball&r and catch a Pokemon after battling them to reduce their  health low enough for capture!"]
 	quest.532FBFE98329A7D6.quest_subtitle: "Catch Your First Cobblemon!"
 	quest.532FBFE98329A7D6.title: "Gotta Start Somewhere!"
+	quest.58C0C01C3A5DE34D.quest_desc: [
+		"Combat in Cobblemon Eternal has some extra features to make your time fighting monsters more interesting and exciting!"
+		""
+		"1) &dRight-Click&r with a sword to &eParry"
+		"2) Press &dR&r to &eCombat Roll"
+		"3) Pressing &dSNEAK&r will allow you to go stealth. Attacking enemies from behind while &eStealth&r will do extra damage"
+		"4) &eHeadshots&r with a bow will do extra damage"
+		"5) Each weapon has a special attack animation!"
+	]
+	quest.58C0C01C3A5DE34D.quest_subtitle: "Learn About Combat!"
+	quest.58C0C01C3A5DE34D.title: "&6&lCombat!&r &e- &eInfo Quest"
+	quest.58C366173DE6C049.quest_subtitle: "Drops from &eVoid Blossom"
 	quest.5987F4BEB3B4EE16.quest_desc: [
 		"Using an &eEmpty TM&r on a Cobblemon you have currently out of their Pokeball will give you a &dCharged TM&r with their first move!"
 		""
@@ -86,6 +109,7 @@
 	quest.5EAC27E2738426EF.quest_subtitle: "Craft a &eGreat Ball"
 	quest.5EAC27E2738426EF.title: "Improved Portable Catching Device"
 	quest.608565C4FF22309C.quest_subtitle: "Craft a &ePokéFinder"
+	quest.614DB0C276BB8929.quest_subtitle: "Drops from &eNight Lich"
 	quest.648B23380CEF3226.quest_desc: [
 		"The Cobble Merchant trades useful supplies and items for &bCobble Dollars."
 		""
@@ -107,10 +131,13 @@
 		"&oOw"
 	]
 	quest.6A954B946EFFC175.quest_subtitle: "Craft a &eBall Replacer"
+	quest.6C42808582684B4D.quest_subtitle: "Found in Chests"
+	quest.6D903BA3CC21CD05.quest_subtitle: "Drops from &eWitch"
 	quest.74005CB1AF80AA78.quest_subtitle: "Defeat &d10x&r Cobblemon or Trainers"
 	quest.74005CB1AF80AA78.title: "Poké Battler"
 	quest.7601DD3E65B378B4.quest_desc: ["The Charging Station accepts fuel and provides energy to powered tools, such as a Building Gadget!"]
 	quest.7601DD3E65B378B4.quest_subtitle: "Craft a &eCharging Station"
+	quest.76C573F56E45E7E3.quest_subtitle: "Drops from &eDead King"
 	quest.7B6EE4E7B5D9ADBB.quest_desc: [
 		"The PC can be used to store Cobblemon!"
 		"Don't worry, &othey like it in there!"
@@ -123,6 +150,7 @@
 	]
 	quest.7C9078DABA6430B6.quest_subtitle: "Locate a &eHealing Machine&r at a &6Village"
 	quest.7C9078DABA6430B6.title: "&3Time To Heal!"
+	quest.7D98D24F126DBB3B.quest_subtitle: "Found in Chests"
 	reward.0019487E9BA5725C.title: "&eModpack Setup"
 	reward.163A6CB8F046F7B8.title: "&eModpack Setup"
 	reward.21AC6846D373FCE8.title: "&eModpack Setup"
@@ -132,6 +160,7 @@
 	reward.6837BCBB4D56FF46.title: "&dTEAM ROCKET!!"
 	reward_table.4756D9B1FDD521B6.title: "tm_lottery"
 	reward_table.63ED2FA51512A0F8.title: "GENERIC"
+	reward_table.6D8687545BE5E619.title: "relic"
 	reward_table.70DE8427138F48A6.title: "reward_choice_Relic"
 	task.3DA23BFEA2CDD1E9.title: "Poké Trainer"
 	task.489BD304A4EC94D6.title: "Poké Collector"
