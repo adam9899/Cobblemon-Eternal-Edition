@@ -8,7 +8,7 @@
   ],
   "key": {
     "F": {
-      "tag": "cobblemon:dusk_stone_block"
+      "item": "cobblemon:dusk_stone_block"
     },
 	"A": {
       "item": "minecraft:dragon_egg"
