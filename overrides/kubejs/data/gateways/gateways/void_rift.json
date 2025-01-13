@@ -196,7 +196,7 @@
     "rewards": [
        {
     "type": "gateways:command",
-    "command": "pokespawn rayquaza level=70 shiny",
+    "command": "pokespawnat ~ ~35 ~2 rayquaza level=70 shiny attack_iv=100",
     "desc": "?? Special Guest ??"
 }
     ],
