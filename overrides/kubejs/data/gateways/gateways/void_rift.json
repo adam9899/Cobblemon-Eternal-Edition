@@ -85,7 +85,7 @@
                 },
                 {
                     "entity": "minecraft:enderman",
-                    "count": 2
+                    "count": 3
                 }
             ],
 			"modifiers": [
@@ -138,12 +138,13 @@
 		},
         {
 			"entities": [
-                 {
-                    "entity": "minecraft:phantom",
-                    "count": 5
-                },
+            
                 {
-                    "entity": "bosses_of_mass_destruction:obsidilith",
+                    "entity": "darkdoppelganger:dark_doppelganger",
+					"desc": "name.gateways.being",
+                    "nbt": {
+                        "CustomNameVisible": 1,
+                        "CustomName": "{\"translate\":\"name.gateways.being\",\"color\":\"purple\"}"
                     "count": 1
                 }
                
@@ -180,12 +181,12 @@
 					"value": 0.10
 				}
             ],
-			"rewards": [{
+			    "rewards": [{
 				"type": "gateways:stack_list",
 				"stacks": [
                     {
-                        "id": "cobblemon:ancient_heavy_ball",
-                        "count": 16
+                        "id": "cobblemon:master_ball",
+                        "count": 1
                     }
                 ]
 			}],
