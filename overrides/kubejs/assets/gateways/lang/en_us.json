@@ -91,7 +91,6 @@
 	"gateways.basic/enderman": "Enderman Gateway",
     
 	"gateways.emerald_grove": "Gateway of the Emerald Grove",
-	"gateways.void_rift": "§dGateway of the Infinite Void",
 	"gateways.overworldian_nights": "Gateway of Overworldian Nights",
 	"gateways.hellish_fortress": "Gateway of the Hellish Fortress",
 
@@ -101,6 +100,7 @@
     "rewards.gateways.loot_table.nether_bridge": "Nether Fortress Loot",
 
     "name.gateways.necrotic_farmer": "Necrotic Farmer",
+	"name.gateways.being": "§5The Creator",
     "name.gateways.undead_legionnaire": "Undead Legionnaire",
     "name.gateways.withered_ranger": "Withered Ranger",
     "name.gateways.butcher": "Butcher",
