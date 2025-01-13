@@ -140,11 +140,7 @@
 			"entities": [
             
                 {
-                    "entity": "darkdoppelganger:dark_doppelganger",
-					"desc": "name.gateways.being",
-                    "nbt": {
-                        "CustomNameVisible": 1,
-                        "CustomName": "{\"translate\":\"name.gateways.being\",\"color\":\"purple\"}"
+                    "entity": "bosses_of_mass_destruction:obsidilith",
                     "count": 1
                 }
                
