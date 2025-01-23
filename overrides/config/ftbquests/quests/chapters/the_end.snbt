@@ -1,0 +1,456 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "the_end"
+	group: ""
+	id: "16A7BCF860211CB6"
+	images: [
+		{
+			height: 5.6d
+			image: "minecraft:block/end_stone"
+			rotation: 0.0d
+			width: 5.6d
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			height: 3.0d
+			image: "minecraft:block/nether_portal"
+			rotation: 0.0d
+			width: 3.0d
+			x: -1.0680272108843525d
+			y: -4.488095238095248d
+		}
+		{
+			click: "https://www.curseforge.com/minecraft/mc-mods/endremastered"
+			height: 2.0d
+			image: "irons_spellbooks:item/upgrade_orb_ender"
+			rotation: 0.0d
+			width: 2.0d
+			x: -1.129251700680264d
+			y: -4.534863945578238d
+		}
+	]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "1B6CCB38C4549D44"
+			rewards: [
+				{
+					id: "00EA244948AA4D19"
+					item: {
+						count: 1
+						id: "refurbished_furniture:cheese_toastie"
+					}
+					type: "item"
+				}
+				{
+					id: "2D7804D41CE9C415"
+					item: {
+						count: 1
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "17BCAAB19D4C13E0"
+					table_id: 7892144193402168857L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "1704DEE4109471E2"
+				item: { count: 1, id: "endrem:nether_eye" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			id: "76C573F56E45E7E3"
+			rewards: [
+				{
+					id: "0B686BA2AB9F571F"
+					item: {
+						count: 1
+						id: "refurbished_furniture:cheese_toastie"
+					}
+					type: "item"
+				}
+				{
+					id: "7A8AA158684839D7"
+					item: {
+						count: 1
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "67FE8A8FBEBFBCD7"
+					table_id: 7892144193402168857L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "2DE75D360787CC53"
+				item: { count: 1, id: "endrem:cursed_eye" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			id: "02DF45F7DA8311BB"
+			rewards: [
+				{
+					id: "12CF9E8EDA893A35"
+					item: {
+						count: 1
+						id: "refurbished_furniture:cheese_toastie"
+					}
+					type: "item"
+				}
+				{
+					id: "689F45825043181A"
+					item: {
+						count: 1
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "47CA80E893B53B27"
+					table_id: 7892144193402168857L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "69DE4AF3EA88B6A2"
+				item: { count: 1, id: "endrem:old_eye" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.5d
+		}
+		{
+			id: "25CC1866C4B2CD98"
+			rewards: [
+				{
+					id: "6F1C5B61C42CDD5B"
+					item: {
+						count: 1
+						id: "refurbished_furniture:cheese_toastie"
+					}
+					type: "item"
+				}
+				{
+					id: "1A88C3F9FABEEAF8"
+					item: {
+						count: 1
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4CDF7BAE87CD82CD"
+					table_id: 7892144193402168857L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "2C538C1E2E7B0CC9"
+				item: { count: 1, id: "endrem:magical_eye" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			id: "2B29B428A013E04D"
+			rewards: [
+				{
+					id: "009A57DF2BE35FE7"
+					item: {
+						count: 1
+						id: "refurbished_furniture:cheese_toastie"
+					}
+					type: "item"
+				}
+				{
+					id: "64B924ECA7D809F2"
+					item: {
+						count: 1
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3BE6AB40B7ED64D7"
+					table_id: 7892144193402168857L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "6B2DC9E34E198B78"
+				item: { count: 1, id: "endrem:wither_eye" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			id: "1B2300A535829DA2"
+			rewards: [
+				{
+					id: "199FD1938FB0FE4F"
+					item: {
+						count: 1
+						id: "refurbished_furniture:cheese_toastie"
+					}
+					type: "item"
+				}
+				{
+					id: "4A71CA434CFD9E95"
+					item: {
+						count: 1
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "36F22E5A83589C19"
+					table_id: 7892144193402168857L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "1213851179DF6404"
+				item: { count: 1, id: "endrem:exotic_eye" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			id: "521C904D81C4C47F"
+			rewards: [
+				{
+					id: "233FCF43B2BC8122"
+					item: {
+						count: 1
+						id: "refurbished_furniture:cheese_toastie"
+					}
+					type: "item"
+				}
+				{
+					id: "3AA416727FB8A09E"
+					item: {
+						count: 1
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "72F800675D6DF1B2"
+					table_id: 7892144193402168857L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "7010E050F2E1DC28"
+				item: { count: 1, id: "endrem:corrupted_eye" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.5d
+		}
+		{
+			id: "7D98D24F126DBB3B"
+			rewards: [
+				{
+					id: "18BF2EC7048574A8"
+					item: {
+						count: 1
+						id: "refurbished_furniture:cheese_toastie"
+					}
+					type: "item"
+				}
+				{
+					id: "18E44F5377EC384F"
+					item: {
+						count: 1
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "45D209A4D9987303"
+					table_id: 7892144193402168857L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "0A5D6EC361A8A41B"
+				item: { count: 1, id: "endrem:cold_eye" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.5d
+		}
+		{
+			id: "28A4438BD0A75AF1"
+			rewards: [
+				{
+					id: "3AE1A0B1B5B8EF28"
+					item: {
+						count: 1
+						id: "refurbished_furniture:cheese_toastie"
+					}
+					type: "item"
+				}
+				{
+					id: "1407FA56C39EF1C5"
+					item: {
+						count: 1
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "693775C3DEB6D235"
+					table_id: 7892144193402168857L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "58D16D15E6985EBE"
+				item: { count: 1, id: "endrem:black_eye" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			id: "13103EBD0B4D3497"
+			rewards: [
+				{
+					id: "3D946826D5815EF4"
+					item: {
+						count: 1
+						id: "refurbished_furniture:cheese_toastie"
+					}
+					type: "item"
+				}
+				{
+					id: "3014618AC63E9ABA"
+					item: {
+						count: 1
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2FBF85B1E61E6247"
+					table_id: 7892144193402168857L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "2EC58ABCE65D59CF"
+				item: { count: 1, id: "endrem:guardian_eye" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			id: "6C42808582684B4D"
+			rewards: [
+				{
+					id: "7CBE8DE1B3A6F479"
+					item: {
+						count: 1
+						id: "refurbished_furniture:cheese_toastie"
+					}
+					type: "item"
+				}
+				{
+					id: "78B0DB0B0B06113F"
+					item: {
+						count: 1
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5410353399CA66CD"
+					table_id: 7892144193402168857L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "6C57915883E7B2D6"
+				item: { count: 1, id: "endrem:lost_eye" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			id: "614DB0C276BB8929"
+			rewards: [
+				{
+					id: "54A8353F16D062FF"
+					item: {
+						count: 1
+						id: "refurbished_furniture:cheese_toastie"
+					}
+					type: "item"
+				}
+				{
+					id: "318B61ABF22F2276"
+					item: {
+						count: 1
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "451B43AFB5DC6CCC"
+					table_id: 7892144193402168857L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "4C9AA835DC3D9B26"
+				item: { count: 1, id: "endrem:undead_eye" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -6.5d
+		}
+		{
+			id: "58C366173DE6C049"
+			tasks: [{
+				id: "6C1575291F4D1750"
+				item: { count: 1, id: "endrem:rogue_eye" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -5.0d
+		}
+	]
+}

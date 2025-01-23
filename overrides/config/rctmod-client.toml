@@ -1,0 +1,19 @@
+[Trainers]
+	#Determines if symbols for trainer types are shown next to trainer names.
+	showTrainerTypeSymbols = false
+	#Determines if trainer names are colored based of their type.
+	showTrainerTypeColors = true
+
+["Trainer Card"]
+	#Padding of the trainer card gui.
+	# Default: 8
+	# Range: 0 ~ 2147483646
+	trainerCardPadding = 8
+	#Horizontal alignment of the trainer card gui, i.e. 0=left, 0.5=center, 1=right.
+	# Default: 0.0
+	# Range: 0.0 ~ 1.0
+	trainerCardAlignmentX = 0.0
+	#Vertical alignment of the trainer card gui, i.e. 0=top, 0.5=center, 1=bottom.
+	# Default: 0.0
+	# Range: 0.0 ~ 1.0
+	trainerCardAlignmentY = 0.0

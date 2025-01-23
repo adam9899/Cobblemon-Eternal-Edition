@@ -1,0 +1,27 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "farming__berries"
+	group: ""
+	id: "3190B10C12FAB4F7"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		id: "3FE970CC80B586EB"
+		rewards: [{
+			id: "3E81F5391186A599"
+			item: {
+				count: 1
+				id: "cobblemon:love_ball"
+			}
+			type: "item"
+		}]
+		tasks: [{
+			id: "51D5DF185D9B0B87"
+			item: { count: 1, id: "cobblemon:red_apricorn" }
+			type: "item"
+		}]
+		x: -0.5d
+		y: -0.5d
+	}]
+}

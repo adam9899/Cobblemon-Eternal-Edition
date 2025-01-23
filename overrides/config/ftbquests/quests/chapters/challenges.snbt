@@ -2,80 +2,9 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "challenges"
-	group: "14DA31FFDD5C3EE8"
-	id: "2CC579791F06168B"
+	group: ""
+	id: "031093E825061AE5"
 	order_index: 2
 	quest_links: [ ]
-	quests: [
-		{
-			id: "6A15D488929F4085"
-			rewards: [{
-				id: "6B654A3FA58E4976"
-				item: "cobblemon:master_ball"
-				type: "item"
-			}]
-			subtitle: "Catch a &eShiny Pokemon"
-			tasks: [{
-				action: "catch"
-				entity: "cobblemon_quests:choice_any"
-				form: "choice_any"
-				gender: "choice_any"
-				icon: "cobblemon:sport_ball"
-				id: "3552B8B71B7FE4FF"
-				pokemon_type: "choice_any"
-				region: "choice_any"
-				shiny: true
-				title: "Oooh! Shiny!"
-				type: "cobblemon_tasks:cobblemon_task"
-				value: 1L
-			}]
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			id: "5629C3B6906F49AC"
-			rewards: [{
-				id: "5EC037015546F76B"
-				item: "cobblemon:master_ball"
-				type: "item"
-			}]
-			subtitle: "Catch 1000x Pokemon!"
-			tasks: [{
-				action: "catch"
-				entity: "cobblemon_quests:choice_any"
-				form: "choice_any"
-				gender: "choice_any"
-				id: "10822451A683B778"
-				pokemon_type: "choice_any"
-				region: "choice_any"
-				shiny: false
-				title: "Pokemon Master!"
-				type: "cobblemon_tasks:cobblemon_task"
-				value: 1000L
-			}]
-			x: 1.5d
-			y: 0.0d
-		}
-		{
-			id: "2C798A81650FC06C"
-			subtitle: "Catch &eMewtwo"
-			tasks: [{
-				action: "catch"
-				entity: "cobblemon:mewtwo"
-				form: "choice_any"
-				gender: "choice_any"
-				icon: "cobblemon:master_ball"
-				id: "0B6CE2598FDEE19A"
-				pokemon_type: "choice_any"
-				region: "choice_any"
-				shiny: false
-				title: "Subject 0"
-				type: "cobblemon_tasks:cobblemon_task"
-				value: 1L
-			}]
-			x: 3.0d
-			y: 0.0d
-		}
-	]
-	title: "Challenges"
+	quests: [ ]
 }

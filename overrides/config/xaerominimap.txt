@@ -1,5 +1,5 @@
 #CONFIG ONLY OPTIONS
-ignoreUpdate:0
+ignoreUpdate:380
 settingsButton:false
 allowWrongWorldTeleportation:false
 differentiateByServerAddress:true
@@ -24,7 +24,7 @@ minimapSize:0
 chunkGrid:-1
 slimeChunks:false
 mapSafeMode:false
-minimapOpacity:100.0
+minimapOpacity:85.0
 waypointsIngameIconScale:0
 waypointsIngameDistanceScale:0
 waypointsIngameNameScale:0
@@ -83,7 +83,7 @@ minimapFrameColor:9
 compassColor:9
 northCompassColor:-1
 displayMultipleWaypointInfo:1
-entityRadar:true
+entityRadar:false
 adjustHeightForCarpetLikeBlocks:true
 autoConvertWaypointDistanceToKmThreshold:10000
 waypointDistancePrecision:1
@@ -105,8 +105,12 @@ infoDisplayBackgroundOpacity:40
 caveModeToggleTimer:1000
 legibleCaveMaps:false
 biomeBlending:true
-displayTrackedPlayers:true
+displayTrackedPlayersOnMap:true
+displayTrackedPlayersInWorld:true
 dimensionScaledMaxWaypointDistance:true
+trackedPlayerWorldIconScale:0
+trackedPlayerWorldNameScale:0
+trackedPlayerMinimapIconScale:0
 displayClaims:true
 displayCurrentClaim:true
 claimsFillOpacity:46

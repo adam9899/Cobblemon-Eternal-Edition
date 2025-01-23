@@ -1,0 +1,25 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "combat"
+	group: ""
+	id: "0E1F8A4BFA26DD78"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		id: "58C0C01C3A5DE34D"
+		rewards: [{
+			exclude_from_claim_all: true
+			id: "62CDCD736536C816"
+			table_id: 7200463765304942840L
+			type: "choice"
+		}]
+		shape: "gear"
+		tasks: [{
+			id: "47DF5EC6486DD18D"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: -0.5d
+	}]
+}
