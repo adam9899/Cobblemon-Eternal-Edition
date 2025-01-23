@@ -35,11 +35,13 @@ StartupEvents.registry('item', event => {
         event.create(`cobblemoneternal:${item}`)
     })
 
+    //*
     $PokemonStats.Companion.PERMANENT.forEach(stat => {
         event.create(`cobblemoneternal:bottle_cap/${stat.showdownId}`)
             .texture('cobblemoneternal:item/bottle_cap/normal')
             .tag('cobblemoneternal:iv_stat_up')
     })
+    //*/
 
     event.create(`cobblemoneternal:bottle_cap/gold`)
         .tag('cobblemoneternal:iv_stat_up')

@@ -13,13 +13,13 @@ const statupMap = {
     'cobblemoneternal:bottle_cap/gold': $PokemonStats.Companion.PERMANENT
 }
 
-ItemEvents.entityInteracted('#cobblemoneternal:iv_stat_up', event => {
+ItemEvents.entityInteracted(event => {
     let pokemonEntity = event.target
 
-    if(!(pokemonEntity instanceof $PokemonEntity)
+    if(!statupMap[event.item.id]
+        || !(pokemonEntity instanceof $PokemonEntity)
         || event.hand == $InteractionHand.OFF_HAND
-        || event.entity.isCrouching()
-        || !statupMap[event.item.id]) 
+        || event.entity.isCrouching()) 
             return;
 
     let pokemon = pokemonEntity.pokemon
@@ -38,7 +38,7 @@ ItemEvents.entityInteracted('#cobblemoneternal:iv_stat_up', event => {
         player.setStatusMessage(Text.translate('message.cobblemoneternal.feature.bottle_cap_min_level_req').color('red'))
         return;
     }
-
+    /*
     console.log(
         pokemonEntity,
         statupMap[event.item.id],
@@ -46,14 +46,17 @@ ItemEvents.entityInteracted('#cobblemoneternal:iv_stat_up', event => {
         event.hand == $InteractionHand.OFF_HAND,
         pokemon.ivs
     )
+    */
 
     pokemon.ivs.forEach(entry => {
         IVMap[entry.getKey()] = entry.getValue()
     })
 
     statupMap[event.item.id].forEach(stat => {
+        /*
         console.log(stat)
         pokemon.ivs.forEach(iv => console.log(iv))
+        */
 
         if(player.offhandItem.id == 'cobblemoneternal:potential_limiter'){
             if(IVMap[stat] > 0){

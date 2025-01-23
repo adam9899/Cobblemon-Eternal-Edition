@@ -5,9 +5,9 @@
 /**
 * @param {PlayerJS} player
 * @param {Map<string, string | Function>} spawnDetails
-* @param {boolean} bypassConditions
+* @param {boolean} bypassChecks whether to bypass spawning conditions and 'alreadyOwns'
 */
-const trySpawnRoamingLegendary = (player, spawnDetails, bypassConditions) => {
+const trySpawnRoamingLegendary = (player, spawnDetails, bypassChecks) => {
     let {x, y, z, level} = player
     let pos = level.getBlockRandomPos(x, y, z, 32)
     /*BlockPos.of(
@@ -15,27 +15,29 @@ const trySpawnRoamingLegendary = (player, spawnDetails, bypassConditions) => {
         y + Math.round(Math.random() * 16) - 8,
         z + Math.round(Math.random() * 32) - 16
     )*/
-    bypassConditions = bypassConditions || false // for forcing spawns from '/forceroaminglegendaryspawn'
+    bypassChecks = bypassChecks || false // conditions are evaluated before being added to the spawnable list, like loot tables.
 
-    let alreadyOwns = false
-    partyOf(player).forEach(pokemon => {
-        if(pokemon.species == spawnDetails.species)
-            alreadyOwns = true;
-    })
-    if(alreadyOwns)
-        if(spawnDetails.alreadyOwns){
-            spawnDetails.alreadyOwns()
-        } else {
-            if(Math.random() < roamerRerollSuccessRate) return;
-            trySpawnRoamingLegendary(player, getRandomRoamer())
-        }
+    
+    if(!bypassChecks)
+        partyOf(player).forEach(pokemon => {
+            if(pokemon.species == spawnDetails.species)
+                if(spawnDetails.alreadyOwns){
+                    spawnDetails.alreadyOwns(player, spawnDetails.species)
+                } else {
+                    if(Math.random() < roamerRerollSuccessRate) return;
+                    trySpawnRoamingLegendary(player, global.selectRoamingLegendary(player, global.registeredRoamers))
+                    return;
+                }
+        })
+        
 
-    if(!(bypassConditions || spawnDetails.condition(player))) return;
+    //if(!bypassConditions) return;
 
     //set the player's roamer limiter flag, cause at this point, it's getting spawned.
     player.persistentData.dailyRoamerSuccesses += 1
 
     console.log('Y position adjustment starting')
+    /*
     if(spawnDetails.flyingHeight){
         console.log(`${spawnDetails.species} is a flyer, looking for a surface to spawn above`)
         for (let currentY = 255; currentY < pos.y; currentY--){
@@ -45,11 +47,17 @@ const trySpawnRoamingLegendary = (player, spawnDetails, bypassConditions) => {
             }
         }
     } else {
-        console.log(`${spawnDetails.species} is not a flyer, looking for a ground position`)
+     */
+        //console.log(`${spawnDetails.species} is not a flyer, looking for a ground position`)
         if(!spawnDetails.canBeUnderground) pos = level.getBlock(pos.x, 60, pos.z).pos
         let lastBlockWasAir = false
-        for (let currentY = pos.y; currentY < 255; currentY++){
+        for (let currentY = pos.y; currentY < 319; currentY++){
             if(level.getBlock(pos.x, currentY, pos.z) == 'minecraft:air'){
+                if(currentY < -64) {
+                    console.warn(`Roamer ${spawnDetails.species} could not find ground to spawn on!`)
+                    return;
+                }
+
                 if(lastBlockWasAir){
                     pos = level.getBlock(pos.x, currentY, pos.z).pos
                     console.log(`Valid pos found at ${pos}`)
@@ -60,7 +68,7 @@ const trySpawnRoamingLegendary = (player, spawnDetails, bypassConditions) => {
                 lastBlockWasAir = false
             }
         }
-    }
+    //}
     console.log('Y position adjustment done')
 
     level.getEntitiesWithin(AABB.ofBlock(pos).inflate(64))
@@ -68,8 +76,13 @@ const trySpawnRoamingLegendary = (player, spawnDetails, bypassConditions) => {
         .forEach(player => {
             let speciesName = spawnDetails.species.split(':')
             console.log(player)
-            player.setStatusMessage(Text.translate(`${speciesName[0]}.species.${speciesName[1]}.name`).append(Text.translate('message.cobblemoneternal.legendary_spawned_nearby')))
-            player.level.playSound(null, player.x, player.y, player.z, spawnDetails.spawnSound, 'neutral', 1, 1)
+            player.setStatusMessage(Text.translate('message.cobblemoneternal.legendary_spawned_nearby',
+                Text.translate(`${speciesName[0]}.species.${speciesName[1]}.name`)
+                    .color(spawnDetails.textColor ? spawnDetails.textColor : 'white')
+            ))
+
+            player.level['playSound(net.minecraft.world.entity.player.Player,double,double,double,net.minecraft.sounds.SoundEvent,net.minecraft.sounds.SoundSource,float,float)']
+                (null, player.x, player.y, player.z, spawnDetails.spawnSound, 'neutral', 1, 1)
         })
 
     console.log(spawnDetails)
@@ -80,7 +93,7 @@ const trySpawnRoamingLegendary = (player, spawnDetails, bypassConditions) => {
         pokemonEntity.z = pos.z
         pokemonEntity.spawn()
 
-    console.log(`${spawnDetails.species} created at ${pos.x}x ${pos.y}y ${pos.z}z near ${player.username}. forced: ${bypassConditions}`)
+    console.log(`${spawnDetails.species} created at ${pos.x}x ${pos.y}y ${pos.z}z near ${player.username}. forced: ${bypassChecks}`)
 }
 
 
@@ -94,10 +107,10 @@ PlayerEvents.tick(event => {
             if(event.player.persistentData.dailyRoamerSuccesses < maxRoamersPerDay
                 && Math.random() > (1.0 - roamerSpawnCheckSuccessRate)){
                 console.log(`attempting roaming legendary spawn near ${event.player.username}`)
-                
+                global.setCopyRoamerGroup()
                 trySpawnRoamingLegendary(
                     event.player,
-                    getRandomRoamer()
+                    global.selectRoamingLegendary(event.player)
                 )
             }
         }
@@ -114,8 +127,9 @@ PlayerEvents.tick(event => {
 * @param {string} species 
 * @returns {boolean}
 */
-const forceSpawnRoamerNear = (player, species) => {
-    trySpawnRoamingLegendary(player, global.roamingConditionalEncounters[species], true)
+const forceSpawnRoamerNear = (player, species, bypassChecks) => {
+    bypassChecks = bypassChecks || true
+    trySpawnRoamingLegendary(player, global.roamingConditionalEncounters[species], bypassChecks)
     return 1;
 }
 
@@ -134,8 +148,8 @@ ServerEvents.commandRegistry(event => {
                     let player = ctx.source.player
                     let species = Arguments.WORD.getResult(ctx, 'species')
                     player.tell(
-                        Text.translate('message.cobblemoneternal.command.force_spawn_success')
-                        //.with([species, player.username])
+                        Text.translate('message.cobblemoneternal.command.force_spawn_success',
+                            species, player.username)
                     )
                     return forceSpawnRoamerNear(player, species)
                 })
@@ -145,11 +159,24 @@ ServerEvents.commandRegistry(event => {
                         let species = Arguments.WORD.getResult(ctx, 'species')
                         if(ctx.source.player)
                             ctx.source.player.tell(
-                                Text.translate('message.cobblemoneternal.command.force_spawn_success')
-                                //.with([species, player.username])
+                                Text.translate('message.cobblemoneternal.command.force_spawn_success',
+                                    species, player.username)
                             )
                         return forceSpawnRoamerNear(player, species)
                     })
+                    .then(Commands.argument('bypassChecks', Arguments.BOOLEAN.create(event))
+                        .executes(ctx => {
+                        let player = Arguments.PLAYER.getResult(ctx, 'player')
+                        let species = Arguments.WORD.getResult(ctx, 'species')
+                        let bypassChecks = Arguments.BOOLEAN.getResult(ctx, 'bypassChecks')
+                        if(ctx.source.player)
+                            ctx.source.player.tell(
+                                Text.translate('message.cobblemoneternal.command.force_spawn_success',
+                                    species, player.username)
+                            )
+                        return forceSpawnRoamerNear(player, species, bypassChecks)
+                        })
+                    )
                 )
             )
     )

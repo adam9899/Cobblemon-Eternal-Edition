@@ -17,8 +17,9 @@ const $Moves = Java.loadClass('com.cobblemon.mod.common.api.moves.Moves').INSTAN
 
 const $InteractionHand = Java.loadClass('net.minecraft.world.InteractionHand')
 
-//const $PatchouliAPI = Java.loadClass('vazkii.patchouli.api.stub.StubPatchouliAPI').INSTANCE
-const $PatchouliAPI = Java.loadClass('vazkii.patchouli.api.PatchouliAPI').get()
+
+//Load encounter data on server startup
+global.reloadEncounterData()
 
 
 //Roaming Legendary updates occur every this long in ticks
@@ -44,17 +45,6 @@ const roamerRerollSuccessRate = 0.5
 // default: [24000]
 const dayLength = 24000
 
-//time out of a day's length that dawn begins
-//dawn is fucked up and starts at the end of a day, and ends early into the new day
-// default: [start: 23000, end: 1000]
-const dawnTime = {
-    start: 23000,
-    end: 1000
-}
-//time out of a day's length that dusk begins
-// default: [12500]
-const duskTime = 12500
-
 
 //get the player's Party
 /**
@@ -62,23 +52,10 @@ const duskTime = 12500
 * @returns {Pokemon[]}
 */
 const partyOf = (player) => {
-    return $CobblemonAPI.getStorage().getParty(player.uuid)
+    return $CobblemonAPI.getStorage().getParty(player)
 }
 
-//check if the player is a Biome which has the given Tag
-/**
-* @param {PlayerJS} player 
-* @param {ResourceLocation} biomeTag 
-* @returns {boolean}
-*/
-const playerIsInBiome = (player, biomeTag) => {
-    let biomeHasTag = player.level.getBiome(player.blockPosition())
-        .tags()
-        .anyMatch((tag) => tag.location().toString() == biomeTag)
-    return biomeHasTag
-}
-
-//get a random Roaming Legendary entry
+//get a random Roaming Legendary entry (unweighted and without evaluating conditions)
 const getRandomRoamer = () => {
     let roamerIndex = Math.floor(Math.random() * global.registeredRoamers.length)
     while (roamerIndex >= (global.registeredRoamers.length)) { // there is a hypothetical edge case where the maximum possible is generated and then indexes out of bounds, this loop hypothetically prevents that hypothetical edge case
@@ -105,27 +82,12 @@ const getRoamerFromList = (roamers) => {
     return global.roamingConditionalEncounters[roamers[roamerIndex]]
 }
 
-//function to validate a multiblock with Patchouli
-// used in Static Encounter system
-/**
-* @param {string} multiblock
-* @param {BlockContainerJS} block
-* @returns {boolean}
-*/
-const validateMultiblock = (multiblock, block, rotation) => {
-    if(rotation)
-        return global.customMultiblocks[multiblock].validate(block.level, block.pos, rotation)
-    else 
-        return global.customMultiblocks[multiblock].validate(block.level, block.pos) != null
-        //['validate(net.minecraft.world.level.Level,net.minecraft.core.BlockPos)']
-}
-
 
 //function to spawn a Pokemon
 // used in Static and Roaming Encounter systems
 const createPokemon = (speciesID, properties) => {
     let pokemon = new $Pokemon()
-    let species = $PokemonSpecies.getByPokedexNumber(properties.dexNumber, 'cobblemon') //$PokemonSpecies.getByIdentifier(speciesID)
+    let species = $PokemonSpecies.getByIdentifier(speciesID) //$PokemonSpecies.getByIdentifier(speciesID)
     //PokemonSpecies.getByIdentifier() does not exist in this version, so we use getByPokedexNumber() until we update
 
     pokemon.setSpecies(species)
@@ -157,6 +119,7 @@ const createPokemon = (speciesID, properties) => {
 
 
 //function to test if a player meets the Encounter Condition for the specified Encounter entry
+// used by the "testencountercondition" command exclusively
 /**
 * @param {PlayerJS} player 
 * @param {string} species 
@@ -198,17 +161,17 @@ ServerEvents.commandRegistry(event => {
         Commands.literal('testencountercondition')
             .requires(source => source.hasPermission(2))
             .then(Commands.argument('encounterType', Arguments.STRING.create(event))
-                //.suggests(builder => Suggestions.suggest(["roamer", "static"], builder))
+                //.suggests((ctx, builder) => Suggestions.suggests(builder, ["roamer", "static"]))
                 .then(Commands.argument('species', Arguments.STRING.create(event))
-                    //.suggests(builder => Suggestions.suggest(global.registeredRoamers, builder))
+                    //.suggests((ctx, builder) => Suggestions.suggest(builder, global.registeredRoamers))
                     .executes(ctx => {
                         let encounterType = Arguments.STRING.getResult(ctx, 'encounterType')
                         let species = Arguments.STRING.getResult(ctx, 'species')
                         let player = ctx.source.player
                         let condition = testEncounterCondition(player, species, encounterType)
                         player.tell(
-                            Text.translate('message.cobblemoneternal.command.test_encounter_condition')
-                            //.with([player.username, encounterType, species, condition])
+                            Text.translate('message.cobblemoneternal.command.test_encounter_condition',
+                                player.username, encounterType, species, condition)
                         )
                         player.tell(condition)
                         return condition ? 1 : 0
@@ -221,8 +184,8 @@ ServerEvents.commandRegistry(event => {
                             let condition = testEncounterCondition(player, species, encounterType)
                             if(ctx.source.player)
                                 ctx.source.player.tell(
-                                    Text.translate('message.cobblemoneternal.command.test_encounter_condition')
-                                    //.with([player.username, encounterType, species, condition])
+                                    Text.translate('message.cobblemoneternal.command.test_encounter_condition',
+                                        player.username, encounterType, species, condition)
                                 )
                             player.tell(condition)
                             return condition ? 1 : 0
@@ -241,40 +204,38 @@ ServerEvents.commandRegistry(event => {
             .executes(ctx => {
                 let player = ctx.source.player
                 player.persistentData.dailyRoamerSuccesses = 0
-                let message = Text.translate('message.cobblemoneternal.command.reset_daily_roamer')
-                message.setStyle(message.getStyle().withInsertion(player.username))
 
-                player.tell(message)
+                player.tell(Text.translate('message.cobblemoneternal.command.reset_daily_roamer',
+                    player.username))
                 return 1
             })
             .then(Commands.argument('player', Arguments.PLAYER.create(event))
                 .executes(ctx => {
                     let player = Arguments.PLAYER.getResult(ctx, 'player')
                     player.persistentData.dailyRoamerSuccesses = 0
-                    let message = Text.translate('message.cobblemoneternal.command.reset_daily_roamer')
-                    message.setStyle(message.getStyle().withInsertion(player.username))
 
-                    player.tell(message)
+                    player.tell(Text.translate('message.cobblemoneternal.command.reset_daily_roamer',
+                        player.username))
+                    return 1
+                })
+            )
+    )
+
+    event.register(
+        Commands.literal('encounterreload')
+            .requires(source => source.hasPermission(2))
+            .executes(ctx => {
+                global.reloadEncounterData()
+                ctx.source.player.tell(Text.translate('message.cobblemoneternal.command.reload_conditional_encounters'))
+                return 1
+            })
+            .then(Commands.argument('set', Arguments.STRING.create(event))
+                .executes(ctx => {
+                    let gen = Arguments.STRING.getResult(ctx, 'set')
+                    global[`load${set}Encounters`]()
+                    ctx.source.player.tell(Text.translate('message.cobblemoneternal.command.reload_conditional_encounters'))
                     return 1
                 })
             )
     )
 })
-
-
-//Legendary Tables
-
-//Storage for Roaming Encounter data
-//may randomly spawn around the player when specific conditions are met
-global.roamingConditionalEncounters = {}
-
-//a list of registered Roaming legendary pokemon, because you can't numerically index maps in JS
-global.registeredRoamers = []
-
-
-//Storage for Static Encounter data
-//may be summoned in special locations (custom structures) when specific conditions are met
-global.staticConditionalEncounters = {}
-
-//a list of registered Static legendary pokemon, so that an encounter can be fetched from its associated block
-global.registeredStatics = {}

@@ -1,23 +1,44 @@
 //priority: 5
 
 const $PatchouliAPI = Java.loadClass('vazkii.patchouli.api.PatchouliAPI').get()
+const $VisualizationHandler = Java.loadClass('vazkii.patchouli.client.handler.MultiblockVisualizationHandler')
 
 
 NetworkEvents.dataReceived('showMultiblock', event => {
     console.log(`trying to display ${event.data.targetMultiblock}`, event.data)
-    let pos = event.data.position
+    let multiblock = event.data.getString('targetMultiblock')
+    let legalMultiblockName = `cobblemoneternal:${multiblock}`
+    let pos = event.data.getCompound('position')
+    let rotation = global.facingToRotation[event.data.getString('orientation')]
 
+    /*
     console.log(
-        global.customMultiblocks[event.data.targetMultiblock],
-        `multiblock.cobblemoneternal.${event.data.targetMultiblock}.name`,
-        new BlockPos(pos.x, pos.y, pos.z),
-        event.data.rotation
+        global.customMultiblocks[multiblock].getID(),
+        `multiblock.cobblemoneternal.${multiblock}.name`,
+        new BlockPos(pos.getInt('x'), pos.getInt('y'), pos.getInt('z')),
+        `Rotation: ${rotation}`
+    )
+    */
+
+    //
+    if($PatchouliAPI.getCurrentMultiblock() != undefined
+        && legalMultiblockName != $PatchouliAPI.getCurrentMultiblock().getID())
+        $PatchouliAPI.clearMultiblock()
+
+    // Display Multiblock
+    $PatchouliAPI.showMultiblock(
+        $PatchouliAPI.getMultiblock(legalMultiblockName),
+        Text.translate(`multiblock.cobblemoneternal.${multiblock}.name`),
+        new BlockPos(pos.getInt('x'), pos.getInt('y') - 1, pos.getInt('z')),
+        rotation
     )
 
-    $PatchouliAPI.showMultiblock(
-        global.customMultiblocks[event.data.targetMultiblock],
-        Text.translate(`multiblock.cobblemoneternal.${event.data.targetMultiblock}.name`),
-        new BlockPos(pos.x, pos.y - 1, pos.z),
-        event.data.rotation //facingToRotation[event.block.properties.facing]
-    )
+    event.player.playSound('minecraft:block.note_block.chime')
+
+    console.log('Current Multiblock: '+ $PatchouliAPI.getCurrentMultiblock().getID())
+})
+
+NetworkEvents.dataReceived('clearMultiblock', event => {
+    if($PatchouliAPI.getCurrentMultiblock() != undefined)
+        $PatchouliAPI.clearMultiblock()
 })

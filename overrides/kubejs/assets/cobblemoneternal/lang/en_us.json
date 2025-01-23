@@ -1,12 +1,14 @@
 {
-    "message.cobblemoneternal.legendary_spawned_nearby": " has appeared nearby!",
-    "message.cobblemoneternal.command.force_spawn_success": "%s has been forcibly spawned near %s",
+    "message.cobblemoneternal.legendary_spawned_nearby": "%s has appeared nearby!",
+    "message.cobblemoneternal.command.force_spawn_success": "Encounter \"%s\" has been forcibly spawned near %s",
     "message.cobblemoneternal.command.reset_daily_roamer": "Daily roamer counter reset for %s",
     "message.cobblemoneternal.command.test_encounter_condition": "%s meets condition for %s %s: %s",
     "message.cobblemoneternal.command.test_condition.invalid_type": "Invalid encounter type: %s",
 
     "message.cobblemoneternal.feature.bottle_cap_min_level_req": "Your Pokemon must be atleast Level 50 to use Bottle Caps!",
     "message.cobblemoneternal.thats_not_your_pokemon": "That's not your Pokemon!",
+
+    "message.cobblemoneternal.missing_multiblock": "Multiblock Incomplete",
 
     "cobblemoneternal.species.barry.name": "Barry",
 

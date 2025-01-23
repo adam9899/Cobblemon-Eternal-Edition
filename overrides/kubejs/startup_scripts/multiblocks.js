@@ -1,4 +1,4 @@
-//priority: 0
+//priority: 10
 
 //const $PatchouliAPI = Java.loadClass('vazkii.patchouli.api.stub.StubPatchouliAPI').INSTANCE
 const $PatchouliAPI = Java.loadClass('vazkii.patchouli.api.PatchouliAPI').get()
@@ -10,15 +10,14 @@ const $StringStateMatcher = Java.loadClass('vazkii.patchouli.common.multiblock.S
 const $Character = Java.loadClass('java.lang.Character')
 
 
-//Storage for Patchouli Multiblock objects
-// for quicker reference in other scripts
-global.customMultiblocks = {}
-
-
 //*
 //Cloning Machine
 // used for Mewtwo
 StartupEvents.postInit(event => {
+
+    //Storage for Patchouli Multiblock objects
+    // for quicker reference in other scripts
+    global.customMultiblocks = {}
         
     $PatchouliAPI.registerMultiblock('cobblemoneternal:cloning_machine',
         $PatchouliAPI.makeMultiblock(
