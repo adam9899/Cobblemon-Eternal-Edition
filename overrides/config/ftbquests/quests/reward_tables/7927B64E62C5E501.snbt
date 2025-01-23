@@ -1,0 +1,14 @@
+{
+	id: "7927B64E62C5E501"
+	loot_size: 1
+	order_index: 4
+	rewards: [
+		{ item: { count: 1, id: "cobblemon:pokedex_red" } }
+		{ item: { count: 1, id: "cobblemon:pokedex_yellow" } }
+		{ item: { count: 1, id: "cobblemon:pokedex_green" } }
+		{ item: { count: 1, id: "cobblemon:pokedex_blue" } }
+		{ item: { count: 1, id: "cobblemon:pokedex_pink" } }
+		{ item: { count: 1, id: "cobblemon:pokedex_black" } }
+		{ item: { count: 1, id: "cobblemon:pokedex_white" } }
+	]
+}

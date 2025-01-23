@@ -431,12 +431,10 @@
 			id: "09BD5BE582E54F69"
 			rewards: [
 				{
+					exclude_from_claim_all: true
 					id: "4A8137D89F0AFF5F"
-					item: {
-						count: 1
-						id: "cobblemon:pokedex_blue"
-					}
-					type: "item"
+					table_id: 8730146850461836545L
+					type: "choice"
 				}
 				{
 					auto: "invisible"
@@ -477,7 +475,6 @@
 			y: 1.6120748299319025d
 		}
 		{
-			dependencies: ["648B23380CEF3226"]
 			hide_until_deps_complete: true
 			id: "1A0BD89EC5FB4061"
 			rewards: [
