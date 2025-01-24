@@ -9,7 +9,7 @@
   "broadcastVolatileDespawns": false,
   "broadcastSpeciesName": true,
   "broadcastPlayerSpawnedOn": false,
-  "broadcastRange": -1,
+  "broadcastRange": 256,
   "playerLimit": -1,
   "labelsForBroadcast": [
     "legendary"
