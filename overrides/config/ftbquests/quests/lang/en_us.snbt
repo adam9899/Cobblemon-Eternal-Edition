@@ -7,6 +7,14 @@
 	file.0000000000000001.title: "Cobblemon Eternal Quests"
 	quest.012E4D991A81408A.quest_subtitle: "Craft a &eMaster Ball Fishing Rod"
 	quest.012E4D991A81408A.title: "Master Angler"
+	quest.0271FC09CF404434.quest_desc: [
+		"&eMint Leaves&r are used to craft &dMints&r, which can change a mon's stats a little bit."
+		"Mints will &dreplace the effect of the mon's Nature&r, to be those of the Nature the Mint is for."
+		""
+		"&lMost&r Mints are made with 4 Leaves, 3 of one color, and one of an different one. &1The single leaf determines which Stat is Reduced&r by the Mint, while &cthe 3 Leaves determine which Stat is Boosted&r."
+	]
+	quest.0271FC09CF404434.quest_subtitle: "Get a &eMint Leaf"
+	quest.0271FC09CF404434.title: "Authentically Minted"
 	quest.02DF45F7DA8311BB.quest_subtitle: "Found in Chests"
 	quest.09BD5BE582E54F69.quest_desc: [
 		"This project is currenty a work in progress."
@@ -212,7 +220,9 @@
 	reward_table.6D8687545BE5E619.title: "relic"
 	reward_table.70DE8427138F48A6.title: "reward_choice_Relic"
 	reward_table.7927B64E62C5E501.title: "pokedex"
+	task.018D3F5CA945F0EC.title: "Any Mint Leaf"
 	task.0233678E76DDED52.title: "Any Backpack"
+	task.029A75D73AB06C02.title: "Any Mint"
 	task.12CD84DA35710EB2.title: "Any Waystone"
 	task.20AC7EEE7A1762F4.title: "Any Bed"
 	task.25C8B95D77CD0CA6.title: "Any PokéNav"

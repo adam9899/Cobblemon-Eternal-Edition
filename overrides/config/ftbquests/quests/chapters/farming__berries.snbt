@@ -6,22 +6,41 @@
 	id: "3190B10C12FAB4F7"
 	order_index: 1
 	quest_links: [ ]
-	quests: [{
-		id: "3FE970CC80B586EB"
-		rewards: [{
-			id: "3E81F5391186A599"
-			item: {
-				count: 1
-				id: "cobblemon:love_ball"
-			}
-			type: "item"
-		}]
-		tasks: [{
-			id: "51D5DF185D9B0B87"
-			item: { count: 1, id: "cobblemon:red_apricorn" }
-			type: "item"
-		}]
-		x: -0.5d
-		y: -0.5d
-	}]
+	quests: [
+		{
+			id: "3FE970CC80B586EB"
+			rewards: [{
+				id: "3E81F5391186A599"
+				item: {
+					count: 1
+					id: "cobblemon:love_ball"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "51D5DF185D9B0B87"
+				item: { count: 1, id: "cobblemon:red_apricorn" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			id: "0271FC09CF404434"
+			tasks: [
+				{
+					id: "018D3F5CA945F0EC"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(cobblemon:mint_leaf)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "029A75D73AB06C02"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(cobblemon:mints)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: -2.5d
+		}
+	]
 }
