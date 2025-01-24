@@ -30,6 +30,7 @@
 		"&dNote:&r Watch out for those pesky Team Rocket! They would LOVE to get their hands on technology like this..."
 	]
 	quest.116F1AFF9B138FEE.quest_subtitle: "Craft a &ePokéNav"
+	quest.116F1AFF9B138FEE.title: "PokéNav"
 	quest.13103EBD0B4D3497.quest_subtitle: "Drops from &eGuardian"
 	quest.15CADD4029E11471.quest_desc: [
 		"The &ePoke Rod&r can be used to have encounters with sea dwelling Cobblemon!"
@@ -151,6 +152,7 @@
 		"It can also be &dfiltered to specific Species&r. To Filter it, Open your PokéNav, and select the species which you want to track. &6Click the PokéFinder button near the bottom center&r to Track that species."
 	]
 	quest.608565C4FF22309C.quest_subtitle: "Craft a &ePokéFinder"
+	quest.608565C4FF22309C.title: "PokéFinder"
 	quest.614DB0C276BB8929.quest_subtitle: "Drops from &eNight Lich"
 	quest.648B23380CEF3226.quest_desc: [
 		"The Cobble Merchant trades useful supplies and items for &bCobble Dollars."
@@ -213,7 +215,9 @@
 	task.0233678E76DDED52.title: "Any Backpack"
 	task.12CD84DA35710EB2.title: "Any Waystone"
 	task.20AC7EEE7A1762F4.title: "Any Bed"
+	task.25C8B95D77CD0CA6.title: "Any PokéNav"
 	task.3DA23BFEA2CDD1E9.title: "Poké Trainer"
+	task.3FB41F264A9DA37E.title: "Any PokéFinder"
 	task.489BD304A4EC94D6.title: "Poké Collector"
 	task.4CB9166594EE3C43.title: "Catch Your First Cobblemon"
 	task.5841B92A0B863B4C.title: "Any Fossil"

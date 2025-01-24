@@ -978,7 +978,7 @@
 			]
 			tasks: [{
 				id: "25C8B95D77CD0CA6"
-				item: { count: 1, id: "cobblenav:pokenav_item_base" }
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(cobblenav:pokenav)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -3.5d
@@ -1006,7 +1006,7 @@
 			]
 			tasks: [{
 				id: "3FB41F264A9DA37E"
-				item: { count: 1, id: "cobblenav:pokefinder_item_black" }
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(cobblemoneternal:pokefinder)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -3.5d
