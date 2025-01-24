@@ -143,6 +143,13 @@
 	quest.5987F4BEB3B4EE16.title: "Learning Moves!"
 	quest.5EAC27E2738426EF.quest_subtitle: "Craft a &eGreat Ball"
 	quest.5EAC27E2738426EF.title: "Improved Portable Catching Device"
+	quest.608565C4FF22309C.quest_desc: [
+		"A &ePokéFinder&r is a tool that works with the &dPokéNav&r to track down 'Mons in the world."
+		""
+		"When held, it gives you a Minimap in the bottom corner, showing you dots where nearby Cobblemon are."
+		""
+		"It can also be &dfiltered to specific Species&r. To Filter it, Open your PokéNav, and select the species which you want to track. &6Click the PokéFinder button near the bottom center&r to Track that species."
+	]
 	quest.608565C4FF22309C.quest_subtitle: "Craft a &ePokéFinder"
 	quest.614DB0C276BB8929.quest_subtitle: "Drops from &eNight Lich"
 	quest.648B23380CEF3226.quest_desc: [
