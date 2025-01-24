@@ -19,14 +19,6 @@
           "price": 80
         },
         {
-          "item": "cobblemon:full_heal",
-          "price": 150
-        },
-        {
-          "item": "cobblemon:revive",
-          "price": 200
-        },
-        {
           "item": "cobblemon:potion",
           "price": 200
         },
@@ -145,14 +137,6 @@
         {
           "item": "cobblemon:quick_ball",
           "price": 3000
-        },
-        {
-          "item": "cobblemon:sport_rod",
-          "price": 500
-        },
-        {
-          "item": "cobblemon:master_ball",
-          "price": 500000
         }
       ]
     },
@@ -181,10 +165,6 @@
         {
           "item": "cobblemon:rare_candy",
           "price": 100000
-        },
-        {
-          "item": "cobblemon:exp_share",
-          "price": 250000
         }
       ]
     },
@@ -235,40 +215,17 @@
     {
       "Special Items": [
         {
-          "item": "cobblemon:prism_scale",
-          "price": 3500
+          "item": "cobblemon:ability_capsule",
+          "price": 25000
         },
         {
-          "item": "cobblemon:love_sweet",
-          "price": 3500
-        },
-        {
-          "item": "cobblemon:sachet",
-          "price": 3500
-        },
-        {
-          "item": "cobblemon:dubious_disc",
-          "price": 3500
-        },
-        {
-          "item": "cobblemon:electirizer",
-          "price": 3500
-        },
-        {
-          "item": "cobblemon:thunder_stone",
-          "price": 3500
-        },
-        {
-          "item": "cobblemon:metal_coat",
-          "price": 3500
+          "item": "cobblemon:lucky_egg",
+          "price": 10000
         },
         {
           "item": "cobblemon:ability_patch",
-          "price": 15300
-        },
-        {
-          "item": "cobblemon:ability_capsule",
-          "price": 15300
+          "price": 100000,
+          "comment": "TEMPORARY, i think it should be loot or something to tie in with the exploration aspect of the pack - Emper"
         }
       ]
     },
