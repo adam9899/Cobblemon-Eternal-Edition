@@ -224,8 +224,7 @@
         },
         {
           "item": "cobblemon:ability_patch",
-          "price": 100000,
-          "comment": "TEMPORARY, i think it should be loot or something to tie in with the exploration aspect of the pack - Emper"
+          "price": 100000
         }
       ]
     },
