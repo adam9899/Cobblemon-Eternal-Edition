@@ -6,8 +6,6 @@ const $PokemonStats = Java.loadClass('com.cobblemon.mod.common.api.pokemon.stats
 //Array of simple items
 const simpleItems = [
     'zygarde_cube', // complex code is implemented in an Entity Interaction event, along with other manual form changes
-    'bottle_cap/normal',
-    'potential_limiter',
     'mewtant_genome'
 ]
 
@@ -33,24 +31,38 @@ const staticSpawnerBlocks = {
 StartupEvents.registry('item', event => {
     simpleItems.forEach(item => {
         event.create(`cobblemoneternal:${item}`)
+            .name(stack => Text.translate(`item.cobblemoneternal.${item}.name`))
     })
 
-    //*
+    event.create('cobblemoneternal:bottle_cap')
+        .tooltip(Text.translate('item.cobblemoneternal.bottle_cap.desc').color('gray'))
+
     $PokemonStats.Companion.PERMANENT.forEach(stat => {
+        let fullStatName = stat.identifier.path.toLowerCase()
         event.create(`cobblemoneternal:bottle_cap/${stat.showdownId}`)
-            .texture('cobblemoneternal:item/bottle_cap/normal')
+            .texture('cobblemoneternal:item/bottle_cap')
             .tag('cobblemoneternal:iv_stat_up')
+            .name(stack => Text.translate('item.cobblemoneternal.bottle_cap/typed.name',
+                Text.translate(`cobblemon.stat.${fullStatName}.name`)))
+            .tooltip(Text.translate('item.cobblemoneternal.bottle_cap/typed.desc', 
+                Text.translate(`cobblemon.stat.${fullStatName}.name`))
+                .color('gray'))
     })
-    //*/
-
-    event.create(`cobblemoneternal:bottle_cap/gold`)
+    
+    event.create('cobblemoneternal:bottle_cap_gold')
         .tag('cobblemoneternal:iv_stat_up')
+        .name(stack => Text.translate('item.cobblemoneternal.bottle_cap_gold.name'))
+        .tooltip(Text.translate('item.cobblemoneternal.bottle_cap_gold.desc').color('gray'))
+
+    event.create('cobblemoneternal:potential_limiter')
+        .tooltip(Text.translate('item.cobblemoneternal.potential_limiter.desc').color('gray'))
 })
 
 
 StartupEvents.registry('block', event => {
     simpleBlocks.forEach(block => {
         event.create(`cobblemoneternal:${block}`)
+            //.name(stack => Text.translate(`block.cobblemoneternal.${block}.name`)) // this not work :(
     })
 
     Object.keys(staticSpawnerBlocks).forEach(block => {

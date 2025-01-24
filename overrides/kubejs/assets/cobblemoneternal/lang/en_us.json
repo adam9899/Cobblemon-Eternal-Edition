@@ -10,9 +10,24 @@
 
     "message.cobblemoneternal.missing_multiblock": "Multiblock Incomplete",
 
-    "cobblemoneternal.species.barry.name": "Barry",
+    "multiblock.cobblemoneternal.cloning_machine.name": "Cloning Machine",
+    "block.cobblemoneternal.cloning_machine_core.name": "Cloning Machine Computer",
 
-    "cobblemoneternal.starterselection.category.orre": "Orre",
+    "multiblock.cobblemoneternal.sleeping_giant.name": "Sleeping Giant",
+    "block.cobblemoneternal.regigigas_core.name": "Giant's Core",
 
-    "multiblock.cobblemoneternal.cloning_machine.name": "Cloning Machine"
+
+    "item.cobblemoneternal.bottle_cap.name": "Bottle Cap",
+    "item.cobblemoneternal.bottle_cap.desc": "Craft with a Mint Leaf to choose IV to Maximize",
+
+    "item.cobblemoneternal.bottle_cap/typed.name": "Bottle Cap (%s)",
+    "item.cobblemoneternal.bottle_cap/typed.desc": "Maximizes the %s IV",
+
+    "item.cobblemoneternal.bottle_cap_gold.name": "Gold Bottle Cap",
+    "item.cobblemoneternal.bottle_cap_gold.desc": "Maximizes All IVs",
+
+    "item.cobblemoneternal.potential_limiter.desc": "When in the Offhand, Bottle Caps will Minimize IVs",
+
+
+    "cobblemoneternal.species.barry.name": "Barry"
 }
