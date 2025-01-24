@@ -97,7 +97,7 @@
 			]
 			tasks: [{
 				id: "637B6A4A68CFC780"
-				item: { count: 1, id: "cobblemon:poke_rod" }
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(cobblemon:poke_rods)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -514,7 +514,7 @@
 			]
 			tasks: [{
 				id: "0233678E76DDED52"
-				item: { count: 1, id: "sophisticatedbackpacks:backpack" }
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(cobblemoneternal:backpacks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 5.5d
@@ -904,7 +904,7 @@
 			]
 			tasks: [{
 				id: "20AC7EEE7A1762F4"
-				item: { count: 1, id: "minecraft:white_bed" }
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:beds)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -940,7 +940,7 @@
 			]
 			tasks: [{
 				id: "12CD84DA35710EB2"
-				item: { count: 1, id: "waystones:waystone" }
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(waystones:waystones)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -1285,6 +1285,17 @@
 			}]
 			x: 4.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["7B6EE4E7B5D9ADBB"]
+			id: "3696C5D5931C1C99"
+			tasks: [{
+				id: "75503AE3BCDB424D"
+				item: { count: 1, id: "cobblemonboxlink:box_link" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.5d
 		}
 	]
 }
