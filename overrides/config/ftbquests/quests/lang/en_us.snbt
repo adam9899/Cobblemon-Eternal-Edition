@@ -83,6 +83,7 @@
 		""
 		"&eTip:&r You can also put the Box Link into the \"&lBox Link\"&r Curio slot, and use the Keybind!"
 	]
+	quest.3696C5D5931C1C99.quest_subtitle: "Craft a &eBox Link"
 	quest.3FE970CC80B586EB.quest_subtitle: "WIP"
 	quest.46A2507A373FA4E7.quest_desc: ["Shiny Cobblemon are very very rare. Good luck!"]
 	quest.46A2507A373FA4E7.quest_subtitle: "Catch a &e&oShiny Cobblemon"

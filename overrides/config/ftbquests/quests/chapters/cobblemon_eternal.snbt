@@ -530,11 +530,10 @@
 					type: "choice"
 				}
 				{
-					count: 3
 					id: "6FA5150FB6F4926F"
 					item: {
 						count: 1
-						id: "farmersdelight:fried_egg"
+						id: "farmersdelight:egg_sandwich"
 					}
 					type: "item"
 				}
@@ -1289,6 +1288,14 @@
 		{
 			dependencies: ["7B6EE4E7B5D9ADBB"]
 			id: "3696C5D5931C1C99"
+			rewards: [{
+				id: "50F05590BA5E2A18"
+				item: {
+					count: 1
+					id: "farmersdelight:honey_cookie"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "75503AE3BCDB424D"
 				item: { count: 1, id: "cobblemonboxlink:box_link" }
