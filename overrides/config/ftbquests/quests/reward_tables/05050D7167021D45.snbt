@@ -1,0 +1,22 @@
+{
+	id: "05050D7167021D45"
+	loot_size: 1
+	order_index: 5
+	rewards: [
+		{ item: { count: 1, id: "cobblemon:helix_fossil" } }
+		{ item: { count: 1, id: "cobblemon:dome_fossil" } }
+		{ item: { count: 1, id: "cobblemon:old_amber_fossil" } }
+		{ item: { count: 1, id: "cobblemon:root_fossil" } }
+		{ item: { count: 1, id: "cobblemon:claw_fossil" } }
+		{ item: { count: 1, id: "cobblemon:skull_fossil" } }
+		{ item: { count: 1, id: "cobblemon:armor_fossil" } }
+		{ item: { count: 1, id: "cobblemon:cover_fossil" } }
+		{ item: { count: 1, id: "cobblemon:plume_fossil" } }
+		{ item: { count: 1, id: "cobblemon:jaw_fossil" } }
+		{ item: { count: 1, id: "cobblemon:sail_fossil" } }
+		{ item: { count: 1, id: "cobblemon:fossilized_bird" } }
+		{ item: { count: 1, id: "cobblemon:fossilized_fish" } }
+		{ item: { count: 1, id: "cobblemon:fossilized_drake" } }
+		{ item: { count: 1, id: "cobblemon:fossilized_dino" } }
+	]
+}

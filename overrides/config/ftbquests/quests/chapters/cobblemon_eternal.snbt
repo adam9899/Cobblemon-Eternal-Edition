@@ -262,7 +262,7 @@
 				item: { count: 1, id: "cobblemon:ultra_ball" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 3.5d
 			y: 9.0d
 		}
 		{
@@ -1301,8 +1301,106 @@
 				item: { count: 1, id: "cobblemonboxlink:box_link" }
 				type: "item"
 			}]
-			x: 4.0d
+			x: 3.5d
 			y: 4.5d
+		}
+		{
+			id: "2AA4E046D4FEEB6B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5643DCC8C0DC965A"
+					table_id: 361710125783850309L
+					type: "loot"
+				}
+				{
+					id: "66844851D94BAA9C"
+					item: {
+						count: 1
+						id: "cobblemon:revival_herb"
+					}
+					type: "item"
+				}
+				{
+					id: "7DA78CD2CBAC7AD1"
+					item: {
+						count: 1
+						id: "farmersdelight:ham"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "11BC848F4DF972C3"
+					item: { count: 1, id: "minecraft:brush" }
+					type: "item"
+				}
+				{
+					id: "5841B92A0B863B4C"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(cobblemon:fossils)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2AA4E046D4FEEB6B"]
+			id: "4923D2E3695FF1E9"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6E4AB7B3DE89B260"
+					table_id: 361710125783850309L
+					type: "loot"
+				}
+				{
+					id: "164C12F40EE1C4D3"
+					item: {
+						count: 1
+						id: "cobblemon:revive"
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "6EDB91B9497FE260"
+					item: {
+						count: 1
+						id: "cobblemon:ancient_poke_ball"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "669B02D6C60F88F7"
+					item: { count: 1, id: "cobblemon:restoration_tank" }
+					type: "item"
+				}
+				{
+					id: "439BBD44F19CB18A"
+					item: { count: 1, id: "cobblemon:fossil_analyzer" }
+					type: "item"
+				}
+				{
+					id: "420B5A4DDBEF2D45"
+					item: { count: 1, id: "cobblemon:monitor" }
+					type: "item"
+				}
+				{
+					advancement: "cobblemon:resurrect_pokemon"
+					criterion: ""
+					icon: {
+						id: "cobblemon:old_amber_fossil"
+					}
+					id: "35BDBAD8E8A0FBA1"
+					type: "advancement"
+				}
+			]
+			x: 0.5d
+			y: 6.5d
 		}
 	]
 }
