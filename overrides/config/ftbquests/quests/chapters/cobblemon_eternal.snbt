@@ -619,8 +619,8 @@
 				}
 			]
 			tasks: [{
-				id: "266BAE2DBE32A793"
-				item: { components: { "minecraft:custom_model_data": 0 }, count: 1, id: "cobblemon_tm:tm" }
+				id: "3288887B6B4358AC"
+				item: { count: 1, id: "simpletms:tr_blank" }
 				type: "item"
 			}]
 			x: -1.5d
@@ -1301,7 +1301,7 @@
 				item: { count: 1, id: "cobblemonboxlink:box_link" }
 				type: "item"
 			}]
-			x: 3.5d
+			x: 4.0d
 			y: 4.5d
 		}
 		{
@@ -1401,6 +1401,39 @@
 			]
 			x: 0.5d
 			y: 6.5d
+		}
+		{
+			id: "2D4A7835804303CD"
+			rewards: [{
+				id: "4432D599F5428560"
+				item: {
+					components: {
+						"ftbquests:loot_crate": "sleeping_box"
+					}
+					count: 1
+					id: "ftbquests:lootcrate"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				action: "evolve"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "75D35550F26E6056"
+				poke_ball_used: ""
+				pokemon: ""
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			x: 0.0d
+			y: 1.5d
 		}
 	]
 }
