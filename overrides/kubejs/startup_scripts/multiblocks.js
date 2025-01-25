@@ -9,6 +9,8 @@ const $StringStateMatcher = Java.loadClass('vazkii.patchouli.common.multiblock.S
 
 const $Character = Java.loadClass('java.lang.Character')
 
+//can be flushed on script reload because multiblocks are already registered and stored when reloading is possible.
+global.multiblockRegistryList = []
 
 //*
 //Cloning Machine
@@ -18,96 +20,11 @@ StartupEvents.postInit(event => {
     //Storage for Patchouli Multiblock objects
     // for quicker reference in other scripts
     global.customMultiblocks = {}
-        
-    $PatchouliAPI.registerMultiblock('cobblemoneternal:cloning_machine',
-        $PatchouliAPI.makeMultiblock(
-            [
-                [
-                    '  ',
-                    ' A',
-                    '  ',
-                    ' A',
-                    '  '
-                ],
-                [
-                    'AA',
-                    ' A',
-                    'A0',
-                    ' A',
-                    'AA'
-                ]
-            ],
-            new $Character('0'), $StringStateMatcher.fromString('cobblemoneternal:cloning_machine_core'),
-            new $Character('A'), Block.getBlock('minecraft:iron_block')
-        )
-    )
 
-    global.customMultiblocks['cloning_machine'] = $PatchouliAPI.getMultiblock('cobblemoneternal:cloning_machine')
-
-    $PatchouliAPI.registerMultiblock('cobblemoneternal:sleeping_giant',
-        $PatchouliAPI.makeMultiblock(
-            [
-                [
-                    'SS',
-                    'SS',
-                    'SS',
-                    'SS',
-                    'SS',
-                    'SS',
-                    'SS'
-                ],
-                [
-                    'SS',
-                    'SS',
-                    'SS',
-                    'SS',
-                    'SS',
-                    'SS',
-                    'SS'
-                ],
-                [
-                    'SS',
-                    'SS',
-                    'SS',
-                    'S0',
-                    'SS',
-                    'SS',
-                    'SS'
-                ],
-                [
-                    'SS',
-                    'SS',
-                    'SS',
-                    'SS',
-                    'SS',
-                    'SS',
-                    'SS'
-                ],
-                [
-                    '  ',
-                    'SS',
-                    'SS',
-                    '  ',
-                    'SS',
-                    'SS',
-                    '  '
-                ],
-                [
-                    '  ',
-                    'SS',
-                    'SS',
-                    '  ',
-                    'SS',
-                    'SS',
-                    '  '
-                ]
-            ],
-            new $Character('0'), $StringStateMatcher.fromString('cobblemoneternal:regigigas_core'),
-            new $Character('S'), Block.getBlock('minecraft:stone')
-        )
-    )
-
-    global.customMultiblocks['sleeping_giant'] = $PatchouliAPI.getMultiblock('cobblemoneternal:sleeping_giant')
+    //register all multiblocks in this array
+    // to add a multiblock, use 'global.multiblockRegistryList.push()' in a startup script.
+    // provide an object with a noargs function assigned to 'register', insert code to register inside that function.
+    global.multiblockRegistryList.forEach(multiblock => multiblock.register())
 
     console.log(global.customMultiblocks, global.customMultiblocks['cloning_machine'])
 

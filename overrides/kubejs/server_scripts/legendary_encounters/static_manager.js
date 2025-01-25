@@ -20,10 +20,22 @@ const tryStaticEncounter = (event) => {
             pokemonEntity.x = posWithOffset(pos, entry, 'x') + 0.5
             pokemonEntity.y = posWithOffset(pos, entry, 'y')
             pokemonEntity.z = posWithOffset(pos, entry, 'z') + 0.5
+            if(!entry.properties?.skipAutomaticBattleStart)
+                pokemonEntity
             pokemonEntity.spawn()
+            let uuid = pokemonEntity.uuid
 
         if(entry.spawnSound)
             event.server.runCommandSilent(`playsound ${entry.spawnSound} neutral ${event.player.username} ${posWithOffset(pos, entry, 'x')} ${posWithOffset(pos, entry, 'y')} ${posWithOffset(pos, entry, 'z')}`)
+        /*
+        if(!entry.properties?.skipAutomaticBattleStart)
+            event.server.scheduleInTicks(40, callback => {
+                let spawnedPokemonEntity = event.level.getEntity(uuid)
+                let pokemon = spawnedPokemonEntity.pokemon
+
+                $PokemonProperties.Companion.parse("uncatchable=false").apply(pokemon)
+            })
+        */
     } 
     else if(entry.multiblockName && conditionResult == 'fail_multiblock'){
         event.player.sendData('showMultiblock', {
@@ -37,7 +49,7 @@ const tryStaticEncounter = (event) => {
 
 
 BlockEvents.rightClicked(event => {
-    if(event.hand == 'OFF_HAND' || !event.block.hasTag('cobblemoneternal:static_spawner_block')) return;
+    if(event.hand == 'OFF_HAND' || !event.block.hasTag('cobblemoneternal:static_spawner_block') || event.item.id != 'minecraft:air') return;
     
     if(event.player.crouching) {
         event.player.sendData('clearMultiblock', {})

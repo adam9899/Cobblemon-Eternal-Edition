@@ -1,5 +1,7 @@
 //priority: 5
 
+const $CobblemonAPI = Java.loadClass('com.cobblemon.mod.common.Cobblemon').INSTANCE
+
 //Legendary Tables
 
 //Storage for Roaming Encounter data
@@ -36,6 +38,15 @@ global.copyRoamerGroup = false
 let currentGroup = [] // storage for currently iterated group
 
 
+
+//get the player's Party
+/**
+* @param {PlayerJS} player 
+* @returns {Pokemon[]}
+*/
+global.partyOf = (player) => {
+    return $CobblemonAPI.getStorage().getParty(player)
+}
 
 
 //function to validate a multiblock with Patchouli
@@ -114,6 +125,18 @@ global.playerIsInBiome = (player, biomeTag) => {
         .tags()
         .anyMatch((tag) => tag.location().toString() == biomeTag)
     return biomeHasTag
+}
+
+
+//shorthand for getting a 'java.lang.Character', which is required for Multiblock Patterns with Patchouli
+/**
+ * @param {String} character 
+ * @returns {Character}
+ */
+const char = (character) => {
+    if(character.length > 1)
+        throw `function "char()" was provided \'${character}\', containing multiple Characters!`
+    new $Character(character);
 }
 
 

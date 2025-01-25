@@ -7,20 +7,19 @@ global.loadMewDuo = () => {
         weight: 10,
         spawnSound: 'minecraft:block.note_block.bell',
         properties: {
-            level: 60,
+            level: 50,
             moveSet: [
                 'psychic',
                 'dazzlinggleam',
                 'lifedew',
                 'reflecttype'
             ],
-            maxedIVs: 3,
-            heldItem: Item.of('cobblemoneternal:mewtant_genome')
-
+            maxedIVs: 3
+            //heldItem: Item.of('cobblemoneternal:mewtant_genome')
         },
         condition: (player) => {
             let highFriendshipMon = 0
-            partyOf(player).forEach(pokemon => {
+            global.partyOf(player).forEach(pokemon => {
                 if(pokemon.friendship > 220) highFriendshipMon++
             })
             if(highFriendshipMon < 3 || playerIsInBiome(player, 'forge:is_jungle')) return false;

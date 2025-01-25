@@ -18,11 +18,27 @@ const simpleBlocks = [
 //Blocks for Static Conditional Encounters
 // if you want to make it more complex, you can manually define it.
 const staticSpawnerBlocks = {
-    'cloning_machine_core': {
+    'cloning_machine': {
         soundType: 'metal',
         hardness: 1.5
     },
-    'regigigas_core': {
+    //Regis
+    'stone_shrine': {
+        soundType: 'stone'
+    },
+    'ice_shrine': {
+        soundType: 'glass'
+    },
+    'steel_shrine': {
+        soundType: 'metal'
+    },
+    'storm_shrine': {
+        soundType: 'amethyst'
+    },
+    'dragon_shrine': {
+        soundType: 'bone_block'
+    },
+    'regigigas': {
         soundType: 'stone'
     }
 }
@@ -67,7 +83,7 @@ StartupEvents.registry('block', event => {
 
     Object.keys(staticSpawnerBlocks).forEach(block => {
         let properties = staticSpawnerBlocks[block]
-        event.create(`cobblemoneternal:${block}`, 'cardinal')
+        event.create(`cobblemoneternal:${block}_core`, 'cardinal')
             .soundType(properties.soundType)
             .hardness(properties.hardness ? properties.hardness : 50.0)
             .tagBlock('cobblemoneternal:static_spawner_block')

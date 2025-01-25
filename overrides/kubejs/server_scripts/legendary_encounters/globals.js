@@ -12,14 +12,11 @@ const $PokemonSpecies = Java.loadClass('com.cobblemon.mod.common.api.pokemon.Pok
 const $PokemonStats = Java.loadClass('com.cobblemon.mod.common.api.pokemon.stats.Stats')
 const $Abilities = Java.loadClass('com.cobblemon.mod.common.api.abilities.Abilities')
 const $Ability = Java.loadClass('com.cobblemon.mod.common.api.abilities.Ability')
+const $PokemonProperties = Java.loadClass('com.cobblemon.mod.common.api.pokemon.PokemonProperties')
 
 const $Moves = Java.loadClass('com.cobblemon.mod.common.api.moves.Moves').INSTANCE
 
 const $InteractionHand = Java.loadClass('net.minecraft.world.InteractionHand')
-
-
-//Load encounter data on server startup
-global.reloadEncounterData()
 
 
 //Roaming Legendary updates occur every this long in ticks
@@ -45,15 +42,6 @@ const roamerRerollSuccessRate = 0.5
 // default: [24000]
 const dayLength = 24000
 
-
-//get the player's Party
-/**
-* @param {PlayerJS} player 
-* @returns {Pokemon[]}
-*/
-const partyOf = (player) => {
-    return $CobblemonAPI.getStorage().getParty(player)
-}
 
 //get a random Roaming Legendary entry (unweighted and without evaluating conditions)
 const getRandomRoamer = () => {
@@ -87,8 +75,7 @@ const getRoamerFromList = (roamers) => {
 // used in Static and Roaming Encounter systems
 const createPokemon = (speciesID, properties) => {
     let pokemon = new $Pokemon()
-    let species = $PokemonSpecies.getByIdentifier(speciesID) //$PokemonSpecies.getByIdentifier(speciesID)
-    //PokemonSpecies.getByIdentifier() does not exist in this version, so we use getByPokedexNumber() until we update
+    let species = $PokemonSpecies.getByIdentifier(speciesID)
 
     pokemon.setSpecies(species)
 
@@ -105,14 +92,17 @@ const createPokemon = (speciesID, properties) => {
             pokemon.swapHeldItem(properties.heldItem, false)
         if(properties.moveSet)
             for (let index = 0; index < properties.moveSet.length; index++){
-                console.log(properties.moveSet[index], $Moves.getByName(properties.moveSet[index]).create())
+                // console.log(properties.moveSet[index], $Moves.getByName(properties.moveSet[index]).create())
                 pokemon.moveSet.setMove(index, $Moves.getByName(properties.moveSet[index]).create())
             }
         if(properties.ability)
             pokemon.updateAbility(new $Ability($Abilities.INSTANCE.get(properties.ability), false))
+
+        if(!properties.skipAutomaticBattleStart)
+            $PokemonProperties.Companion.parse("uncatchable=true").apply(pokemon)
     }
 
-    console.log(pokemon)
+    // console.log(pokemon)
 
     return pokemon
 }
@@ -221,6 +211,9 @@ ServerEvents.commandRegistry(event => {
             )
     )
 
+    //Dynamically reload Encounter data
+    // can reload for a specific loading group of encounters by specifying the name used in the function to load them.
+    // ex: '/encounterreload Regis' will run the 'loadRegis()' function, and reload data for the Regis.
     event.register(
         Commands.literal('encounterreload')
             .requires(source => source.hasPermission(2))
@@ -231,9 +224,30 @@ ServerEvents.commandRegistry(event => {
             })
             .then(Commands.argument('set', Arguments.STRING.create(event))
                 .executes(ctx => {
-                    let gen = Arguments.STRING.getResult(ctx, 'set')
-                    global[`load${set}Encounters`]()
+                    let set = Arguments.STRING.getResult(ctx, 'set')
+                    global[`load${set}`]()
                     ctx.source.player.tell(Text.translate('message.cobblemoneternal.command.reload_conditional_encounters'))
+                    return 1
+                })
+            )
+    )
+
+    //Debug command for testing Regi encounters
+    // sets all Regi Encounters use the puzzles at the specified position in the switch statement.
+    // designed for testing modifications to any of the puzzles quickly.
+    // ex: '/setregipuzzles 3' will force all Regi puzzles to use the 3rd condition.
+    event.register(
+        Commands.literal('setregipuzzles')
+            .requires(source => source.hasPermission(2))
+            .then(Commands.argument('puzzle_index', Arguments.INTEGER.create(event))
+                .executes(ctx => {
+                    let index = Arguments.INTEGER.getResult(ctx, 'puzzle_index')
+                    if(index > global.totalRegiPuzzles || index < 1) {
+                        ctx.source.player.tell(Text.translate('message.cobblemoneternal.command.set_regi_puzzles.oob', index, global.totalRegiPuzzles))
+                        return 0
+                    }
+                    global.setRegiPuzzles(parseInt(index))
+                    ctx.source.player.tell(Text.translate('message.cobblemoneternal.command.set_regi_puzzles', index))
                     return 1
                 })
             )

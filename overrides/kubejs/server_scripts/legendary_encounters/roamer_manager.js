@@ -19,7 +19,7 @@ const trySpawnRoamingLegendary = (player, spawnDetails, bypassChecks) => {
 
     
     if(!bypassChecks)
-        partyOf(player).forEach(pokemon => {
+        global.partyOf(player).forEach(pokemon => {
             if(pokemon.species == spawnDetails.species)
                 if(spawnDetails.alreadyOwns){
                     spawnDetails.alreadyOwns(player, spawnDetails.species)

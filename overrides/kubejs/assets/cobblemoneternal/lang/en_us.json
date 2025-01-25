@@ -4,17 +4,26 @@
     "message.cobblemoneternal.command.reset_daily_roamer": "Daily roamer counter reset for %s",
     "message.cobblemoneternal.command.test_encounter_condition": "%s meets condition for %s %s: %s",
     "message.cobblemoneternal.command.test_condition.invalid_type": "Invalid encounter type: %s",
+    "message.cobblemoneternal.command.set_regi_puzzles": "Set Regi Puzzles to Set %s. Restart world to reset.",
+    "message.cobblemoneternal.command.set_regi_puzzles.oob": "Puzzle index '%s' is Out of Bounds. Maximum is %s.",
 
     "message.cobblemoneternal.feature.bottle_cap_min_level_req": "Your Pokemon must be atleast Level 50 to use Bottle Caps!",
     "message.cobblemoneternal.thats_not_your_pokemon": "That's not your Pokemon!",
 
     "message.cobblemoneternal.missing_multiblock": "Multiblock Incomplete",
+    "message.cobblemoneternal.fail_party_condition": "It doesn't react. It must want something specific from your Party Pokemon.",
 
     "multiblock.cobblemoneternal.cloning_machine.name": "Cloning Machine",
     "block.cobblemoneternal.cloning_machine_core.name": "Cloning Machine Computer",
 
     "multiblock.cobblemoneternal.sleeping_giant.name": "Sleeping Giant",
     "block.cobblemoneternal.regigigas_core.name": "Giant's Core",
+
+    "multiblock.cobblemoneternal.stone_shrine.name": "Stone Shrine",
+    "multiblock.cobblemoneternal.ice_shrine.name": "Ice Shrine",
+    "multiblock.cobblemoneternal.steel_shrine.name": "Steel Shrine",
+    "multiblock.cobblemoneternal.storm_shrine.name": "Storm Shrine",
+    "multiblock.cobblemoneternal.dragon_shrine.name": "Draconic Shrine",
 
 
     "item.cobblemoneternal.bottle_cap.name": "Bottle Cap",
