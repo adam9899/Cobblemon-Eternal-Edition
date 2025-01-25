@@ -12,58 +12,28 @@
 	loot_size: 1
 	order_index: 1
 	rewards: [
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.icepunch", "cobblemon_tm:move_num": 8, "cobblemon_tm:move_type": "cobblemon.type.ice", "minecraft:custom_model_data": 6 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.thunderpunch", "cobblemon_tm:move_num": 9, "cobblemon_tm:move_type": "cobblemon.type.electric", "minecraft:custom_model_data": 4 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.scratch", "cobblemon_tm:move_num": 10, "cobblemon_tm:move_type": "cobblemon.type.normal", "minecraft:custom_model_data": 1 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.visegrip", "cobblemon_tm:move_num": 11, "cobblemon_tm:move_type": "cobblemon.type.normal", "minecraft:custom_model_data": 1 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.vinewhip", "cobblemon_tm:move_num": 22, "cobblemon_tm:move_type": "cobblemon.type.grass", "minecraft:custom_model_data": 5 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.guillotine", "cobblemon_tm:move_num": 12, "cobblemon_tm:move_type": "cobblemon.type.normal", "minecraft:custom_model_data": 1 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.poisonsting", "cobblemon_tm:move_num": 40, "cobblemon_tm:move_type": "cobblemon.type.poison", "minecraft:custom_model_data": 8 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.vinewhip", "cobblemon_tm:move_num": 22, "cobblemon_tm:move_type": "cobblemon.type.grass", "minecraft:custom_model_data": 5 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.pinmissile", "cobblemon_tm:move_num": 42, "cobblemon_tm:move_type": "cobblemon.type.bug", "minecraft:custom_model_data": 12 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.supersonic", "cobblemon_tm:move_num": 48, "cobblemon_tm:move_type": "cobblemon.type.normal", "minecraft:custom_model_data": 1 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.flamethrower", "cobblemon_tm:move_num": 53, "cobblemon_tm:move_type": "cobblemon.type.fire", "minecraft:custom_model_data": 2 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.mist", "cobblemon_tm:move_num": 54, "cobblemon_tm:move_type": "cobblemon.type.ice", "minecraft:custom_model_data": 6 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.watergun", "cobblemon_tm:move_num": 55, "cobblemon_tm:move_type": "cobblemon.type.water", "minecraft:custom_model_data": 3 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.hydropump", "cobblemon_tm:move_num": 56, "cobblemon_tm:move_type": "cobblemon.type.water", "minecraft:custom_model_data": 3 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.icebeam", "cobblemon_tm:move_num": 58, "cobblemon_tm:move_type": "cobblemon.type.ice", "minecraft:custom_model_data": 6 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.psybeam", "cobblemon_tm:move_num": 60, "cobblemon_tm:move_type": "cobblemon.type.psychic", "minecraft:custom_model_data": 11 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.poisonpowder", "cobblemon_tm:move_num": 77, "cobblemon_tm:move_type": "cobblemon.type.poison", "minecraft:custom_model_data": 8 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.thunderwave", "cobblemon_tm:move_num": 86, "cobblemon_tm:move_type": "cobblemon.type.electric", "minecraft:custom_model_data": 4 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.megadrain", "cobblemon_tm:move_num": 72, "cobblemon_tm:move_type": "cobblemon.type.grass", "minecraft:custom_model_data": 5 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.sandattack", "cobblemon_tm:move_num": 28, "cobblemon_tm:move_type": "cobblemon.type.ground", "minecraft:custom_model_data": 9 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.wrap", "cobblemon_tm:move_num": 35, "cobblemon_tm:move_type": "cobblemon.type.normal", "minecraft:custom_model_data": 1 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.meditate", "cobblemon_tm:move_num": 96, "cobblemon_tm:move_type": "cobblemon.type.psychic", "minecraft:custom_model_data": 11 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.confuseray", "cobblemon_tm:move_num": 109, "cobblemon_tm:move_type": "cobblemon.type.ghost", "minecraft:custom_model_data": 14 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.withdraw", "cobblemon_tm:move_num": 110, "cobblemon_tm:move_type": "cobblemon.type.water", "minecraft:custom_model_data": 3 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.meteormash", "cobblemon_tm:move_num": 309, "cobblemon_tm:move_type": "cobblemon.type.steel", "minecraft:custom_model_data": 17 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.blastburn", "cobblemon_tm:move_num": 307, "cobblemon_tm:move_type": "cobblemon.type.fire", "minecraft:custom_model_data": 2 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.revenge", "cobblemon_tm:move_num": 279, "cobblemon_tm:move_type": "cobblemon.type.fighting", "minecraft:custom_model_data": 7 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.brickbreak", "cobblemon_tm:move_num": 280, "cobblemon_tm:move_type": "cobblemon.type.fighting", "minecraft:custom_model_data": 7 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.defog", "cobblemon_tm:move_num": 432, "cobblemon_tm:move_type": "cobblemon.type.flying", "minecraft:custom_model_data": 10 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.recycle", "cobblemon_tm:move_num": 278, "cobblemon_tm:move_type": "cobblemon.type.normal", "minecraft:custom_model_data": 1 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.dracometeor", "cobblemon_tm:move_num": 434, "cobblemon_tm:move_type": "cobblemon.type.dragon", "minecraft:custom_model_data": 15 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.thunderfang", "cobblemon_tm:move_num": 422, "cobblemon_tm:move_type": "cobblemon.type.electric", "minecraft:custom_model_data": 4 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.knockoff", "cobblemon_tm:move_num": 282, "cobblemon_tm:move_type": "cobblemon.type.dark", "minecraft:custom_model_data": 16 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.eruption", "cobblemon_tm:move_num": 284, "cobblemon_tm:move_type": "cobblemon.type.fire", "minecraft:custom_model_data": 2 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.dragontail", "cobblemon_tm:move_num": 525, "cobblemon_tm:move_type": "cobblemon.type.dragon", "minecraft:custom_model_data": 15 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.mirrorshot", "cobblemon_tm:move_num": 429, "cobblemon_tm:move_type": "cobblemon.type.steel", "minecraft:custom_model_data": 17 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.leechseed", "cobblemon_tm:move_num": 73, "cobblemon_tm:move_type": "cobblemon.type.grass", "minecraft:custom_model_data": 5 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.razorleaf", "cobblemon_tm:move_num": 75, "cobblemon_tm:move_type": "cobblemon.type.grass", "minecraft:custom_model_data": 5 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.screech", "cobblemon_tm:move_num": 103, "cobblemon_tm:move_type": "cobblemon.type.normal", "minecraft:custom_model_data": 1 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.rage", "cobblemon_tm:move_num": 99, "cobblemon_tm:move_type": "cobblemon.type.normal", "minecraft:custom_model_data": 1 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.harden", "cobblemon_tm:move_num": 106, "cobblemon_tm:move_type": "cobblemon.type.normal", "minecraft:custom_model_data": 1 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.sludgebomb", "cobblemon_tm:move_num": 188, "cobblemon_tm:move_type": "cobblemon.type.poison", "minecraft:custom_model_data": 8 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.clamp", "cobblemon_tm:move_num": 128, "cobblemon_tm:move_type": "cobblemon.type.water", "minecraft:custom_model_data": 3 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.icywind", "cobblemon_tm:move_num": 196, "cobblemon_tm:move_type": "cobblemon.type.ice", "minecraft:custom_model_data": 6 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.twister", "cobblemon_tm:move_num": 239, "cobblemon_tm:move_type": "cobblemon.type.dragon", "minecraft:custom_model_data": 15 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.bide", "cobblemon_tm:move_num": 117, "cobblemon_tm:move_type": "cobblemon.type.normal", "minecraft:custom_model_data": 1 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.fireblast", "cobblemon_tm:move_num": 126, "cobblemon_tm:move_type": "cobblemon.type.fire", "minecraft:custom_model_data": 2 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.bubble", "cobblemon_tm:move_num": 145, "cobblemon_tm:move_type": "cobblemon.type.water", "minecraft:custom_model_data": 3 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.steelwing", "cobblemon_tm:move_num": 211, "cobblemon_tm:move_type": "cobblemon.type.steel", "minecraft:custom_model_data": 17 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.spark", "cobblemon_tm:move_num": 209, "cobblemon_tm:move_type": "cobblemon.type.electric", "minecraft:custom_model_data": 4 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.extrasensory", "cobblemon_tm:move_num": 326, "cobblemon_tm:move_type": "cobblemon.type.psychic", "minecraft:custom_model_data": 11 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.moonblast", "cobblemon_tm:move_num": 585, "cobblemon_tm:move_type": "cobblemon.type.fairy", "minecraft:custom_model_data": 18 }, count: 1, id: "cobblemon_tm:tm" } }
-		{ item: { components: { "cobblemon_tm:move_name": "cobblemon.move.frostbreath", "cobblemon_tm:move_num": 524, "cobblemon_tm:move_type": "cobblemon.type.ice", "minecraft:custom_model_data": 6 }, count: 1, id: "cobblemon_tm:tm" } }
+		{ item: { count: 1, id: "simpletms:tm_absorb" } }
+		{ item: { count: 1, id: "simpletms:tm_acid" } }
+		{ item: { count: 1, id: "simpletms:tm_amnesia" } }
+		{ item: { count: 1, id: "simpletms:tm_aurorabeam" } }
+		{ item: { count: 1, id: "simpletms:tm_bounce" } }
+		{ item: { count: 1, id: "simpletms:tm_bulldoze" } }
+		{ item: { count: 1, id: "simpletms:tm_aerialace" } }
+		{ item: { count: 1, id: "simpletms:tm_brickbreak" } }
+		{ item: { count: 1, id: "simpletms:tm_waterpulse" } }
+		{ item: { count: 1, id: "simpletms:tm_confusion" } }
+		{ item: { count: 1, id: "simpletms:tm_earthquake" } }
+		{ item: { count: 1, id: "simpletms:tm_bulletseed" } }
+		{ item: { count: 1, id: "simpletms:tm_vcreate" } }
+		{ item: { count: 1, id: "simpletms:tm_poisonpowder" } }
+		{ item: { count: 1, id: "simpletms:tm_avalanche" } }
+		{ item: { count: 1, id: "simpletms:tm_aromatherapy" } }
+		{ item: { count: 1, id: "simpletms:tm_bubblebeam" } }
+		{ item: { count: 1, id: "simpletms:tm_thunderwave" } }
+		{ item: { count: 1, id: "simpletms:tm_thunderpunch" } }
+		{ item: { count: 1, id: "simpletms:tm_icepunch" } }
+		{ item: { count: 1, id: "simpletms:tm_focuspunch" } }
+		{ item: { count: 1, id: "simpletms:tm_megapunch" } }
+		{ item: { count: 1, id: "simpletms:tm_suckerpunch" } }
 	]
 }

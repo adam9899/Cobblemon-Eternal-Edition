@@ -1,0 +1,48 @@
+{
+	id: "4F2AC0467B94E0BC"
+	loot_crate: {
+		color: 4078847
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		glow: 1b
+		item_name: "Sleeping Box"
+		string_id: "sleeping_box"
+	}
+	loot_size: 1
+	order_index: 6
+	rewards: [
+		{
+			command: "/pokespawn snorlax level=25 nickname=Gob"
+			elevate_perms: true
+			feedback_message: ""
+			icon: {
+				id: "supplementaries:flute"
+			}
+			silent: true
+			type: "command"
+		}
+		{
+			command: "/pokespawn snorlax level=25 nickname=Snee"
+			elevate_perms: true
+			feedback_message: ""
+			icon: {
+				id: "supplementaries:flute"
+			}
+			silent: true
+			type: "command"
+		}
+		{
+			command: "/pokespawn snorlax level=25 shiny nickname=Mimi"
+			elevate_perms: true
+			feedback_message: ""
+			icon: {
+				id: "supplementaries:flute"
+			}
+			silent: true
+			type: "command"
+		}
+	]
+}
