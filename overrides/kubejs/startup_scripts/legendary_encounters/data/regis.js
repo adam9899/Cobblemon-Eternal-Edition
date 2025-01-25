@@ -71,6 +71,10 @@ global.loadRegis = () => {
         multiblockName: 'stone_shrine',
         condition: (player, block, rotation) => {
             if(global.validateMultiblock('stone_shrine', block, rotation)) {
+                if(global.partyLevel(player) < 40) {
+                    player.setStatusMessage(Text.translate('message.cobblemoneternal.fail_party_level', '40'))
+                    return 'fail_party_level';
+                }
                 let passes = false
 
                 console.log(`Puzzle for rock: ${global.regiPuzzleIndex['rock']}`)
@@ -142,6 +146,10 @@ global.loadRegis = () => {
         multiblockName: 'ice_shrine',
         condition: (player, block, rotation) => {
             if(global.validateMultiblock('ice_shrine', block, rotation)) {
+                if(global.partyLevel(player) < 40) {
+                    player.setStatusMessage(Text.translate('message.cobblemoneternal.fail_party_level', '40'))
+                    return 'fail_party_level';
+                }
                 let passes = false
 
                 console.log(global.regiPuzzleIndex['ice'])
@@ -208,6 +216,10 @@ global.loadRegis = () => {
         multiblockName: 'steel_shrine',
         condition: (player, block, rotation) => {
             if(global.validateMultiblock('steel_shrine', block, rotation)) {
+                if(global.partyLevel(player) < 40) {
+                    player.setStatusMessage(Text.translate('message.cobblemoneternal.fail_party_level', '40'))
+                    return 'fail_party_level';
+                }
                 let passes = false
 
                 console.log(global.regiPuzzleIndex['steel'])
@@ -277,6 +289,10 @@ global.loadRegis = () => {
         multiblockName: 'sleeping_giant',
         condition: (player, block, rotation) => {
             if(global.validateMultiblock('sleeping_giant', block, rotation)){
+                if(global.partyLevel(player) < 70) {
+                    player.setStatusMessage(Text.translate('message.cobblemoneternal.fail_party_level', '70'))
+                    return 'fail_party_level';
+                }
                 let hasRegis = [false, false, false, false, false]
 
                 global.partyOf(player).forEach(pokemon => {
@@ -343,6 +359,10 @@ global.loadRegis = () => {
         multiblockName: 'storm_shrine',
         condition: (player, block, rotation) => {
             if(global.validateMultiblock('storm_shrine', block, rotation)) {
+                if(global.partyLevel(player) < 40) {
+                    player.setStatusMessage(Text.translate('message.cobblemoneternal.fail_party_level', '40'))
+                    return 'fail_party_level';
+                }
                 let passes = false;
 
                 console.log(global.regiPuzzleIndex['eleki'])
@@ -408,6 +428,10 @@ global.loadRegis = () => {
         multiblockName: 'dragon_shrine',
         condition: (player, block, rotation) => {
             if(global.validateMultiblock('dragon_shrine', block, rotation)) {
+                if(global.partyLevel(player) < 40) {
+                    player.setStatusMessage(Text.translate('message.cobblemoneternal.fail_party_level', '40'))
+                    return 'fail_party_level';
+                }
                 let passes = false;
 
                 console.log(global.regiPuzzleIndex['drago'])

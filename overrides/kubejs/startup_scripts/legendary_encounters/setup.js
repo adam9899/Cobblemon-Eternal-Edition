@@ -49,6 +49,18 @@ global.partyOf = (player) => {
 }
 
 
+/**
+ * 
+ */
+global.partyLevel = (player) => {
+    let highestLevel = 1
+    $CobblemonAPI.getStorage().getParty(player).forEach(pokemon => {
+        if(pokemon.level > highestLevel)
+            highestLevel = pokemon.level
+    })
+    return highestLevel
+}
+
 //function to validate a multiblock with Patchouli
 // used in Static Encounter system
 /**

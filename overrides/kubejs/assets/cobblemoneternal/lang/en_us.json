@@ -12,6 +12,7 @@
 
     "message.cobblemoneternal.missing_multiblock": "Multiblock Incomplete",
     "message.cobblemoneternal.fail_party_condition": "It doesn't react. It must want something specific from your Party Pokemon.",
+    "message.cobblemoneternal.fail_party_level": "The Construct does not acknowledge your strength. Return with a Level %s+ Pokemon",
 
     "multiblock.cobblemoneternal.cloning_machine.name": "Cloning Machine",
     "block.cobblemoneternal.cloning_machine_core.name": "Cloning Machine Computer",

@@ -29,7 +29,8 @@ global.loadLegendaryBirds = () => {
                 playerIsInBiome(player, 'forge:is_desert')
             )
             */
-            if(!player.level.raining // Clear weather
+            if(global.partyLevel(player) >= 40
+            && !player.level.raining // Clear weather
             && player.level.getBrightness('sky', player.blockPosition()) > 10 // Skylight level 10
             && global.playerIsInBiome(player, 'cobblemon:is_desert')){ // in a Desert biome
                 return true;
@@ -59,7 +60,8 @@ global.loadLegendaryBirds = () => {
             maxedIVs: 3
         },
         condition: (player) => {
-            if(player.level.thundering // during a Thunderstorm
+            if(global.partyLevel(player) >= 40 
+            && player.level.thundering // during a Thunderstorm
             && global.playerIsInBiome(player, 'cobblemon:is_mountain')){ // in a Mountainous biome
                 return true;
             } else {
@@ -88,7 +90,8 @@ global.loadLegendaryBirds = () => {
             maxedIVs: 3
         },
         condition: (player) => {
-            if(player.level.raining
+            if(global.partyLevel(player) >= 40 
+            && player.level.raining
             && global.playerIsInBiome(player, 'cobblemon:is_snowy')){
                 return true;
             } else {
