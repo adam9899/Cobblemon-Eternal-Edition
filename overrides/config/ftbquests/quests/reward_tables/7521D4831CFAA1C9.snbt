@@ -1,0 +1,21 @@
+{
+	id: "7521D4831CFAA1C9"
+	loot_crate: {
+		color: 16777215
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		string_id: "ancient_box"
+	}
+	loot_size: 1
+	order_index: 7
+	rewards: [{
+		command: "/pokespawn aerodactyl level=30 "
+		elevate_perms: true
+		feedback_message: "Special Encounter"
+		silent: true
+		type: "command"
+	}]
+}
