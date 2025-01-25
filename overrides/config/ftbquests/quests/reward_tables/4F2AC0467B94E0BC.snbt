@@ -15,7 +15,7 @@
 	order_index: 6
 	rewards: [
 		{
-			command: "/pokespawn snorlax level=25 nickname=Gob"
+			command: "/pokespawn snorlax level=20 nickname=Gob"
 			elevate_perms: true
 			feedback_message: ""
 			icon: {
@@ -25,7 +25,7 @@
 			type: "command"
 		}
 		{
-			command: "/pokespawn snorlax level=25 nickname=Snee"
+			command: "/pokespawn snorlax level=20 nickname=Snee"
 			elevate_perms: true
 			feedback_message: ""
 			icon: {
