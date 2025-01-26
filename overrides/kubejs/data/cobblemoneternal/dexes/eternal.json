@@ -1,0 +1,9 @@
+{
+    "type": "cobblemon:simple_pokedex_def",
+    "id": "cobblemoneternal:eternal",
+    "sortOrder": 100,
+    "entries": [
+        "cobblemoneternal:barry",
+        "cobblemoneternal:snom-eternal"
+    ]
+}

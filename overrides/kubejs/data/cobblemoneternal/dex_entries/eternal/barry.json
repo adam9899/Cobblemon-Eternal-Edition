@@ -1,0 +1,15 @@
+{
+    "id": "cobblemoneternal:barry",
+    "speciesId": "cobblemoneternal:barry",
+    "displayAspects": [],
+    "conditionAspects": [],
+    "forms": [
+        {
+            "displayForm": "Normal",
+            "unlockForms": [
+                "Normal"
+            ]
+        }
+    ],
+    "variations": []
+}

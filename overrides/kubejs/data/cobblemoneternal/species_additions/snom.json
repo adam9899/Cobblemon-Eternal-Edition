@@ -1,0 +1,64 @@
+{
+    "target": "cobblemon:snom",
+    "forms": [
+        {
+            "name": "Eternal",
+            "aspects": ["eternal"],
+            "baseStats": {
+                "hp": 90,
+                "attack": 80,
+                "defence": 150,
+                "special_attack": 100,
+                "special_defence": 120,
+                "speed": 60
+            },
+            "baseScale": 2,
+            "hitbox": {
+                "width": 1.5,
+                "height": 1.5,
+                "fixed": false
+            },
+            "height": 27,
+            "weight": 1520,
+            "moves": [
+                "1:eternabeam",
+                "1:powdersnow",
+                "1:strugglebug",
+                "1:fellstinger",
+                "6:frostbreath",
+                "10:attackorder",
+                "14:firstimpression",
+                "25:blizzard",
+                "32:healorder",
+                "40:glaciallance",
+                "45:freezeshock",
+                "45:iceburn",
+                "50:ragepowder",
+                "70:tailglow",
+                "egg:bugbite",
+                "egg:fairywind",
+                "egg:mirrorcoat",
+                "tm:bugbite",
+                "tm:bugbuzz",
+                "tm:facade",
+                "tm:iciclespear",
+                "tm:icywind",
+                "tm:lunge",
+                "tm:pounce",
+                "tm:protect",
+                "tm:rest",
+                "tm:skittersmack",
+                "tm:sleeptalk",
+                "tm:strugglebug",
+                "tm:substitute",
+                "tm:terablast",
+                "tutor:bugbite",
+                "tutor:icywind",
+                "tutor:rest",
+                "tutor:skittersmack",
+                "tutor:sleeptalk"
+            ],
+            "labels": ["gen8", "eternal", "eternal_form"]
+        }
+    ]
+}

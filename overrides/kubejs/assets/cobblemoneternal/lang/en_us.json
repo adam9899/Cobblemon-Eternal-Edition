@@ -38,6 +38,11 @@
 
     "item.cobblemoneternal.potential_limiter.desc": "When in the Offhand, Bottle Caps will Minimize IVs",
 
+    "cobblemoneternal.village_map": "Village Map",
 
-    "cobblemoneternal.species.barry.name": "Barry"
+
+    "cobblemon.ui.pokedex.region.eternal": "Eternal (WIP)",
+
+    "cobblemoneternal.species.barry.name": "Barry",
+    "cobblemoneternal.species.barry.desc": "A Mischevious Rodent with unfathomable power."
 }

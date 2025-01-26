@@ -1,0 +1,15 @@
+{
+    "id": "cobblemoneternal:snom-eternal",
+    "speciesId": "cobblemon:snom",
+    "displayAspects": [],
+    "conditionAspects": [],
+    "forms": [
+        {
+            "displayForm": "Eternal",
+            "unlockForms": [
+                "Eternal"
+            ]
+        }
+    ],
+    "variations": []
+}
