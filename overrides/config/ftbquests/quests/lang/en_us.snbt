@@ -144,7 +144,10 @@
 	quest.58C0C01C3A5DE34D.title: "&6&lCombat!&r &e- &eInfo Quest"
 	quest.58C366173DE6C049.quest_subtitle: "Drops from &eVoid Blossom"
 	quest.5987F4BEB3B4EE16.quest_desc: [
-		"Using a &eBlank TR&r on a Cobblemon you have currently out of their Pokeball will give you a &dTR with their first move&r!"
+		"&eBlank TRs&r can be used to teach Moves to Cobblemon that can't naturally learn the move."
+		""
+		"Using one on a Cobblemon &cyou have currently out of their Pokeball&r will let you select which of their Moves to record on the TR!"
+		"Using it on anything else will let you select which Cobblemon in your Party to record a Move from."
 		""
 		"&6Hint:&r You can then use the &dTR on a Cobblemon that is able to learn the move&r."
 	]
