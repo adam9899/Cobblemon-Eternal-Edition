@@ -69,6 +69,7 @@
 		"kingler",
 		"gengar",
 		"gyarados",
+		"mewtwo",
 		"tauros"
 	],
 	// Pokemon that will never be aggressive, priority over always aggresive species/forms
