@@ -1,0 +1,30 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "name": "village_map",
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:map",
+                    "functions": [
+                        {
+                            "function": "minecraft:exploration_map",
+                            "destination": "minecraft:village",
+                            "decoration": "minecraft:red_x",
+                            "skip_existing_chunks": false,
+                            "zoom": 1
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "cobblemoneternal.village_map"
+                            },
+                            "target": "item_name"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

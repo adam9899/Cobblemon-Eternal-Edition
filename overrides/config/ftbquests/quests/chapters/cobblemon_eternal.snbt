@@ -1417,5 +1417,31 @@
 			x: 0.0d
 			y: 1.5d
 		}
+		{
+			icon: {
+				id: "minecraft:filled_map"
+			}
+			id: "16590A163DE81B93"
+			optional: true
+			rewards: [{
+				command: "/loot give @p loot cobblemoneternal:quest/village_map"
+				feedback_message: ""
+				icon: {
+					id: "minecraft:filled_map"
+				}
+				id: "5129193851DDE4ED"
+				type: "command"
+			}]
+			shape: "octagon"
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "34852A19D0EBA5B3"
+				item: { count: 4, id: "minecraft:diamond" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.5d
+		}
 	]
 }
