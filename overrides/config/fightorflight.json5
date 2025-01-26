@@ -70,6 +70,10 @@
 		"gengar",
 		"gyarados",
 		"mewtwo",
+		"haxorus",
+		"noivern",
+		"hydreigon",
+		"hatterene",
 		"tauros"
 	],
 	// Pokemon that will never be aggressive, priority over always aggresive species/forms
