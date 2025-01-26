@@ -41,7 +41,7 @@ waypointsDistanceExp:0
 waypointsDistanceMin:0.0
 defaultWaypointTPCommandFormat:/tp @s {x} {y} {z}
 defaultWaypointTPCommandRotationFormat:/tp @s {x} {y} {z} {yaw} ~
-arrowScale:1.5
+arrowScale:1.0
 arrowColour:0
 smoothDots:true
 worldMap:true
