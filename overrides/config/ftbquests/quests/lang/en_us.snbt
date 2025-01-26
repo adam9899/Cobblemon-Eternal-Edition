@@ -144,11 +144,11 @@
 	quest.58C0C01C3A5DE34D.title: "&6&lCombat!&r &e- &eInfo Quest"
 	quest.58C366173DE6C049.quest_subtitle: "Drops from &eVoid Blossom"
 	quest.5987F4BEB3B4EE16.quest_desc: [
-		"Using an &eEmpty TM&r on a Cobblemon you have currently out of their Pokeball will give you a &dCharged TM&r with their first move!"
+		"Using a &eBlank TR&r on a Cobblemon you have currently out of their Pokeball will give you a &dTR with their first move&r!"
 		""
-		"&6Hint:&r You can then use the &dCharged TM&r on a Cobblemon that is able to learn the move."
+		"&6Hint:&r You can then use the &dTR on a Cobblemon that is able to learn the move&r."
 	]
-	quest.5987F4BEB3B4EE16.quest_subtitle: "Craft an &eEmpty TM"
+	quest.5987F4BEB3B4EE16.quest_subtitle: "Craft a &eBlank TR"
 	quest.5987F4BEB3B4EE16.title: "Learning Moves!"
 	quest.5EAC27E2738426EF.quest_subtitle: "Craft a &eGreat Ball"
 	quest.5EAC27E2738426EF.title: "Improved Portable Catching Device"

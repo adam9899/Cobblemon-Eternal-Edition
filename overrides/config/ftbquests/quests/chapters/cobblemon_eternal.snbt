@@ -183,14 +183,8 @@
 				{
 					id: "5387A9BEFA61DA32"
 					item: {
-						components: {
-							"cobblemon_tm:move_name": "cobblemon.move.icepunch"
-							"cobblemon_tm:move_num": 8
-							"cobblemon_tm:move_type": "cobblemon.type.ice"
-							"minecraft:custom_model_data": 6
-						}
 						count: 1
-						id: "cobblemon_tm:tm"
+						id: "simpletms:tr_icepunch"
 					}
 					type: "item"
 				}
@@ -245,14 +239,8 @@
 				{
 					id: "098B804E1D6CCD4A"
 					item: {
-						components: {
-							"cobblemon_tm:move_name": "cobblemon.move.thunderpunch"
-							"cobblemon_tm:move_num": 9
-							"cobblemon_tm:move_type": "cobblemon.type.electric"
-							"minecraft:custom_model_data": 4
-						}
 						count: 1
-						id: "cobblemon_tm:tm"
+						id: "simpletms:tr_thunderpunch"
 					}
 					type: "item"
 				}
@@ -319,14 +307,8 @@
 				{
 					id: "1CAA2A64B95A4398"
 					item: {
-						components: {
-							"cobblemon_tm:move_name": "cobblemon.move.shadowball"
-							"cobblemon_tm:move_num": 247
-							"cobblemon_tm:move_type": "cobblemon.type.ghost"
-							"minecraft:custom_model_data": 14
-						}
 						count: 1
-						id: "cobblemon_tm:tm"
+						id: "simpletms:tr_shadowball"
 					}
 					type: "item"
 				}
