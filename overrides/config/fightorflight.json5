@@ -80,6 +80,8 @@
 	"never_aggro": [
 		"slowpoke",
 		"snorlax",
+		"wynaut",
+		"wobbuffet",
 		"pyukumuku"
 	],
 	// Pokemon that will be aggressive only when provoked(WIP)
