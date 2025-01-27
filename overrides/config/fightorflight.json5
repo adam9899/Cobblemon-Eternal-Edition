@@ -135,7 +135,7 @@
 	// The minimum damage wild pokemon could do on hit
 	"minimum_attack_damage": 1.0,
 	// The maximum damage wild pokemon could do on hit
-	"maximum_attack_damage": 50.0,
+	"maximum_attack_damage": 10.0,
 	// Minimum damage multiplier player-owned pokemon would do
 	"minimum_attack_damage_player": 1.2000000476837158,
 	// Damage multiplier player-owned pokemon would do
@@ -169,7 +169,7 @@
 	// Minimum damage wild pokemon will do with ranged attacks
 	"minimum_ranged_attack_damage": 1.0,
 	// Maximum damage wild pokemon would do with ranged attacks
-	"maximum_ranged_attack_damage": 50.0,
+	"maximum_ranged_attack_damage": 10.0,
 	// Minimum damage multiplier player-owned pokemon would do with ranged attacks
 	"minimum_ranged_attack_damage_player": 1.2000000476837158,
 	// Damage multiplier player-owned pokemon would do with ranged attacks
