@@ -1,0 +1,208 @@
+{
+	// Do more aggressive Pokemon fight back when provoked?
+	"do_pokemon_attack": true,
+	// Do especially aggressive Pokemon attack unprovoked?
+	"do_pokemon_attack_unprovoked": true,
+	// Do aggro Pokemon attack their targets even if they're in the middle of a battles?
+	"do_pokemon_attack_in_battle": false,
+	// The minimum level a Pokemon needs to be to fight back when provoked.
+	"minimum_attack_level": 5,
+	// The minimum level a Pokemon needs to be to attack unprovoked.
+	"minimum_attack_unprovoked_level": 10,
+	// The multiplier used to calculate the wild Pokemon's aggression,lower value can make the high level Pokemon less aggressive.
+	"aggression_level_multiplier": 1.0,
+	// Are Dark types more aggressive at or below light level 7 and less aggressive at or above light level 12?
+	"dark_light_level_aggro": true,
+	// Are Ghost types more aggressive at or below light level 7 and less aggressive at or above light level 12?
+	"ghost_light_level_aggro": true,
+	// Pokemon below this map height (y) will always be aggressive.
+	"always_aggro_below": -128.0,
+	// Pokemon stops running away if the hp is not full.
+	"stop_running_after_hurt": true,
+	// Pokemon with these natures are slightly more aggressive.
+	"aggressive_nature": [
+		"sassy",
+		"hardy",
+		"bold",
+		"impish",
+		"hasty"
+	],
+	// The aggression multiplier for natures above.
+	"aggressive_nature_multiplier": 1.0,
+	// Pokemon with these natures are much more aggressive.
+	"more_aggressive_nature": [
+		"brave",
+		"rash",
+		"adamant",
+		"naughty"
+	],
+	// The aggression multiplier for natures above.
+	"more_aggressive_nature_multiplier": 2.0,
+	// Pokemon with these natures are slightly more peaceful.
+	"peaceful_nature": [
+		"relaxed",
+		"lax",
+		"quiet",
+		"bashful",
+		"calm"
+	],
+	// The aggression multiplier for natures above.
+	"peaceful_nature_multiplier": -1.0,
+	// Pokemon with these natures are much more peaceful.
+	"more_peaceful_nature": [
+		"docile",
+		"timid",
+		"gentle",
+		"careful"
+	],
+	// The aggression multiplier for natures above.
+	"more_peaceful_nature_multiplier": -2.0,
+	// Forms that will always be aggressive
+	"always_aggro_aspects": [
+		"alolan"
+	],
+	// Pokemon that will always be aggressive
+	"always_aggro": [
+		"mankey",
+		"primeape",
+		"beedrill",
+		"kingler",
+		"gengar",
+		"gyarados",
+		"mewtwo",
+		"haxorus",
+		"noivern",
+		"hydreigon",
+		"hatterene",
+		"tauros"
+	],
+	// Pokemon that will never be aggressive, priority over always aggresive species/forms
+	"never_aggro": [
+		"slowpoke",
+		"snorlax",
+		"wynaut",
+		"wobbuffet",
+		"pyukumuku"
+	],
+	// Pokemon that will be aggressive only when provoked(WIP)
+	"provoke_only_aggro": [],
+	// Pokemon that will always flee away from the player, priority over always aggresive species/forms
+	"always_flee": [
+		"wimpod"
+	],
+	// Abilities that will reduce wild pokemon's aggro
+	"aggro_reducing_abilities": [
+		"intimidate",
+		"unnerve",
+		"pressure"
+	],
+	// Abilities that works like Mold Breaker(unused)
+	"mold_breaker_like_ablilities": [
+		"moldbreaker",
+		"turboblaze",
+		"teravolt"
+	],
+	// Allow the Pokemon to use the teleport move to flee if the Pokemon had learnt it?
+	"allow_teleport_to_flee": true,
+	// Do player Pokemon defend their owners when they attack or are attacked by other mobs?
+	"do_pokemon_defend_owner": true,
+	// Do player Pokemon defend their owners proactively? (follows the same rules as Iron Golems)
+	"do_pokemon_defend_proactive": true,
+	// Can player Pokemon target other players? (EXPERIMENTAL)
+	"do_player_pokemon_attack_other_players": false,
+	// Can player Pokemon target other player's Pokemon? (EXPERIMENTAL)
+	"do_player_pokemon_attack_other_player_pokemon": false,
+	// Will the wild pokemon cries for several times when angered,set to false so the pokemon will only cry one time when it's angered
+	"multiple_cries": true,
+	// Tick(1/20s by default) needed for the pokemon to cry again(it will only work when the multiple_cries is set to true)
+	"time_to_cry_again": 100,
+	// How much experience a pokemon can get by killing a pokemon without a battle? Set to 0 for no experience outside standard pokemon battles.
+	"experience_multiplier": 0.0,
+	// Your pokemon can gain EV points by killing a pokemon without a battle?
+	"can_gain_ev": false,
+	// If the Pokemon can evolve by using the move out of a Pokemon Battle? For example Primeape can use Rage Fist 20x to evolve without a traditional Pokemon Battle.
+	"can_progress_use_move_evoluiton": true,
+	// Pokemons should be immune to suffocation damage? (cant die to wall damage, like when sand drops into them)
+	"suffocation_immunity": true,
+	// Should player-owned pokemons be immune to damage from all players?
+	"pvp_immunity": true,
+	// Should player-owned pokemons be immune to damage from mobs on the same team?
+	"friendly_fire_immunity_team": true,
+	// Should player-owned pokemons be immune to damage from the owner (friendly fire)?
+	"friendly_fire_immunity_owner": true,
+	// The maximum damage bonus can get if it reached the maximum stat(the physical and the special moves both share one value currently)
+	"max_bonus_from_stat": 9.0,
+	// The minimum damage wild pokemon could do on hit
+	"minimum_attack_damage": 1.0,
+	// The maximum damage wild pokemon could do on hit
+	"maximum_attack_damage": 50.0,
+	// Minimum damage multiplier player-owned pokemon would do
+	"minimum_attack_damage_player": 1.2000000476837158,
+	// Damage multiplier player-owned pokemon would do
+	"attack_damage_player": 3.200000047683716,
+	// Maximum damage multiplier player-owned pokemon would do
+	"maximum_attack_damage_player": 50.20000076293945,
+	// Attack stat required to reach the maximum damage,the default value is calculated with 50 level, 130 stat, 252 EVs, IVs of 31, and a helpful nature.
+	"maximum_attack_stat": 200,
+	// The movement speed multiplier of a pokemon if the Speed stat of this Pokemon is 0.
+	"minimum_movement_speed": 1.2999999523162842,
+	// The movement speed multiplier of a pokemon if the Speed stat of this Pokemon reaches the value in the config.
+	"maximum_movement_speed": 2.0,
+	// The speed stat required for a pokemon to reach the highest fleeing and pursuing speed.The default value(548) is the max speed stat of a lvl.100 Regieleki with a beneficial nature.
+	"speed_stat_limit": 548,
+	// The maximum damage reduction wild pokemon can get from its defense/special defense(uses the highest one)
+	"max_damage_reduction_multiplier": 0.4000000059604645,
+	// The multiplier for player-owned Pokemon for maximum damage reduction
+	"max_damage_reduction_multiplier_player": 1.2000000476837158,
+	// The highest defense stat needed to get the highest damage reduction.
+	"defense_stat_limit": 161,
+	// When a player owned Pokemon hurts or is hurt by a wild pokemon, should a pokemon battle be started?
+	"force_wild_battle_on_pokemon_hurt": true,
+	// When a player owned Pokemon hurts or is hurt by another player's pokemon, should a pokemon battle be started? (EXPERIMENTAL)
+	"force_player_battle_on_pokemon_hurt": false,
+	// If wild pokemon can use the ranged attack.
+	"wild_pokemon_ranged_attack": false,
+	// The minimum time between pokemons ranged attacks. In seconds.
+	"minimum_ranged_attack_interval": 1.0,
+	// The maximum time between pokemons ranged attacks. In seconds.
+	"maximum_ranged_attack_interval": 3.0,
+	// Minimum damage wild pokemon will do with ranged attacks
+	"minimum_ranged_attack_damage": 1.0,
+	// Maximum damage wild pokemon would do with ranged attacks
+	"maximum_ranged_attack_damage": 50.0,
+	// Minimum damage multiplier player-owned pokemon would do with ranged attacks
+	"minimum_ranged_attack_damage_player": 1.2000000476837158,
+	// Damage multiplier player-owned pokemon would do with ranged attacks
+	"ranged_attack_damage_player": 1.2000000476837158,
+	// Maximum damage multiplier player-owned pokemon would do with ranged attacks
+	"maximum_ranged_attack_damage_player": 1.2000000476837158,
+	// Special attack stat required to reach the maximum damage,the default value is calculated with 50 level, 130 stat, 252 EVs, IVs of 31, and a helpful nature.
+	"maximum_special_attack_stat": 200,
+	// Water type damage will be more effective on mobs like Blaze,Enderman,etc.
+	"water_type_super_effective_dmg_multiplier": 2.0,
+	// Fire type damage will be not very effective against fire immune entity.(set to 0 if you want a complete immune)
+	"fire_type_no_effect_dmg_multiplier": 0.10000000149011612,
+	// Ice type damage will be not very effective against entity that can't be frozen.(set to 0 if you want a complete immune)
+	"ice_type_no_effect_dmg_multiplier": 0.10000000149011612,
+	// Ice type damage will be more effective against entity that has a weaker resistant to the frost damage.
+	"ice_type_super_effective_dmg_multiplier": 2.0,
+	// Poison type damage will be not very effective against undead mobs.(set to 0 if you want a complete immune)
+	"poison_type_no_effect_dmg_multiplier": 0.10000000149011612,
+	// If the original updateMaxHealth() will be replaced by my version. Pokemons outside of battle will use the hp stat instead of the base hp stat. The following configurations needs this one to work.
+	"shouldOverrideUpdateMaxHealth": true,
+	// If health sync will work on the wild pokemon, healing them on standard pokemon battle start if they were damaged before.
+	"health_sync_for_wild_pokemon": true,
+	// The minimum hp of a pokemon outside standard pokemon battle,shedinja is set to 1.0 and can't be changed.
+	"min_HP": 8,
+	// The medium hp value of a pokemon outside standard pokemon battle,the medium value is designed to allow you to better tweak the growth of HP value for the entity
+	"mid_HP": 40,
+	// The maximum hp of a pokemon outside standard pokemon battle.
+	"max_HP": 250,
+	// Pokemon HP stat above this value will increase its HP outside standard pokemon battle.
+	"min_HP_required_stat": 20,
+	// HP stat needed to get medium HP outside standard pokemon battle.
+	"mid_HP_required_stat": 160,
+	// HP stat needed to get maximum HP outside standard pokemon battle. The max hp of a Blissey is 714.
+	"max_HP_required_stat": 500,
+	"stay_after_move_command": true
+}
