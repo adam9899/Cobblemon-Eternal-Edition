@@ -30,7 +30,7 @@ global.findRegiPuzzles = (worldSeed) => {
     global.regiPuzzleIndex = {}
     
     regularRegis.forEach(regi => {
-        console.log(`${regi} ${worldSeed % global.totalRegiPuzzles}`)
+        //console.log(`${regi} ${worldSeed % global.totalRegiPuzzles}`)
         global.regiPuzzleIndex[regi] = worldSeed % global.totalRegiPuzzles
         worldSeed >>>= 2
     })
@@ -41,7 +41,7 @@ global.setRegiPuzzles = (puzzleIndex) => {
 
     regularRegis.forEach(regi => {
         global.regiPuzzleIndex[regi] = puzzleIndex
-        console.log(`${regi} = ${puzzleIndex}`)
+        //console.log(`${regi} = ${puzzleIndex}`)
     })
 }
 
@@ -100,11 +100,6 @@ global.loadRegis = () => {
                         // TODO
                         break;
                     default: 
-                        console.log(global.regiPuzzleIndex["rock"], 
-                            global.regiPuzzleIndex["rock"] == 1,
-                            typeof 1,
-                            typeof global.regiPuzzleIndex["rock"]
-                        )
                         throw regiIndexError('rock');
                 }
 

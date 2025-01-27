@@ -17,16 +17,17 @@ StartupEvents.postInit(event => {
 
 
 global.handleNicknameEasterEggs = (event) => {
-    console.log(`nickname event fired!!! name: ${event.nickname}`, event.nicknameString)
+    //console.log(`nickname event fired!!! name: ${event.nickname}`, event.nicknameString)
     if(event.nicknameString) {
     let {nicknameString: nicknameString, player: player, pokemon: pokemon} = event
     //let nicknameString = event.nicknameString
-
+    /*
     console.log(
         nicknameString,
         global.nicknameEasterEggs[nicknameString.toLowerCase()],
         nicknameString.toLowerCase() == 'garstomp'
     )
+    */
 
     if(global.nicknameEasterEggs[nicknameString.toLowerCase()])
         global.nicknameEasterEggs[nicknameString.toLowerCase()](pokemon, player, nicknameString)
@@ -36,13 +37,13 @@ global.handleNicknameEasterEggs = (event) => {
 
 global.nicknameEasterEggs = {
     'emperdog': (pokemon, player, nickname) => {
-        console.log(`evaluating nickname 'emperdog' for ${pokemon.species.resourceIdentifier}`)
+        //console.log(`evaluating nickname 'emperdog' for ${pokemon.species.resourceIdentifier}`)
         if(pokemon.level >= 80
             && pokemon.species.resourceIdentifier == 'cobblemon:snom')
             global.eternalForm(pokemon, player, nickname)
     },
     'garstomp': (pokemon, player, nickname) => {
-        console.log(`evaluating nickname 'garstomp' for ${pokemon.species.resourceIdentifier}`)
+        //console.log(`evaluating nickname 'garstomp' for ${pokemon.species.resourceIdentifier}`)
         if(pokemon.species.resourceIdentifier == 'cobblemon:garchomp')
             addMove(pokemon, 'eternabeam', player, nickname)
     }

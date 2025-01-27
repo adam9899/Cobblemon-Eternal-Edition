@@ -5,7 +5,7 @@ const $VisualizationHandler = Java.loadClass('vazkii.patchouli.client.handler.Mu
 
 
 NetworkEvents.dataReceived('showMultiblock', event => {
-    console.log(`trying to display ${event.data.targetMultiblock}`, event.data)
+    //console.log(`trying to display ${event.data.targetMultiblock}`, event.data)
     let multiblock = event.data.getString('targetMultiblock')
     let legalMultiblockName = `cobblemoneternal:${multiblock}`
     let pos = event.data.getCompound('position')
@@ -35,7 +35,7 @@ NetworkEvents.dataReceived('showMultiblock', event => {
 
     event.player.playSound('minecraft:block.note_block.chime')
 
-    console.log('Current Multiblock: '+ $PatchouliAPI.getCurrentMultiblock().getID())
+    //console.log('Current Multiblock: '+ $PatchouliAPI.getCurrentMultiblock().getID())
 })
 
 NetworkEvents.dataReceived('clearMultiblock', event => {

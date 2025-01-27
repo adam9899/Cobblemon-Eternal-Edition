@@ -8,11 +8,11 @@ const tryStaticEncounter = (event) => {
     let entry = global.staticConditionalEncounters[global.registeredStatics[event.block.id]]
     let multiblock = global.customMultiblocks[entry.multiblockName]
     let pos = event.block.pos
-    console.log(event.block.properties.facing)
+    //console.log(event.block.properties.facing)
     let conditionResult = entry.condition(event.player, event.block, 
         event.block.properties.facing ? global.facingToRotation[event.block.properties.facing] : undefined)
 
-    console.log(`${event.player.username} clicked on ${event.block.id} at ${pos.x}x ${pos.y}y ${pos.z}z`, entry, multiblock)
+    //console.log(`${event.player.username} clicked on ${event.block.id} at ${pos.x}x ${pos.y}y ${pos.z}z`, entry, multiblock)
 
     if(conditionResult == 'pass'){
 
