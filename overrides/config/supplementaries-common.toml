@@ -1,4 +1,4 @@
-s[redstone]
+[redstone]
 	wind_vane = true
 	clock_block = true
 	redstone_illuminator = true
