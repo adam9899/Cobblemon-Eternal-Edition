@@ -1,28 +1,31 @@
 //priority: 5
 
-const $CobblemonAPI = Java.loadClass('com.cobblemon.mod.common.Cobblemon').INSTANCE
 
-//Legendary Tables
+StartupEvents.init(event => {
+    //Legendary Tables
 
-//Storage for Roaming Encounter data
-//may randomly spawn around the player when specific conditions are met
-global.roamingConditionalEncounters = {}
+    //Storage for Roaming Encounter data
+    //may randomly spawn around the player when specific conditions are met
+    global.roamingConditionalEncounters = {}
 
-//a list of registered Roaming legendary pokemon, because you can't numerically index maps in JS
-global.registeredRoamers = []
-
-
-//Storage for Static Encounter data
-//may be summoned in special locations (custom structures) when specific conditions are met
-global.staticConditionalEncounters = {}
-
-//a list of registered Static legendary pokemon, so that an encounter can be fetched from its associated block
-global.registeredStatics = {}
+    //a list of registered Roaming legendary pokemon, because you can't numerically index maps in JS
+    global.registeredRoamers = []
 
 
-//a Map containing Lists of Legendary Pokemon Groups
-// primarily used for shifting spawns for already owned Legendaries to another of their group
-global.legendaryGroups = {}
+    //Storage for Static Encounter data
+    //may be summoned in special locations (custom structures) when specific conditions are met
+    global.staticConditionalEncounters = {}
+
+    //a list of registered Static legendary pokemon, so that an encounter can be fetched from its associated block
+    global.registeredStatics = {}
+
+
+    //a Map containing Lists of Legendary Pokemon Groups
+    // primarily used for shifting spawns for already owned Legendaries to another of their group
+    global.legendaryGroups = {}
+
+    console.log('Initialized Encounter data storage.')
+})
 
 
 //Reference map to convert Block Facing into Rotation
@@ -38,28 +41,6 @@ global.copyRoamerGroup = false
 let currentGroup = [] // storage for currently iterated group
 
 
-
-//get the player's Party
-/**
-* @param {PlayerJS} player 
-* @returns {Pokemon[]}
-*/
-global.partyOf = (player) => {
-    return $CobblemonAPI.getStorage().getParty(player)
-}
-
-
-/**
- * 
- */
-global.partyLevel = (player) => {
-    let highestLevel = 1
-    $CobblemonAPI.getStorage().getParty(player).forEach(pokemon => {
-        if(pokemon.level > highestLevel)
-            highestLevel = pokemon.level
-    })
-    return highestLevel
-}
 
 //function to validate a multiblock with Patchouli
 // used in Static Encounter system
@@ -126,19 +107,6 @@ global.spawnOtherMemberOfGroup = (player, species) => {
 }
 
 
-//check if the player is a Biome which has the given Tag
-/**
-* @param {PlayerJS} player player to evaluate
-* @param {ResourceLocation} biomeTag biome tag ID. no '#' prefix.s
-* @returns {boolean}
-*/
-global.playerIsInBiome = (player, biomeTag) => {
-    let biomeHasTag = player.level.getBiome(player.blockPosition())
-        .tags()
-        .anyMatch((tag) => tag.location().toString() == biomeTag)
-    return biomeHasTag
-}
-
 
 //shorthand for getting a 'java.lang.Character', which is required for Multiblock Patterns with Patchouli
 /**
@@ -203,8 +171,8 @@ const flushStorage = () => {
 //load all encounter data
 global.loadAllEncounters = () => {
 
-    //load encounters by generation
-    // currently unused generations are commented out
+    //load encounters by set/group
+    // try to sort by introduction generation order
     global.loadLegendaryBirds()
     global.loadMewDuo()
 

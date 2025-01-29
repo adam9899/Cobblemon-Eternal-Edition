@@ -52,6 +52,7 @@ StartupEvents.registry('item', event => {
 
     event.create('cobblemoneternal:bottle_cap')
         .tooltip(Text.translate('item.cobblemoneternal.bottle_cap.desc').color('gray'))
+        .tooltip(Text.translate('cobblemoneternal.intentionally_untextured').color('red'))
 
     $PokemonStats.Companion.PERMANENT.forEach(stat => {
         let fullStatName = stat.identifier.path.toLowerCase()
@@ -63,15 +64,18 @@ StartupEvents.registry('item', event => {
             .tooltip(Text.translate('item.cobblemoneternal.bottle_cap/typed.desc', 
                 Text.translate(`cobblemon.stat.${fullStatName}.name`))
                 .color('gray'))
+            .tooltip(Text.translate('cobblemoneternal.intentionally_untextured').color('red'))
     })
     
     event.create('cobblemoneternal:bottle_cap_gold')
         .tag('cobblemoneternal:iv_stat_up')
         .name(stack => Text.translate('item.cobblemoneternal.bottle_cap_gold.name'))
         .tooltip(Text.translate('item.cobblemoneternal.bottle_cap_gold.desc').color('gray'))
+        .tooltip(Text.translate('cobblemoneternal.intentionally_untextured').color('red'))
 
     event.create('cobblemoneternal:potential_limiter')
         .tooltip(Text.translate('item.cobblemoneternal.potential_limiter.desc').color('gray'))
+        .tooltip(Text.translate('cobblemoneternal.intentionally_untextured').color('red'))
 })
 
 
@@ -90,5 +94,6 @@ StartupEvents.registry('block', event => {
             .placementState(ctx => {
                 BlockProperties.FACING, ctx.getClickedFace().getAxis()
             })
+            .item(builder => builder.tooltip(Text.translate('cobblemoneternal.intentionally_untextured').color('red')))
     })
 })

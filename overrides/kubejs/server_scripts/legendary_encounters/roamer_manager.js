@@ -81,8 +81,7 @@ const trySpawnRoamingLegendary = (player, spawnDetails, bypassChecks) => {
                     .color(spawnDetails.textColor ? spawnDetails.textColor : 'white')
             ))
 
-            player.level['playSound(net.minecraft.world.entity.player.Player,double,double,double,net.minecraft.sounds.SoundEvent,net.minecraft.sounds.SoundSource,float,float)']
-                (null, player.x, player.y, player.z, spawnDetails.spawnSound, 'neutral', 1, 1)
+            global.playSoundNear(player, null, spawnDetails.spawnSound, 'neutral', 1, 1)
         })
 
     console.log(spawnDetails)

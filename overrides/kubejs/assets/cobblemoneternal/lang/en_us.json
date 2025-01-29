@@ -1,4 +1,7 @@
 {
+    "message.cobblemoneternal.error": "ERROR, please report how and when this appeared to the MCE Team!",
+    "cobblemoneternal.intentionally_untextured": "This item has no Texture yet, this is Intended!",
+
     "message.cobblemoneternal.legendary_spawned_nearby": "%s has appeared nearby!",
     "message.cobblemoneternal.command.force_spawn_success": "Encounter \"%s\" has been forcibly spawned near %s",
     "message.cobblemoneternal.command.reset_daily_roamer": "Daily roamer counter reset for %s",
@@ -37,6 +40,18 @@
     "item.cobblemoneternal.bottle_cap_gold.desc": "Maximizes All IVs",
 
     "item.cobblemoneternal.potential_limiter.desc": "When in the Offhand, Bottle Caps will Minimize IVs",
+
+
+    "message.cobblemoneternal.stat_maximized": "%s's %s IV was Maximized!",
+    "message.cobblemoneternal.multiple_stats_maximized": "%s's %s IVs were Maximized! - UNUSED",
+    "message.cobblemoneternal.all_stats_maximized": "All of %s's IVs were Maximized!",
+
+    "message.cobblemoneternal.stat_minimized": "%s's %s IV was Minimized!",
+    "message.cobblemoneternal.multiple_stats_minimized": "%s's %s IVs were Minimized! - UNUSED",
+    "message.cobblemoneternal.all_stats_minimized": "All of %s's IVs were Minimized!",
+
+    "message.cobblemoneternal.message_separator": ", ",
+
 
     "cobblemoneternal.village_map": "Village Map",
 

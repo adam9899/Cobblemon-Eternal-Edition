@@ -434,7 +434,7 @@ global.loadRegis = () => {
                     case 1: // Pseudo-Legendary with Draco Meteor
                         global.partyOf(player).forEach(pokemon => {
                             console.log(pokemon.form.labels)
-                            if(pokemon.form.labels.contains('pseudo_legendary')
+                            if(pokemon.form.labels.contains('powerhouse')
                                 && pokemon.moveSet.getMoves().stream().anyMatch(move => move.name == 'dracometeor'))
                                 passes = true
                         })

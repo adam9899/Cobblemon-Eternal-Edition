@@ -55,8 +55,7 @@ global.eternalForm = (pokemon, player, nickname) => {
     if(!pokemon.form.aspects.contains("eternal")) {
         $PokemonProperties.Companion.parse("eternal=true").apply(pokemon)
         player.tell(Text.translate('cobblemoneternal.pokemon.form_change_eternal', nickname).color('light_purple'))
-        player.level['playSound(net.minecraft.world.entity.player.Player,double,double,double,net.minecraft.sounds.SoundEvent,net.minecraft.sounds.SoundSource,float,float)']
-            (null, player.x, player.y, player.z, 'minecraft:entity.ender_dragon.ambient', 'neutral', 0.5, 1.0)
+        global.playSoundNear(player, null, 'minecraft:entity.ender_dragon.ambient', 'neutral', 0.5, 1.0)
     }
 }
 

@@ -10,7 +10,7 @@ const statupMap = {
     'cobblemoneternal:bottle_cap/spa': [$PokemonStats.SPECIAL_ATTACK],
     'cobblemoneternal:bottle_cap/spd': [$PokemonStats.SPECIAL_DEFENCE],
     'cobblemoneternal:bottle_cap/spe': [$PokemonStats.SPEED],
-    'cobblemoneternal:bottle_cap/gold': $PokemonStats.Companion.PERMANENT
+    'cobblemoneternal:bottle_cap_gold': $PokemonStats.Companion.PERMANENT
 }
 
 ItemEvents.entityInteracted(event => {
@@ -25,6 +25,10 @@ ItemEvents.entityInteracted(event => {
     let pokemon = pokemonEntity.pokemon
     let player = event.entity
     let used = false
+    let soundEvent = {sound: 'minecraft:entity.player.hurt', volume: 1.0, pitch: 1.0};
+    let messageKey = 'message.cobblemoneternal.error'
+    let statsBoosted = Text.empty()
+    let entry = statupMap[event.item.id]
     // for whatever reason, IVs do not seem to be interpreted as Map by KJS, but rather an Array.
     // i have literally no idea why, the type used for the entries is what you would expect from a Map in Java
     let IVMap = {}
@@ -52,25 +56,58 @@ ItemEvents.entityInteracted(event => {
         IVMap[entry.getKey()] = entry.getValue()
     })
 
-    statupMap[event.item.id].forEach(stat => {
+    let usingLimiter = player.offhandItem.id == 'cobblemoneternal:potential_limiter'
+
+    //determine message to use
+    if(entry.length == 6) // all 6 stats will use the 'all' form message
+        if(usingLimiter) messageKey = 'message.cobblemoneternal.all_stats_minimized'
+        else messageKey = 'message.cobblemoneternal.all_stats_maximized'
+    else if(entry.length == 1) // single stats use the singular form message
+        if(usingLimiter) messageKey = 'message.cobblemoneternal.stat_minimized' 
+        else messageKey = 'message.cobblemoneternal.stat_maximized'
+    //else // multiple stats use the plural form message - this would be annoying to program and we're not going to use it, so it will stay commented out for now.
+        //if(usingLimiter) messageKey = 'message.cobblemoneternal.multiple_stats_minimized' 
+        //else messageKey = 'message.cobblemoneternal.multiple_stats_maximized'
+
+
+    entry.forEach(stat => {
         /*
         console.log(stat)
         pokemon.ivs.forEach(iv => console.log(iv))
         */
 
-        if(player.offhandItem.id == 'cobblemoneternal:potential_limiter'){
+        if(usingLimiter){
             if(IVMap[stat] > 0){
                 pokemon.setIV(stat, 0)
-                used = true
+                //if(!statsBoosted.isEmpty())
+                //    statsBoosted.append(Text.translate('message.cobblemoneternal.message_separator'))
+                statsBoosted.append(Text.translate(`cobblemon.stat.${stat.identifier.path}.name`))
+
+                if(!used) {
+                    used = true
+                    soundEvent.sound = 'cobblemon:item.medicine.candy.use'
+                    soundEvent.volume = 0.7
+                }
             }
         } else if(IVMap[stat] < 31){
             pokemon.setIV(stat, 31)
-            used = true
+            //if(!statsBoosted.isEmpty())
+            //    statsBoosted.append(Text.translate('message.cobblemoneternal.message_separator'))
+            statsBoosted.append(Text.translate(`cobblemon.stat.${stat.identifier.path}.name`))
+
+            if(!used) {
+                used = true
+                soundEvent.sound = 'minecraft:entity.player.levelup'
+                soundEvent.volume = 0.7
+            }
         }
     })
 
     if(used){
         player.swing(event.hand, true)
+        global.playSoundNear(player, null, soundEvent.sound, 'neutral', soundEvent.volume, soundEvent.pitch)
+        console.log(pokemon.getDisplayName())
+        player.setStatusMessage(Text.translate(messageKey, pokemon.getDisplayName(), statsBoosted))
         if(!player.isCreative())
             event.item.count--
     }
