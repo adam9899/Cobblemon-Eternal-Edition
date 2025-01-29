@@ -45,3 +45,42 @@ global.playSoundNear = (player, sourceEntity, sound, sourceType, volume, pitch) 
     player.level['playSound(net.minecraft.world.entity.player.Player,double,double,double,net.minecraft.sounds.SoundEvent,net.minecraft.sounds.SoundSource,float,float)']
             (sourceEntity, player.x, player.y, player.z, sound, sourceType, volume, pitch)
 }
+
+
+//Changes a pokemon into its Eternal form, and sends a message to the provided player that it has.
+/**
+ * @param {Pokemon} pokemon the pokemon to change into Eternal form
+ * @param {Player} player the player to notify of the form change
+ * @param {String} nickname the pokemon's Nickname
+ */
+global.eternalForm = (pokemon, player, nickname) => {
+    console.log(`Setting ${pokemon.species.resourceIdentifier} to Eternal form`)
+    if(!pokemon.form.aspects.contains("eternal")) {
+        $PokemonProperties.Companion.parse("eternal=true").apply(pokemon)
+        player.tell(Text.translate('cobblemoneternal.pokemon.form_change_eternal', nickname).color('light_purple'))
+        global.playSoundNear(player, null, 'minecraft:entity.ender_dragon.ambient', 'neutral', 0.5, 1.0)
+    }
+}
+
+
+//adds the specified move to the Pokemon, and sends a message to the provided player that it has.
+// can and will add moves illegally
+/**
+ * @param {Pokemon} pokemon the pokemon to teach the move to
+ * @param {String} move the move to teach
+ * @param {Player} player the player to notify of the move addition
+ * @param {String} nickname the pokemon's Nickname
+ */
+global.addMove = (pokemon, move, player, nickname) => {
+    console.log(`Adding special move '${move}' to ${pokemon.species.resourceIdentifier}`)
+    let knows = false
+    //.stream().anyMatch(move => move.moveTemplate.name == 'eternabeam')
+    pokemon.benchedMoves.forEach(benchedMove => {
+        if(benchedMove.moveTemplate.name == move)
+            knows = true
+    })
+    if(!knows) {
+        pokemon.benchedMoves.add(new $BenchedMove($Moves.getByName(move).create().template, 0))
+        player.tell(Text.translate("cobblemon.experience.learned_move", nickname, Text.translate(`cobblemon.move.${move}`)))
+    }
+}

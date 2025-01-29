@@ -10,12 +10,12 @@
     "message.cobblemoneternal.command.set_regi_puzzles": "Set Regi Puzzles to Set %s. Restart world to reset.",
     "message.cobblemoneternal.command.set_regi_puzzles.oob": "Puzzle index '%s' is Out of Bounds. Maximum is %s.",
 
-    "message.cobblemoneternal.feature.bottle_cap_min_level_req": "Your Pokemon must be atleast Level 50 to use Bottle Caps!",
-    "message.cobblemoneternal.thats_not_your_pokemon": "That's not your Pokemon!",
+    "message.cobblemoneternal.feature.bottle_cap_min_level_req": "Your Pokémon must be atleast Level 50 to use Bottle Caps!",
+    "message.cobblemoneternal.thats_not_your_pokemon": "That's not your Pokémon!",
 
     "message.cobblemoneternal.missing_multiblock": "Multiblock Incomplete",
-    "message.cobblemoneternal.fail_party_condition": "It doesn't react. It must want something specific from your Party Pokemon.",
-    "message.cobblemoneternal.fail_party_level": "The Construct does not acknowledge your strength. Return with a Level %s+ Pokemon",
+    "message.cobblemoneternal.fail_party_condition": "It doesn't react. It must want something specific from your Party Pokémon.",
+    "message.cobblemoneternal.fail_party_level": "The Construct does not acknowledge your strength. Return with a Level %s+ Pokémon",
 
     "multiblock.cobblemoneternal.cloning_machine.name": "Cloning Machine",
     "block.cobblemoneternal.cloning_machine_core.name": "Cloning Machine Computer",
@@ -61,5 +61,9 @@
     "cobblemon.ui.pokedex.region.eternal": "Eternal (WIP)",
 
     "cobblemoneternal.species.barry.name": "Barry",
-    "cobblemoneternal.species.barry.desc": "A Mischevious Rodent with unfathomable power."
+    "cobblemoneternal.species.barry.desc": "A Mischevious Rodent with unfathomable power.",
+
+    "cobblemoneternal.species.snom-eternal.desc": "Thanks to its hard icy shell protecting it, this Pokémon has plenty of time to think. It has been observed to frequently answer questions from other Pokémon.",
+
+    "cobblemoneternal.species.rotom-eternal.desc": "Despite being shaped similarly to a Lightbulb, this Pokémon isn't very bright. When interacting with Snom, it can often be seen teasing them."
 }

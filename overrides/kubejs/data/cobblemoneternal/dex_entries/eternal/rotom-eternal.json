@@ -1,0 +1,15 @@
+{
+    "id": "cobblemoneternal:rotom-eternal",
+    "speciesId": "cobblemon:rotom",
+    "displayAspects": [],
+    "conditionAspects": [],
+    "forms": [
+        {
+            "displayForm": "Eternal",
+            "unlockForms": [
+                "Eternal"
+            ]
+        }
+    ],
+    "variations": []
+}

@@ -1,6 +1,7 @@
 {
     "pokemon": [
-        "snom"
+        "snom",
+        "rotom"
     ],
     "features": ["eternal"]
 }

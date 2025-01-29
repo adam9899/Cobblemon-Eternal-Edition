@@ -18,6 +18,9 @@
                 "height": 1.5,
                 "fixed": false
             },
+            "pokedex": [
+                "cobblemoneternal.species.snom-eternal.desc"
+            ],
             "height": 27,
             "weight": 1520,
             "moves": [
@@ -30,6 +33,7 @@
                 "14:firstimpression",
                 "20:nastyplot",
                 "25:blizzard",
+                "30:assist",
                 "32:healorder",
                 "40:glaciallance",
                 "45:freezeshock",

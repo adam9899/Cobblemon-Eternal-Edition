@@ -45,30 +45,11 @@ global.nicknameEasterEggs = {
     'garstomp': (pokemon, player, nickname) => {
         //console.log(`evaluating nickname 'garstomp' for ${pokemon.species.resourceIdentifier}`)
         if(pokemon.species.resourceIdentifier == 'cobblemon:garchomp')
-            addMove(pokemon, 'eternabeam', player, nickname)
-    }
-}
-
-
-global.eternalForm = (pokemon, player, nickname) => {
-    console.log(`Setting ${pokemon.species.resourceIdentifier} to Eternal form`)
-    if(!pokemon.form.aspects.contains("eternal")) {
-        $PokemonProperties.Companion.parse("eternal=true").apply(pokemon)
-        player.tell(Text.translate('cobblemoneternal.pokemon.form_change_eternal', nickname).color('light_purple'))
-        global.playSoundNear(player, null, 'minecraft:entity.ender_dragon.ambient', 'neutral', 0.5, 1.0)
-    }
-}
-
-const addMove = (pokemon, move, player, nickname) => {
-    console.log(`Adding special move '${move}' to ${pokemon.species.resourceIdentifier}`)
-    let knows = false
-    //.stream().anyMatch(move => move.moveTemplate.name == 'eternabeam')
-    pokemon.benchedMoves.forEach(benchedMove => {
-        if(benchedMove.moveTemplate.name == move)
-            knows = true
-    })
-    if(!knows) {
-        pokemon.benchedMoves.add(new $BenchedMove($Moves.getByName(move).create().template, 0))
-        player.tell(Text.translate("cobblemon.experience.learned_move", nickname, Text.translate(`cobblemon.move.${move}`)))
+            global.addMove(pokemon, 'eternabeam', player, nickname)
+    },
+    'thesmartnoob': (pokemon, player, nickname) => {
+        if(pokemon.level >= 65
+            && pokemon.species.resourceIdentifier == 'cobblemon:rotom')
+            global.eternalForm(pokemon, player, nickname)
     }
 }
