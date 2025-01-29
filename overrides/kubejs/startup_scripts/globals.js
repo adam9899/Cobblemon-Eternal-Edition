@@ -63,6 +63,19 @@ global.eternalForm = (pokemon, player, nickname) => {
 }
 
 
+//Changes a pokemon into the form with the specified properties.
+/**
+ * @param {String} properties Pokemon Properties that parse to the target form
+ * @param {Pokemon} pokemon the Pokemon that will be changing form
+ * @param {Player} player the player to notify of the form change
+ */
+global.changeForme = (properties, pokemon, player) => {
+    console.log(`Setting ${pokemon.species.resourceIdentifier} to form with properties: ${properties}`)
+    $PokemonProperties.Companion.parse(properties).apply(pokemon)
+    player.tell(Text.translate('cobblemoneternal.pokemon.form_change', pokemon.getDisplayName()))
+}
+
+
 //adds the specified move to the Pokemon, and sends a message to the provided player that it has.
 // can and will add moves illegally
 /**
