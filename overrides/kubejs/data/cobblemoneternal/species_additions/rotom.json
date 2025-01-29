@@ -43,6 +43,7 @@
                 "35:hex",
                 "40:substitute",
                 "42:selfdestruct",
+                "42:amnesia",
                 "45:trick",
                 "47:strengthsap",
                 "50:discharge",
