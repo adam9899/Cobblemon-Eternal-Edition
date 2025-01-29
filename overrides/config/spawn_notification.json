@@ -8,7 +8,7 @@
   "broadcastDespawns": false,
   "broadcastVolatileDespawns": false,
   "broadcastSpeciesName": true,
-  "broadcastPlayerSpawnedOn": false,
+  "broadcastPlayerSpawnedOn": true,
   "broadcastRange": 256,
   "playerLimit": -1,
   "labelsForBroadcast": [

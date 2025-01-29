@@ -1,5 +1,5 @@
 {
-  "lastSavedVersion": "1.6.0",
+  "lastSavedVersion": "1.6.1",
   "maxPokemonLevel": 100,
   "maxPokemonFriendship": 255,
   "announceDropItems": true,
@@ -55,7 +55,7 @@
   "displayNameForUnknownPokemon": false,
   "displayEntityLabelsWhenCrouchingOnly": false,
   "shinyRate": 8192.0,
-  "shinyNoticeParticlesDistance": 24.0,
+  "shinyNoticeParticlesDistance": 64.0,
   "captureCalculator": "cobblemon",
   "playerDamagePokemon": false,
   "appleLeftoversChance": 0.025,
@@ -72,8 +72,9 @@
   "walkingInBattleAnimations": false,
   "battleWildMaxDistance": 12.0,
   "tradeMaxDistance": 12.0,
-  "BattlePvPMaxDistance": 32.0,
+  "battlePvPMaxDistance": 32.0,
   "battleSpectateMaxDistance": 64.0,
-  "entityInteractionMaxDistance": 64.0,
+  "maxPokedexScanningDetectionRange": 10.0,
+  "hideUnimplementedPokemonInThePokedex": false,
   "enableDebugKeys": false
 }
