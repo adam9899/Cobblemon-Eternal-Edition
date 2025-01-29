@@ -31,7 +31,7 @@
 
 
     "item.cobblemoneternal.bottle_cap.name": "Bottle Cap",
-    "item.cobblemoneternal.bottle_cap.desc": "Craft with a Mint Leaf to choose IV to Maximize",
+    "item.cobblemoneternal.bottle_cap.desc": "Craft with Mint Leaves to choose IV to Maximize",
 
     "item.cobblemoneternal.bottle_cap/typed.name": "Bottle Cap (%s)",
     "item.cobblemoneternal.bottle_cap/typed.desc": "Maximizes the %s IV",
