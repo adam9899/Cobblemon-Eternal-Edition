@@ -193,6 +193,31 @@
           ]
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "name": "bottle_cap",
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "cobblemoneternal:bottle_cap",
+          "conditions": [
+            {
+              "condition": "releaserewards:value_range",
+              "value_type": "level",
+              "range": {
+                "min": 50,
+                "max": 100
+              }
+            },
+            {
+              "type": "random_chance",
+              "chance": 0.025
+            }
+          ]
+        }
+      ]
     }
   ]
 }
