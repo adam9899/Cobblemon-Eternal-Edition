@@ -1,0 +1,48 @@
+	#To disable specific modules, use Jade's plugins.json config.
+	[jade.pokemon]
+		#This is intended to be used for configuring the shown placeholders, but can include text/formatting. Text changes should be made via lang entries!
+		#Wrap "{}" around text shown when crouching, and "!{}" for text shown when not crouching.
+		#Placeholders prefixed by "%" have a lang entry at "cobblemonintegrations.jade.pokemon_entity.<placeholder without %>".
+		#Placeholders prefixed by "#" MUST be placed on their own line.
+		#Valid placeholders are: %dex_status, %display_name, %nickname, %species, %gender, #health, %level, %typing, %ev_yield, %nature, %ability, %ivs, %evs, %trainer, %egg_groups, %battle_message
+		#Any text prefixed with "$" will look for an associated lang entry. Example: "$crouch_message" pulls the lang entry "cobblemonintegrations.jade.pokemon_entity.crouch_message".
+		#Finally, you can configure conditions using "<placeholder>:<conditions>" where conditions are an & separated list of "<hidden/unknown>_<when/unless>_<condition>".
+		#Valid conditions are: unknown, encountered, caught, wild, yours, others, nicknamed
+		pokemonTooltip = """
+%dex_status %nickname:hidden_unless_nicknamed %species:hidden_when_nicknamed&unknown_when_unknown %gender:hidden_when_unknown %level
+#health
+$species_label:hidden_unless_nicknamed %species:hidden_unless_nicknamed&unknown_when_unknown
+%trainer:hidden_when_wild
+%typing:unknown_when_unknown
+%ev_yield:unknown_when_unknown
+{%nature:hidden_unless_caught&hidden_when_wild
+%ability:hidden_unless_caught&hidden_when_wild
+%ivs:hidden_unless_caught&hidden_when_wild
+%evs:hidden_unless_caught&hidden_when_wild
+%battle_message:hidden_unless_wild}!{$crouch_message:hidden_unless_caught
+%battle_message:hidden_unless_wild&hidden_when_caught}
+"""
+
+[jei]
+	#What Pokedex progress level should be required to see Pokemon in JEI?
+	#Note that this will only hide the info specified by "pokemonHideMode".
+	#Allowed Values: NONE, ENCOUNTERED, CAUGHT
+	pokedexHideLevel = "NONE"
+	#What info should be hidden in JEI?
+	#This only takes effect if "pokedexHideLevel" is not "NONE".
+	#Allowed Values: NAME, POKEMON, BOTH
+	pokemonHideMode = "BOTH"
+
+[enhancedcelestials]
+	#Most Enhanced Celestials configuration for Cobblemon Integrations must be done via Datapack.
+	#
+	#Should Lunar Event reward modifiers apply in PvP battles?
+	applyInPvP = false
+
+[waystones]
+	#Allow Pokemon to be used for Waystone teleportation.
+	allowWaystoneTeleport = true
+	#Minimum level to Teleport.
+	waystonesMinLevel = 0
+	#Does the Pokemon need to have Teleport accessible? When disabled, any psychic type can teleport.
+	requireTeleportMove = true
