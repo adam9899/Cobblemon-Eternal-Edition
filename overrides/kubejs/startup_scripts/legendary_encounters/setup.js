@@ -68,21 +68,29 @@ global.selectRoamingLegendary = (player, legendaryList) => {
     legendaryList = legendaryList || global.registeredRoamers
 
     let totalWeight = 0;
+    let passedEncounters = [];
+    let returnedEncounter;
 
     legendaryList.forEach((legendary) => {
         let encounter = global.roamingConditionalEncounters[legendary]
-        if(encounter.condition(player))
-            totalWeight += getWeightOrDefault(encounter.weight)
+        if(encounter.condition(player)) {
+            totalWeight += global.getWeightOrDefault(encounter.weight)
+            passedEncounters.push(legendary)
+        }
     })
 
     let weight = Math.floor(Math.random() * totalWeight)
 
-    global.roamingConditionalEncounters.forEach((encounter) => {
-        let encounterWeight = getWeightOrDefault(encounter.weight)
+    passedEncounters.forEach((legendary) => {
+        let encounter = global.roamingConditionalEncounters[legendary]
+        let encounterWeight = global.getWeightOrDefault(encounter.weight)
+        //console.log(legendary, encounter)
         weight -= encounterWeight
         if(weight < 0)
-            return encounter
+            returnedEncounter = encounter
     })
+
+    return returnedEncounter
 }
 
 //attempts to Spawn another member of the Legendary Group the given species is a part of.

@@ -1,5 +1,5 @@
-let birds = []
 
+const $IronsSounds = Java.loadClass('io.redspace.ironsspellbooks.registries.SoundRegistry')
 
 global.loadLegendaryBirds = () => {
 
@@ -9,7 +9,9 @@ global.loadLegendaryBirds = () => {
         group: 'legendaryBirds',
         weight: 10,
         flyingHeight: 6,
-        spawnSound: 'minecraft:block.note_block.bell',
+        spawnSound: {
+            event: 'minecraft:entity.blaze.shoot'
+        },
         textColor: 'red',
         properties: {
             level: 50,
@@ -47,7 +49,9 @@ global.loadLegendaryBirds = () => {
         species: 'cobblemon:zapdos',
         weight: 10,
         flyingHeight: 6,
-        spawnSound: 'minecraft:block.note_block.bell',
+        spawnSound: {
+            event: 'minecraft:entity.lightning_bolt.impact'
+        },
         textColor: 'yellow',
         properties: {
             level: 50,
@@ -77,7 +81,9 @@ global.loadLegendaryBirds = () => {
         species: 'cobblemon:articuno',
         weight: 10,
         flyingHeight: 6,
-        spawnSound: 'minecraft:block.note_block.bell',
+        spawnSound: {
+            event: $IronsSounds.THUNDERSTORM_PREPARE.get()
+        },
         textColor: 'blue',
         properties: {
             level: 50,

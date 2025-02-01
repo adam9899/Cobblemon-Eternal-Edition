@@ -18,7 +18,7 @@ global.loadMewDuo = () => {
             //heldItem: Item.of('cobblemoneternal:mewtant_genome')
         },
         condition: (player) => {
-            if(!global.partyLevel(player) >= 40 || !playerIsInBiome(player, 'forge:is_jungle')) return false;
+            if(!global.partyLevel(player) >= 40 || !global.playerIsInBiome(player, 'forge:is_jungle')) return false;
 
             let highFriendshipMon = 0
             global.partyOf(player).forEach(pokemon => {

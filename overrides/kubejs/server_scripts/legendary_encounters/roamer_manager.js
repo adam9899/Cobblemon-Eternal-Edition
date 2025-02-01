@@ -17,6 +17,7 @@ const trySpawnRoamingLegendary = (player, spawnDetails, bypassChecks) => {
     )*/
     bypassChecks = bypassChecks || false // conditions are evaluated before being added to the spawnable list, like loot tables.
 
+    if(spawnDetails == undefined) return;
     
     if(!bypassChecks)
         global.partyOf(player).forEach(pokemon => {
@@ -34,9 +35,9 @@ const trySpawnRoamingLegendary = (player, spawnDetails, bypassChecks) => {
     //if(!bypassConditions) return;
 
     //set the player's roamer limiter flag, cause at this point, it's getting spawned.
-    player.persistentData.dailyRoamerSuccesses += 1
+    player.persistentData.dailyRoamerSuccesses = 1 //hardcoded for 1 right now because '+=' with the double to string interpretation makes it concat and eval to NaN
 
-    console.log('Y position adjustment starting')
+    //console.log('Y position adjustment starting')
     /*
     if(spawnDetails.flyingHeight){
         console.log(`${spawnDetails.species} is a flyer, looking for a surface to spawn above`)
@@ -69,24 +70,25 @@ const trySpawnRoamingLegendary = (player, spawnDetails, bypassChecks) => {
             }
         }
     //}
-    console.log('Y position adjustment done')
+    //console.log('Y position adjustment done')
 
     level.getEntitiesWithin(AABB.ofBlock(pos).inflate(64))
         .filter(entity => entity.type == 'minecraft:player')
         .forEach(player => {
             let speciesName = spawnDetails.species.split(':')
-            console.log(player)
+            //console.log(player)
             player.setStatusMessage(Text.translate('message.cobblemoneternal.legendary_spawned_nearby',
                 Text.translate(`${speciesName[0]}.species.${speciesName[1]}.name`)
                     .color(spawnDetails.textColor ? spawnDetails.textColor : 'white')
             ))
 
-            global.playSoundNear(player, null, spawnDetails.spawnSound, 'neutral', 1, 1)
+            let spawnSound = spawnDetails.spawnSound
+            global.playSoundNear(player, null, spawnSound.event, 'neutral', spawnSound.volume ? spawnSound.volume : 1, spawnSound.pitch ? spawnSound.pitch : 1)
         })
 
-    console.log(spawnDetails)
+    //console.log(spawnDetails)
     let pokemonEntity = new $PokemonEntity(level, createPokemon(spawnDetails.species, spawnDetails.properties), $CobblemonEntities.POKEMON)
-    console.log(pokemonEntity)
+    //console.log(pokemonEntity)
         pokemonEntity.x = pos.x
         pokemonEntity.y = pos.y
         pokemonEntity.z = pos.z
@@ -103,8 +105,19 @@ PlayerEvents.tick(event => {
     if(!event.level.remote){
         if(event.level.time % roamingLegendaryCheckFrequency == 0){
             console.log(`running Roamer check for ${event.player.username} at ${event.level.time}`)
-            if(event.player.persistentData.dailyRoamerSuccesses < maxRoamersPerDay
-                && Math.random() > (1.0 - roamerSpawnCheckSuccessRate)){
+            let rand = Math.random()
+            let roamerSuccesses = parseInt(event.player.persistentData.dailyRoamerSuccesses)
+            /*
+            console.log(
+                `successes limit: ${maxRoamersPerDay}`,
+                `current successes: ${roamerSuccesses}`,
+                `successes not at limit: ${roamerSuccesses < maxRoamersPerDay}`,
+                `random value: ${rand}`,
+                `sucess rate: ${1.0 - roamerSpawnCheckSuccessRate}`
+            )
+                */
+            if(roamerSuccesses < maxRoamersPerDay
+                && rand > (1.0 - roamerSpawnCheckSuccessRate)){
                 console.log(`attempting roaming legendary spawn near ${event.player.username}`)
                 global.setCopyRoamerGroup()
                 trySpawnRoamingLegendary(
