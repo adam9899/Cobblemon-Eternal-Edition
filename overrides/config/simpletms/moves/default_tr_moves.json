@@ -1,0 +1,1763 @@
+[
+    {
+        "moveName": "absorb"
+    },
+    {
+        "moveName": "acid"
+    },
+    {
+        "moveName": "acidarmor"
+    },
+    {
+        "moveName": "acidspray"
+    },
+    {
+        "moveName": "acrobatics"
+    },
+    {
+        "moveName": "acupressure"
+    },
+    {
+        "moveName": "aerialace"
+    },
+    {
+        "moveName": "afteryou"
+    },
+    {
+        "moveName": "agility"
+    },
+    {
+        "moveName": "aircutter"
+    },
+    {
+        "moveName": "airslash"
+    },
+    {
+        "moveName": "alluringvoice"
+    },
+    {
+        "moveName": "allyswitch"
+    },
+    {
+        "moveName": "amnesia"
+    },
+    {
+        "moveName": "ancientpower"
+    },
+    {
+        "moveName": "aquacutter"
+    },
+    {
+        "moveName": "aquajet"
+    },
+    {
+        "moveName": "aquaring"
+    },
+    {
+        "moveName": "aquatail"
+    },
+    {
+        "moveName": "aromatherapy"
+    },
+    {
+        "moveName": "aromaticmist"
+    },
+    {
+        "moveName": "assist"
+    },
+    {
+        "moveName": "assurance"
+    },
+    {
+        "moveName": "astonish"
+    },
+    {
+        "moveName": "attract"
+    },
+    {
+        "moveName": "aurasphere"
+    },
+    {
+        "moveName": "aurorabeam"
+    },
+    {
+        "moveName": "auroraveil"
+    },
+    {
+        "moveName": "autotomize"
+    },
+    {
+        "moveName": "avalanche"
+    },
+    {
+        "moveName": "axekick"
+    },
+    {
+        "moveName": "babydolleyes"
+    },
+    {
+        "moveName": "barrier"
+    },
+    {
+        "moveName": "batonpass"
+    },
+    {
+        "moveName": "beatup"
+    },
+    {
+        "moveName": "belch"
+    },
+    {
+        "moveName": "bellydrum"
+    },
+    {
+        "moveName": "bestow"
+    },
+    {
+        "moveName": "bide"
+    },
+    {
+        "moveName": "bind"
+    },
+    {
+        "moveName": "bite"
+    },
+    {
+        "moveName": "blastburn"
+    },
+    {
+        "moveName": "blazekick"
+    },
+    {
+        "moveName": "blizzard"
+    },
+    {
+        "moveName": "block"
+    },
+    {
+        "moveName": "bodypress"
+    },
+    {
+        "moveName": "bodyslam"
+    },
+    {
+        "moveName": "boomburst"
+    },
+    {
+        "moveName": "bounce"
+    },
+    {
+        "moveName": "bravebird"
+    },
+    {
+        "moveName": "breakingswipe"
+    },
+    {
+        "moveName": "brickbreak"
+    },
+    {
+        "moveName": "brine"
+    },
+    {
+        "moveName": "brutalswing"
+    },
+    {
+        "moveName": "bubble"
+    },
+    {
+        "moveName": "bubblebeam"
+    },
+    {
+        "moveName": "bugbite"
+    },
+    {
+        "moveName": "bugbuzz"
+    },
+    {
+        "moveName": "bulkup"
+    },
+    {
+        "moveName": "bulldoze"
+    },
+    {
+        "moveName": "bulletpunch"
+    },
+    {
+        "moveName": "bulletseed"
+    },
+    {
+        "moveName": "burningjealousy"
+    },
+    {
+        "moveName": "burnup"
+    },
+    {
+        "moveName": "calmmind"
+    },
+    {
+        "moveName": "camouflage"
+    },
+    {
+        "moveName": "captivate"
+    },
+    {
+        "moveName": "charge"
+    },
+    {
+        "moveName": "chargebeam"
+    },
+    {
+        "moveName": "charm"
+    },
+    {
+        "moveName": "chillingwater"
+    },
+    {
+        "moveName": "chipaway"
+    },
+    {
+        "moveName": "circlethrow"
+    },
+    {
+        "moveName": "clamp"
+    },
+    {
+        "moveName": "clearsmog"
+    },
+    {
+        "moveName": "closecombat"
+    },
+    {
+        "moveName": "coaching"
+    },
+    {
+        "moveName": "coil"
+    },
+    {
+        "moveName": "cometpunch"
+    },
+    {
+        "moveName": "confide"
+    },
+    {
+        "moveName": "confuseray"
+    },
+    {
+        "moveName": "confusion"
+    },
+    {
+        "moveName": "constrict"
+    },
+    {
+        "moveName": "copycat"
+    },
+    {
+        "moveName": "corrosivegas"
+    },
+    {
+        "moveName": "cosmicpower"
+    },
+    {
+        "moveName": "cottonguard"
+    },
+    {
+        "moveName": "cottonspore"
+    },
+    {
+        "moveName": "counter"
+    },
+    {
+        "moveName": "covet"
+    },
+    {
+        "moveName": "crabhammer"
+    },
+    {
+        "moveName": "craftyshield"
+    },
+    {
+        "moveName": "crosschop"
+    },
+    {
+        "moveName": "crosspoison"
+    },
+    {
+        "moveName": "crunch"
+    },
+    {
+        "moveName": "crushclaw"
+    },
+    {
+        "moveName": "curse"
+    },
+    {
+        "moveName": "cut"
+    },
+    {
+        "moveName": "darkestlariat"
+    },
+    {
+        "moveName": "darkpulse"
+    },
+    {
+        "moveName": "dazzlinggleam"
+    },
+    {
+        "moveName": "defensecurl"
+    },
+    {
+        "moveName": "defog"
+    },
+    {
+        "moveName": "destinybond"
+    },
+    {
+        "moveName": "detect"
+    },
+    {
+        "moveName": "dig"
+    },
+    {
+        "moveName": "disable"
+    },
+    {
+        "moveName": "disarmingvoice"
+    },
+    {
+        "moveName": "discharge"
+    },
+    {
+        "moveName": "dive"
+    },
+    {
+        "moveName": "dizzypunch"
+    },
+    {
+        "moveName": "doubleedge"
+    },
+    {
+        "moveName": "doublehit"
+    },
+    {
+        "moveName": "doublekick"
+    },
+    {
+        "moveName": "doubleslap"
+    },
+    {
+        "moveName": "doubleteam"
+    },
+    {
+        "moveName": "dracometeor"
+    },
+    {
+        "moveName": "dragonbreath"
+    },
+    {
+        "moveName": "dragoncheer"
+    },
+    {
+        "moveName": "dragonclaw"
+    },
+    {
+        "moveName": "dragondance"
+    },
+    {
+        "moveName": "dragonhammer"
+    },
+    {
+        "moveName": "dragonpulse"
+    },
+    {
+        "moveName": "dragonrage"
+    },
+    {
+        "moveName": "dragonrush"
+    },
+    {
+        "moveName": "dragontail"
+    },
+    {
+        "moveName": "drainingkiss"
+    },
+    {
+        "moveName": "drainpunch"
+    },
+    {
+        "moveName": "dreameater"
+    },
+    {
+        "moveName": "drillpeck"
+    },
+    {
+        "moveName": "drillrun"
+    },
+    {
+        "moveName": "dualchop"
+    },
+    {
+        "moveName": "dualwingbeat"
+    },
+    {
+        "moveName": "dynamicpunch"
+    },
+    {
+        "moveName": "earthpower"
+    },
+    {
+        "moveName": "earthquake"
+    },
+    {
+        "moveName": "echoedvoice"
+    },
+    {
+        "moveName": "eerieimpulse"
+    },
+    {
+        "moveName": "electricterrain"
+    },
+    {
+        "moveName": "electroball"
+    },
+    {
+        "moveName": "electroweb"
+    },
+    {
+        "moveName": "embargo"
+    },
+    {
+        "moveName": "encore"
+    },
+    {
+        "moveName": "endeavor"
+    },
+    {
+        "moveName": "endure"
+    },
+    {
+        "moveName": "energyball"
+    },
+    {
+        "moveName": "entrainment"
+    },
+    {
+        "moveName": "eruption"
+    },
+    {
+        "moveName": "expandingforce"
+    },
+    {
+        "moveName": "explosion"
+    },
+    {
+        "moveName": "extrasensory"
+    },
+    {
+        "moveName": "extremespeed"
+    },
+    {
+        "moveName": "facade"
+    },
+    {
+        "moveName": "fairywind"
+    },
+    {
+        "moveName": "fakeout"
+    },
+    {
+        "moveName": "faketears"
+    },
+    {
+        "moveName": "falseswipe"
+    },
+    {
+        "moveName": "featherdance"
+    },
+    {
+        "moveName": "feint"
+    },
+    {
+        "moveName": "feintattack"
+    },
+    {
+        "moveName": "fellstinger"
+    },
+    {
+        "moveName": "finalgambit"
+    },
+    {
+        "moveName": "fireblast"
+    },
+    {
+        "moveName": "firefang"
+    },
+    {
+        "moveName": "firepledge"
+    },
+    {
+        "moveName": "firepunch"
+    },
+    {
+        "moveName": "firespin"
+    },
+    {
+        "moveName": "firstimpression"
+    },
+    {
+        "moveName": "fissure"
+    },
+    {
+        "moveName": "flail"
+    },
+    {
+        "moveName": "flameburst"
+    },
+    {
+        "moveName": "flamecharge"
+    },
+    {
+        "moveName": "flamethrower"
+    },
+    {
+        "moveName": "flamewheel"
+    },
+    {
+        "moveName": "flareblitz"
+    },
+    {
+        "moveName": "flash"
+    },
+    {
+        "moveName": "flashcannon"
+    },
+    {
+        "moveName": "flatter"
+    },
+    {
+        "moveName": "fling"
+    },
+    {
+        "moveName": "flipturn"
+    },
+    {
+        "moveName": "flowershield"
+    },
+    {
+        "moveName": "fly"
+    },
+    {
+        "moveName": "focusblast"
+    },
+    {
+        "moveName": "focusenergy"
+    },
+    {
+        "moveName": "focuspunch"
+    },
+    {
+        "moveName": "followme"
+    },
+    {
+        "moveName": "forcepalm"
+    },
+    {
+        "moveName": "foresight"
+    },
+    {
+        "moveName": "foulplay"
+    },
+    {
+        "moveName": "freezedry"
+    },
+    {
+        "moveName": "frenzyplant"
+    },
+    {
+        "moveName": "frostbreath"
+    },
+    {
+        "moveName": "furyattack"
+    },
+    {
+        "moveName": "furycutter"
+    },
+    {
+        "moveName": "furyswipes"
+    },
+    {
+        "moveName": "futuresight"
+    },
+    {
+        "moveName": "gastroacid"
+    },
+    {
+        "moveName": "gigadrain"
+    },
+    {
+        "moveName": "gigaimpact"
+    },
+    {
+        "moveName": "glare"
+    },
+    {
+        "moveName": "grassknot"
+    },
+    {
+        "moveName": "grasspledge"
+    },
+    {
+        "moveName": "grasswhistle"
+    },
+    {
+        "moveName": "grassyglide"
+    },
+    {
+        "moveName": "grassyterrain"
+    },
+    {
+        "moveName": "gravity"
+    },
+    {
+        "moveName": "growl"
+    },
+    {
+        "moveName": "growth"
+    },
+    {
+        "moveName": "grudge"
+    },
+    {
+        "moveName": "guardsplit"
+    },
+    {
+        "moveName": "guardswap"
+    },
+    {
+        "moveName": "guillotine"
+    },
+    {
+        "moveName": "gunkshot"
+    },
+    {
+        "moveName": "gust"
+    },
+    {
+        "moveName": "gyroball"
+    },
+    {
+        "moveName": "hail"
+    },
+    {
+        "moveName": "hammerarm"
+    },
+    {
+        "moveName": "harden"
+    },
+    {
+        "moveName": "hardpress"
+    },
+    {
+        "moveName": "haze"
+    },
+    {
+        "moveName": "headbutt"
+    },
+    {
+        "moveName": "headsmash"
+    },
+    {
+        "moveName": "healbell"
+    },
+    {
+        "moveName": "healblock"
+    },
+    {
+        "moveName": "healingwish"
+    },
+    {
+        "moveName": "healpulse"
+    },
+    {
+        "moveName": "heartstamp"
+    },
+    {
+        "moveName": "heatcrash"
+    },
+    {
+        "moveName": "heatwave"
+    },
+    {
+        "moveName": "heavyslam"
+    },
+    {
+        "moveName": "helpinghand"
+    },
+    {
+        "moveName": "hex"
+    },
+    {
+        "moveName": "hiddenpower"
+    },
+    {
+        "moveName": "highhorsepower"
+    },
+    {
+        "moveName": "highjumpkick"
+    },
+    {
+        "moveName": "honeclaws"
+    },
+    {
+        "moveName": "hornattack"
+    },
+    {
+        "moveName": "horndrill"
+    },
+    {
+        "moveName": "howl"
+    },
+    {
+        "moveName": "hurricane"
+    },
+    {
+        "moveName": "hydrocannon"
+    },
+    {
+        "moveName": "hydropump"
+    },
+    {
+        "moveName": "hyperbeam"
+    },
+    {
+        "moveName": "hypervoice"
+    },
+    {
+        "moveName": "hypnosis"
+    },
+    {
+        "moveName": "iceball"
+    },
+    {
+        "moveName": "icebeam"
+    },
+    {
+        "moveName": "icefang"
+    },
+    {
+        "moveName": "icehammer"
+    },
+    {
+        "moveName": "icepunch"
+    },
+    {
+        "moveName": "iceshard"
+    },
+    {
+        "moveName": "icespinner"
+    },
+    {
+        "moveName": "iciclecrash"
+    },
+    {
+        "moveName": "iciclespear"
+    },
+    {
+        "moveName": "icywind"
+    },
+    {
+        "moveName": "imprison"
+    },
+    {
+        "moveName": "incinerate"
+    },
+    {
+        "moveName": "inferno"
+    },
+    {
+        "moveName": "infestation"
+    },
+    {
+        "moveName": "ingrain"
+    },
+    {
+        "moveName": "iondeluge"
+    },
+    {
+        "moveName": "irondefense"
+    },
+    {
+        "moveName": "ironhead"
+    },
+    {
+        "moveName": "irontail"
+    },
+    {
+        "moveName": "jumpkick"
+    },
+    {
+        "moveName": "karatechop"
+    },
+    {
+        "moveName": "knockoff"
+    },
+    {
+        "moveName": "laserfocus"
+    },
+    {
+        "moveName": "lashout"
+    },
+    {
+        "moveName": "lastresort"
+    },
+    {
+        "moveName": "lastrespects"
+    },
+    {
+        "moveName": "leafage"
+    },
+    {
+        "moveName": "leafblade"
+    },
+    {
+        "moveName": "leafstorm"
+    },
+    {
+        "moveName": "leaftornado"
+    },
+    {
+        "moveName": "leechlife"
+    },
+    {
+        "moveName": "leechseed"
+    },
+    {
+        "moveName": "leer"
+    },
+    {
+        "moveName": "lick"
+    },
+    {
+        "moveName": "lifedew"
+    },
+    {
+        "moveName": "lightscreen"
+    },
+    {
+        "moveName": "liquidation"
+    },
+    {
+        "moveName": "lockon"
+    },
+    {
+        "moveName": "lowkick"
+    },
+    {
+        "moveName": "lowsweep"
+    },
+    {
+        "moveName": "luckychant"
+    },
+    {
+        "moveName": "lunge"
+    },
+    {
+        "moveName": "machpunch"
+    },
+    {
+        "moveName": "magicalleaf"
+    },
+    {
+        "moveName": "magiccoat"
+    },
+    {
+        "moveName": "magicroom"
+    },
+    {
+        "moveName": "magnetrise"
+    },
+    {
+        "moveName": "magnitude"
+    },
+    {
+        "moveName": "meanlook"
+    },
+    {
+        "moveName": "meditate"
+    },
+    {
+        "moveName": "mefirst"
+    },
+    {
+        "moveName": "megadrain"
+    },
+    {
+        "moveName": "megahorn"
+    },
+    {
+        "moveName": "megakick"
+    },
+    {
+        "moveName": "megapunch"
+    },
+    {
+        "moveName": "memento"
+    },
+    {
+        "moveName": "metalburst"
+    },
+    {
+        "moveName": "metalclaw"
+    },
+    {
+        "moveName": "metalsound"
+    },
+    {
+        "moveName": "meteorbeam"
+    },
+    {
+        "moveName": "meteormash"
+    },
+    {
+        "moveName": "metronome"
+    },
+    {
+        "moveName": "milkdrink"
+    },
+    {
+        "moveName": "mimic"
+    },
+    {
+        "moveName": "mindreader"
+    },
+    {
+        "moveName": "miracleeye"
+    },
+    {
+        "moveName": "mirrorcoat"
+    },
+    {
+        "moveName": "mirrormove"
+    },
+    {
+        "moveName": "mirrorshot"
+    },
+    {
+        "moveName": "mist"
+    },
+    {
+        "moveName": "mistyexplosion"
+    },
+    {
+        "moveName": "mistyterrain"
+    },
+    {
+        "moveName": "moonblast"
+    },
+    {
+        "moveName": "moonlight"
+    },
+    {
+        "moveName": "morningsun"
+    },
+    {
+        "moveName": "mudbomb"
+    },
+    {
+        "moveName": "muddywater"
+    },
+    {
+        "moveName": "mudshot"
+    },
+    {
+        "moveName": "mudslap"
+    },
+    {
+        "moveName": "mudsport"
+    },
+    {
+        "moveName": "mysticalfire"
+    },
+    {
+        "moveName": "nastyplot"
+    },
+    {
+        "moveName": "naturalgift"
+    },
+    {
+        "moveName": "naturepower"
+    },
+    {
+        "moveName": "nightmare"
+    },
+    {
+        "moveName": "nightshade"
+    },
+    {
+        "moveName": "nightslash"
+    },
+    {
+        "moveName": "nuzzle"
+    },
+    {
+        "moveName": "octazooka"
+    },
+    {
+        "moveName": "odorsleuth"
+    },
+    {
+        "moveName": "ominouswind"
+    },
+    {
+        "moveName": "outrage"
+    },
+    {
+        "moveName": "overheat"
+    },
+    {
+        "moveName": "painsplit"
+    },
+    {
+        "moveName": "paraboliccharge"
+    },
+    {
+        "moveName": "partingshot"
+    },
+    {
+        "moveName": "payback"
+    },
+    {
+        "moveName": "payday"
+    },
+    {
+        "moveName": "peck"
+    },
+    {
+        "moveName": "perishsong"
+    },
+    {
+        "moveName": "petalblizzard"
+    },
+    {
+        "moveName": "petaldance"
+    },
+    {
+        "moveName": "phantomforce"
+    },
+    {
+        "moveName": "pinmissile"
+    },
+    {
+        "moveName": "playnice"
+    },
+    {
+        "moveName": "playrough"
+    },
+    {
+        "moveName": "pluck"
+    },
+    {
+        "moveName": "poisonfang"
+    },
+    {
+        "moveName": "poisonjab"
+    },
+    {
+        "moveName": "poisonpowder"
+    },
+    {
+        "moveName": "poisonsting"
+    },
+    {
+        "moveName": "poisontail"
+    },
+    {
+        "moveName": "pollenpuff"
+    },
+    {
+        "moveName": "poltergeist"
+    },
+    {
+        "moveName": "pounce"
+    },
+    {
+        "moveName": "pound"
+    },
+    {
+        "moveName": "powder"
+    },
+    {
+        "moveName": "powdersnow"
+    },
+    {
+        "moveName": "powergem"
+    },
+    {
+        "moveName": "powersplit"
+    },
+    {
+        "moveName": "powerswap"
+    },
+    {
+        "moveName": "powertrick"
+    },
+    {
+        "moveName": "powertrip"
+    },
+    {
+        "moveName": "poweruppunch"
+    },
+    {
+        "moveName": "powerwhip"
+    },
+    {
+        "moveName": "protect"
+    },
+    {
+        "moveName": "psybeam"
+    },
+    {
+        "moveName": "psychic"
+    },
+    {
+        "moveName": "psychicfangs"
+    },
+    {
+        "moveName": "psychicnoise"
+    },
+    {
+        "moveName": "psychicterrain"
+    },
+    {
+        "moveName": "psychocut"
+    },
+    {
+        "moveName": "psychoshift"
+    },
+    {
+        "moveName": "psychup"
+    },
+    {
+        "moveName": "psyshieldbash"
+    },
+    {
+        "moveName": "psyshock"
+    },
+    {
+        "moveName": "psywave"
+    },
+    {
+        "moveName": "punishment"
+    },
+    {
+        "moveName": "pursuit"
+    },
+    {
+        "moveName": "quash"
+    },
+    {
+        "moveName": "quickattack"
+    },
+    {
+        "moveName": "quickguard"
+    },
+    {
+        "moveName": "quiverdance"
+    },
+    {
+        "moveName": "rage"
+    },
+    {
+        "moveName": "ragepowder"
+    },
+    {
+        "moveName": "ragingfury"
+    },
+    {
+        "moveName": "raindance"
+    },
+    {
+        "moveName": "rapidspin"
+    },
+    {
+        "moveName": "razorleaf"
+    },
+    {
+        "moveName": "razorshell"
+    },
+    {
+        "moveName": "razorwind"
+    },
+    {
+        "moveName": "recover"
+    },
+    {
+        "moveName": "recycle"
+    },
+    {
+        "moveName": "reflect"
+    },
+    {
+        "moveName": "reflecttype"
+    },
+    {
+        "moveName": "refresh"
+    },
+    {
+        "moveName": "rest"
+    },
+    {
+        "moveName": "retaliate"
+    },
+    {
+        "moveName": "return"
+    },
+    {
+        "moveName": "revenge"
+    },
+    {
+        "moveName": "reversal"
+    },
+    {
+        "moveName": "risingvoltage"
+    },
+    {
+        "moveName": "roar"
+    },
+    {
+        "moveName": "rockblast"
+    },
+    {
+        "moveName": "rockclimb"
+    },
+    {
+        "moveName": "rockpolish"
+    },
+    {
+        "moveName": "rockslide"
+    },
+    {
+        "moveName": "rocksmash"
+    },
+    {
+        "moveName": "rockthrow"
+    },
+    {
+        "moveName": "rocktomb"
+    },
+    {
+        "moveName": "roleplay"
+    },
+    {
+        "moveName": "rollingkick"
+    },
+    {
+        "moveName": "rollout"
+    },
+    {
+        "moveName": "roost"
+    },
+    {
+        "moveName": "rototiller"
+    },
+    {
+        "moveName": "round"
+    },
+    {
+        "moveName": "sacredsword"
+    },
+    {
+        "moveName": "safeguard"
+    },
+    {
+        "moveName": "sandattack"
+    },
+    {
+        "moveName": "sandstorm"
+    },
+    {
+        "moveName": "sandtomb"
+    },
+    {
+        "moveName": "scald"
+    },
+    {
+        "moveName": "scaleshot"
+    },
+    {
+        "moveName": "scaryface"
+    },
+    {
+        "moveName": "scorchingsands"
+    },
+    {
+        "moveName": "screech"
+    },
+    {
+        "moveName": "secretpower"
+    },
+    {
+        "moveName": "secretsword"
+    },
+    {
+        "moveName": "seedbomb"
+    },
+    {
+        "moveName": "seismictoss"
+    },
+    {
+        "moveName": "selfdestruct"
+    },
+    {
+        "moveName": "shadowball"
+    },
+    {
+        "moveName": "shadowclaw"
+    },
+    {
+        "moveName": "shadowpunch"
+    },
+    {
+        "moveName": "shadowsneak"
+    },
+    {
+        "moveName": "sharpen"
+    },
+    {
+        "moveName": "shellsmash"
+    },
+    {
+        "moveName": "shockwave"
+    },
+    {
+        "moveName": "signalbeam"
+    },
+    {
+        "moveName": "silverwind"
+    },
+    {
+        "moveName": "simplebeam"
+    },
+    {
+        "moveName": "sing"
+    },
+    {
+        "moveName": "skillswap"
+    },
+    {
+        "moveName": "skittersmack"
+    },
+    {
+        "moveName": "skullbash"
+    },
+    {
+        "moveName": "skyattack"
+    },
+    {
+        "moveName": "skydrop"
+    },
+    {
+        "moveName": "skyuppercut"
+    },
+    {
+        "moveName": "slackoff"
+    },
+    {
+        "moveName": "slam"
+    },
+    {
+        "moveName": "slash"
+    },
+    {
+        "moveName": "sleeppowder"
+    },
+    {
+        "moveName": "sleeptalk"
+    },
+    {
+        "moveName": "sludge"
+    },
+    {
+        "moveName": "sludgebomb"
+    },
+    {
+        "moveName": "sludgewave"
+    },
+    {
+        "moveName": "smackdown"
+    },
+    {
+        "moveName": "smartstrike"
+    },
+    {
+        "moveName": "smellingsalts"
+    },
+    {
+        "moveName": "smog"
+    },
+    {
+        "moveName": "smokescreen"
+    },
+    {
+        "moveName": "snarl"
+    },
+    {
+        "moveName": "snatch"
+    },
+    {
+        "moveName": "snore"
+    },
+    {
+        "moveName": "snowscape"
+    },
+    {
+        "moveName": "soak"
+    },
+    {
+        "moveName": "solarbeam"
+    },
+    {
+        "moveName": "solarblade"
+    },
+    {
+        "moveName": "sonicboom"
+    },
+    {
+        "moveName": "spark"
+    },
+    {
+        "moveName": "speedswap"
+    },
+    {
+        "moveName": "spikecannon"
+    },
+    {
+        "moveName": "spikes"
+    },
+    {
+        "moveName": "spikyshield"
+    },
+    {
+        "moveName": "spite"
+    },
+    {
+        "moveName": "spitup"
+    },
+    {
+        "moveName": "splash"
+    },
+    {
+        "moveName": "stealthrock"
+    },
+    {
+        "moveName": "steamroller"
+    },
+    {
+        "moveName": "steelbeam"
+    },
+    {
+        "moveName": "steelroller"
+    },
+    {
+        "moveName": "steelwing"
+    },
+    {
+        "moveName": "stickyweb"
+    },
+    {
+        "moveName": "stockpile"
+    },
+    {
+        "moveName": "stomp"
+    },
+    {
+        "moveName": "stompingtantrum"
+    },
+    {
+        "moveName": "stoneedge"
+    },
+    {
+        "moveName": "storedpower"
+    },
+    {
+        "moveName": "stormthrow"
+    },
+    {
+        "moveName": "strength"
+    },
+    {
+        "moveName": "strengthsap"
+    },
+    {
+        "moveName": "stringshot"
+    },
+    {
+        "moveName": "struggle"
+    },
+    {
+        "moveName": "strugglebug"
+    },
+    {
+        "moveName": "stuffcheeks"
+    },
+    {
+        "moveName": "stunspore"
+    },
+    {
+        "moveName": "submission"
+    },
+    {
+        "moveName": "substitute"
+    },
+    {
+        "moveName": "suckerpunch"
+    },
+    {
+        "moveName": "sunnyday"
+    },
+    {
+        "moveName": "supercellslam"
+    },
+    {
+        "moveName": "superfang"
+    },
+    {
+        "moveName": "superpower"
+    },
+    {
+        "moveName": "supersonic"
+    },
+    {
+        "moveName": "surf"
+    },
+    {
+        "moveName": "swagger"
+    },
+    {
+        "moveName": "swallow"
+    },
+    {
+        "moveName": "sweetkiss"
+    },
+    {
+        "moveName": "sweetscent"
+    },
+    {
+        "moveName": "swift"
+    },
+    {
+        "moveName": "switcheroo"
+    },
+    {
+        "moveName": "swordsdance"
+    },
+    {
+        "moveName": "synchronoise"
+    },
+    {
+        "moveName": "synthesis"
+    },
+    {
+        "moveName": "tailslap"
+    },
+    {
+        "moveName": "tailwhip"
+    },
+    {
+        "moveName": "tailwind"
+    },
+    {
+        "moveName": "takedown"
+    },
+    {
+        "moveName": "taunt"
+    },
+    {
+        "moveName": "tearfullook"
+    },
+    {
+        "moveName": "teeterdance"
+    },
+    {
+        "moveName": "telekinesis"
+    },
+    {
+        "moveName": "temperflare"
+    },
+    {
+        "moveName": "terablast"
+    },
+    {
+        "moveName": "terrainpulse"
+    },
+    {
+        "moveName": "thief"
+    },
+    {
+        "moveName": "thrash"
+    },
+    {
+        "moveName": "throatchop"
+    },
+    {
+        "moveName": "thunder"
+    },
+    {
+        "moveName": "thunderbolt"
+    },
+    {
+        "moveName": "thunderfang"
+    },
+    {
+        "moveName": "thunderpunch"
+    },
+    {
+        "moveName": "thunderwave"
+    },
+    {
+        "moveName": "tickle"
+    },
+    {
+        "moveName": "tidyup"
+    },
+    {
+        "moveName": "torment"
+    },
+    {
+        "moveName": "toxic"
+    },
+    {
+        "moveName": "toxicspikes"
+    },
+    {
+        "moveName": "trailblaze"
+    },
+    {
+        "moveName": "triattack"
+    },
+    {
+        "moveName": "trick"
+    },
+    {
+        "moveName": "trickroom"
+    },
+    {
+        "moveName": "tripleaxel"
+    },
+    {
+        "moveName": "trumpcard"
+    },
+    {
+        "moveName": "twinbeam"
+    },
+    {
+        "moveName": "twineedle"
+    },
+    {
+        "moveName": "twister"
+    },
+    {
+        "moveName": "upperhand"
+    },
+    {
+        "moveName": "uproar"
+    },
+    {
+        "moveName": "uturn"
+    },
+    {
+        "moveName": "vacuumwave"
+    },
+    {
+        "moveName": "venomdrench"
+    },
+    {
+        "moveName": "venoshock"
+    },
+    {
+        "moveName": "vinewhip"
+    },
+    {
+        "moveName": "vitalthrow"
+    },
+    {
+        "moveName": "voltswitch"
+    },
+    {
+        "moveName": "wakeupslap"
+    },
+    {
+        "moveName": "waterfall"
+    },
+    {
+        "moveName": "watergun"
+    },
+    {
+        "moveName": "waterpledge"
+    },
+    {
+        "moveName": "waterpulse"
+    },
+    {
+        "moveName": "watersport"
+    },
+    {
+        "moveName": "waterspout"
+    },
+    {
+        "moveName": "wavecrash"
+    },
+    {
+        "moveName": "weatherball"
+    },
+    {
+        "moveName": "whirlpool"
+    },
+    {
+        "moveName": "whirlwind"
+    },
+    {
+        "moveName": "wideguard"
+    },
+    {
+        "moveName": "wildcharge"
+    },
+    {
+        "moveName": "willowisp"
+    },
+    {
+        "moveName": "wingattack"
+    },
+    {
+        "moveName": "wish"
+    },
+    {
+        "moveName": "wonderroom"
+    },
+    {
+        "moveName": "woodhammer"
+    },
+    {
+        "moveName": "workup"
+    },
+    {
+        "moveName": "worryseed"
+    },
+    {
+        "moveName": "wrap"
+    },
+    {
+        "moveName": "wringout"
+    },
+    {
+        "moveName": "xscissor"
+    },
+    {
+        "moveName": "yawn"
+    },
+    {
+        "moveName": "zenheadbutt"
+    },
+    {
+        "moveName": "zingzap"
+    }
+]
