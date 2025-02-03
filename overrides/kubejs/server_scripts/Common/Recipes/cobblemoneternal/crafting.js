@@ -24,4 +24,18 @@ ServerEvents.recipes(event => {
     event.shapeless('cobblemoneternal:bottle_cap/spe', 
         ['cobblemoneternal:bottle_cap', 'cobblemon:green_mint_leaf', 'cobblemon:green_mint_leaf', 'cobblemon:green_mint_leaf', 'cobblemon:green_mint_leaf']
     ).id('cobblemoneternal:bottle_cap/spe')
+
+
+    //Potential Limiter
+    event.shaped('cobblemoneternal:potential_limiter', [
+        'IWI',
+        'NCN',
+        'IBI'
+    ], {
+        'C': 'minecraft:comparator',
+        'B': 'cobblemoneternal:bottle_cap',
+        'N': 'minecraft:netherite_scrap',
+        'I': 'minecraft:iron_ingot',
+        'W': 'cobblemon:wide_lens'
+    }).id('cobblemoneternal:potential_limiter')
 })
